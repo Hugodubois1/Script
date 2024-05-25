@@ -73,6 +73,8 @@ Frame.BorderColor3 = Color3.fromRGB(255, 0, 0)
 Frame.BorderSizePixel = 2
 Frame.Position = UDim2.new(0.154664487, 0, 0.323093206, 0)
 Frame.Size = UDim2.new(0, 280, 0, 338)
+Frame.Active = true
+Frame.Draggable = true
 
 ImageLabel.Parent = Frame
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
