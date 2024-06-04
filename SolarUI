@@ -1,7 +1,13 @@
--- Gui to Lua
--- Version: 3.2
+--[[
 
--- Instances:
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
 
 local SolarUiImage = Instance.new("ScreenGui")
 local FramePetite = Instance.new("Frame")
@@ -9,19 +15,14 @@ local UICorner = Instance.new("UICorner")
 local NavigBar = Instance.new("Frame")
 local Home = Instance.new("ImageButton")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local UIGradient = Instance.new("UIGradient")
 local Cmd = Instance.new("ImageButton")
 local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local UIGradient_2 = Instance.new("UIGradient")
 local Internet = Instance.new("ImageButton")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local UIGradient_3 = Instance.new("UIGradient")
 local Settings = Instance.new("ImageButton")
 local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local UIGradient_4 = Instance.new("UIGradient")
 local Credit = Instance.new("ImageButton")
 local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
-local UIGradient_5 = Instance.new("UIGradient")
 local Separation1 = Instance.new("Frame")
 local Separation = Instance.new("Frame")
 local TopBar = Instance.new("Frame")
@@ -32,7 +33,6 @@ local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 local GreenButton = Instance.new("ImageButton")
 local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
 local SolarTitle = Instance.new("TextLabel")
-local UIGradient_6 = Instance.new("UIGradient")
 local SolarLogoButton = Instance.new("ImageButton")
 local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
 local UICorner_2 = Instance.new("UICorner")
@@ -45,13 +45,11 @@ local Frame_2 = Instance.new("Frame")
 local Button = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
-local UIGradient_7 = Instance.new("UIGradient")
 local UICorner_6 = Instance.new("UICorner")
 local Frame_3 = Instance.new("Frame")
 local Button_2 = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-local UIGradient_8 = Instance.new("UIGradient")
 local UICorner_8 = Instance.new("UICorner")
 local Frame_4 = Instance.new("Frame")
 local CmdFrame = Instance.new("Frame")
@@ -94,19 +92,15 @@ local UICorner_23 = Instance.new("UICorner")
 local Reset = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
 local TextLabel_8 = Instance.new("TextLabel")
-local UIGradient_9 = Instance.new("UIGradient")
 local OptimizeGame = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
-local UIGradient_10 = Instance.new("UIGradient")
 local MusicInfo = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
 local TextLabel_10 = Instance.new("TextLabel")
-local UIGradient_11 = Instance.new("UIGradient")
 local Bypass = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
 local TextLabel_11 = Instance.new("TextLabel")
-local UIGradient_12 = Instance.new("UIGradient")
 local CreditFrame = Instance.new("Frame")
 local UICorner_28 = Instance.new("UICorner")
 local TextLabel_12 = Instance.new("TextLabel")
@@ -127,7 +121,6 @@ local TextBox_2 = Instance.new("TextBox")
 local UICorner_30 = Instance.new("UICorner")
 local TextButton = Instance.new("TextButton")
 local UICorner_31 = Instance.new("UICorner")
-local UIGradient_13 = Instance.new("UIGradient")
 local MusicInfoFrame = Instance.new("Frame")
 local UICorner_32 = Instance.new("UICorner")
 local TextLabel_22 = Instance.new("TextLabel")
@@ -135,7 +128,6 @@ local TextBox_3 = Instance.new("TextBox")
 local UICorner_33 = Instance.new("UICorner")
 local TextButton_2 = Instance.new("TextButton")
 local UICorner_34 = Instance.new("UICorner")
-local UIGradient_14 = Instance.new("UIGradient")
 local TextLabelMusic = Instance.new("TextLabel")
 local UICorner_35 = Instance.new("UICorner")
 local FrameReduite = Instance.new("Frame")
@@ -148,7 +140,6 @@ local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
 local GreenButton_2 = Instance.new("ImageButton")
 local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
 local SolarTitle_2 = Instance.new("TextLabel")
-local UIGradient_15 = Instance.new("UIGradient")
 local SolarLogoButton_2 = Instance.new("ImageButton")
 local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 local UICorner_37 = Instance.new("UICorner")
@@ -156,12 +147,10 @@ local LaunchFrame = Instance.new("Frame")
 local UICorner_38 = Instance.new("UICorner")
 local TopBar_3 = Instance.new("Frame")
 local SolarTitle_3 = Instance.new("TextLabel")
-local UIGradient_16 = Instance.new("UIGradient")
 local Separation_2 = Instance.new("Frame")
 local TextButton_3 = Instance.new("TextButton")
-local UIGradient_17 = Instance.new("UIGradient")
 
---Properties:
+-- Properties
 
 SolarUiImage.Name = "SolarUiImage"
 SolarUiImage.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -170,30 +159,30 @@ SolarUiImage.ResetOnSpawn = false
 
 FramePetite.Name = "FramePetite"
 FramePetite.Parent = SolarUiImage
-FramePetite.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-FramePetite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FramePetite.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+FramePetite.BorderColor3 = Color3.new(0, 0, 0)
 FramePetite.BorderSizePixel = 0
 FramePetite.Position = UDim2.new(0.193311587, 0, 0.215042368, 0)
 FramePetite.Size = UDim2.new(0, 514, 0, 384)
 FramePetite.Visible = false
 
-UICorner.CornerRadius = UDim.new(0, 15)
 UICorner.Parent = FramePetite
+UICorner.CornerRadius = UDim.new(0, 15)
 
 NavigBar.Name = "NavigBar"
 NavigBar.Parent = FramePetite
-NavigBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NavigBar.BackgroundTransparency = 1.000
-NavigBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NavigBar.BackgroundColor3 = Color3.new(1, 1, 1)
+NavigBar.BackgroundTransparency = 1
+NavigBar.BorderColor3 = Color3.new(0, 0, 0)
 NavigBar.BorderSizePixel = 0
 NavigBar.Position = UDim2.new(0, 0, 0.140625, 0)
 NavigBar.Size = UDim2.new(0, 47, 0, 330)
 
 Home.Name = "Home"
 Home.Parent = NavigBar
-Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Home.BackgroundTransparency = 1.000
-Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BackgroundColor3 = Color3.new(1, 1, 1)
+Home.BackgroundTransparency = 1
+Home.BorderColor3 = Color3.new(0, 0, 0)
 Home.BorderSizePixel = 0
 Home.Position = UDim2.new(0.148936167, 0, 0.0515151508, 0)
 Home.Size = UDim2.new(0, 40, 0, 35)
@@ -202,14 +191,11 @@ Home.ScaleType = Enum.ScaleType.Fit
 
 UIAspectRatioConstraint.Parent = Home
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient.Parent = Home
-
 Cmd.Name = "Cmd"
 Cmd.Parent = NavigBar
-Cmd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Cmd.BackgroundTransparency = 1.000
-Cmd.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cmd.BackgroundColor3 = Color3.new(1, 1, 1)
+Cmd.BackgroundTransparency = 1
+Cmd.BorderColor3 = Color3.new(0, 0, 0)
 Cmd.BorderSizePixel = 0
 Cmd.Position = UDim2.new(0.148936167, 0, 0.200000003, 0)
 Cmd.Size = UDim2.new(0, 37, 0, 35)
@@ -218,14 +204,11 @@ Cmd.ScaleType = Enum.ScaleType.Fit
 
 UIAspectRatioConstraint_2.Parent = Cmd
 
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_2.Parent = Cmd
-
 Internet.Name = "Internet"
 Internet.Parent = NavigBar
-Internet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Internet.BackgroundTransparency = 1.000
-Internet.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Internet.BackgroundColor3 = Color3.new(1, 1, 1)
+Internet.BackgroundTransparency = 1
+Internet.BorderColor3 = Color3.new(0, 0, 0)
 Internet.BorderSizePixel = 0
 Internet.Position = UDim2.new(0.148936167, 0, 0.345454544, 0)
 Internet.Size = UDim2.new(0, 41, 0, 35)
@@ -234,14 +217,11 @@ Internet.ScaleType = Enum.ScaleType.Fit
 
 UIAspectRatioConstraint_3.Parent = Internet
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_3.Parent = Internet
-
 Settings.Name = "Settings"
 Settings.Parent = NavigBar
-Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Settings.BackgroundTransparency = 1.000
-Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BackgroundColor3 = Color3.new(1, 1, 1)
+Settings.BackgroundTransparency = 1
+Settings.BorderColor3 = Color3.new(0, 0, 0)
 Settings.BorderSizePixel = 0
 Settings.Position = UDim2.new(0.148936167, 0, 0.854545474, 0)
 Settings.Size = UDim2.new(0, 40, 0, 35)
@@ -250,14 +230,11 @@ Settings.ScaleType = Enum.ScaleType.Fit
 
 UIAspectRatioConstraint_4.Parent = Settings
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_4.Parent = Settings
-
 Credit.Name = "Credit"
 Credit.Parent = NavigBar
-Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Credit.BackgroundTransparency = 1.000
-Credit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credit.BackgroundColor3 = Color3.new(1, 1, 1)
+Credit.BackgroundTransparency = 1
+Credit.BorderColor3 = Color3.new(0, 0, 0)
 Credit.BorderSizePixel = 0
 Credit.Position = UDim2.new(0.148936167, 0, 0.4969697, 0)
 Credit.Size = UDim2.new(0, 41, 0, 35)
@@ -266,41 +243,38 @@ Credit.ScaleType = Enum.ScaleType.Fit
 
 UIAspectRatioConstraint_5.Parent = Credit
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_5.Parent = Credit
-
 Separation1.Name = "Separation1"
 Separation1.Parent = FramePetite
-Separation1.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
-Separation1.BackgroundTransparency = 0.500
-Separation1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Separation1.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+Separation1.BackgroundTransparency = 0.5
+Separation1.BorderColor3 = Color3.new(0, 0, 0)
 Separation1.BorderSizePixel = 0
 Separation1.Position = UDim2.new(-0.225680932, 0, 0.572916687, 0)
-Separation1.Rotation = 90.000
+Separation1.Rotation = 90
 Separation1.Size = UDim2.new(0, 330, 0, -2)
 
 Separation.Name = "Separation"
 Separation.Parent = FramePetite
-Separation.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
-Separation.BackgroundTransparency = 0.500
-Separation.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Separation.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+Separation.BackgroundTransparency = 0.5
+Separation.BorderColor3 = Color3.new(0, 0, 0)
 Separation.BorderSizePixel = 0
 Separation.Position = UDim2.new(0, 0, 0.135416672, 0)
 Separation.Size = UDim2.new(0, 514, 0, 2)
 
 TopBar.Name = "TopBar"
 TopBar.Parent = FramePetite
-TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBar.BackgroundTransparency = 1.000
-TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BackgroundColor3 = Color3.new(1, 1, 1)
+TopBar.BackgroundTransparency = 1
+TopBar.BorderColor3 = Color3.new(0, 0, 0)
 TopBar.BorderSizePixel = 0
 TopBar.Size = UDim2.new(0, 514, 0, 52)
 
 OrangeButton.Name = "OrangeButton"
 OrangeButton.Parent = TopBar
-OrangeButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OrangeButton.BackgroundTransparency = 1.000
-OrangeButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OrangeButton.BackgroundColor3 = Color3.new(1, 1, 1)
+OrangeButton.BackgroundTransparency = 1
+OrangeButton.BorderColor3 = Color3.new(0, 0, 0)
 OrangeButton.BorderSizePixel = 0
 OrangeButton.Position = UDim2.new(0.891050577, 0, 0.357171565, 0)
 OrangeButton.Size = UDim2.new(0, 15, 0, 15)
@@ -310,22 +284,22 @@ UIAspectRatioConstraint_6.Parent = OrangeButton
 
 RedButton.Name = "RedButton"
 RedButton.Parent = TopBar
-RedButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RedButton.BackgroundTransparency = 1.000
-RedButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RedButton.BackgroundColor3 = Color3.new(1, 1, 1)
+RedButton.BackgroundTransparency = 1
+RedButton.BorderColor3 = Color3.new(0, 0, 0)
 RedButton.BorderSizePixel = 0
 RedButton.Position = UDim2.new(0.939688742, 0, 0.357171565, 0)
 RedButton.Size = UDim2.new(0, 16, 0, 15)
 RedButton.Image = "http://www.roblox.com/asset/?id=3075923734"
-RedButton.ImageColor3 = Color3.fromRGB(255, 0, 4)
+RedButton.ImageColor3 = Color3.new(1, 0, 0.0156863)
 
 UIAspectRatioConstraint_7.Parent = RedButton
 
 GreenButton.Name = "GreenButton"
 GreenButton.Parent = TopBar
-GreenButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GreenButton.BackgroundTransparency = 1.000
-GreenButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GreenButton.BackgroundColor3 = Color3.new(1, 1, 1)
+GreenButton.BackgroundTransparency = 1
+GreenButton.BorderColor3 = Color3.new(0, 0, 0)
 GreenButton.BorderSizePixel = 0
 GreenButton.Position = UDim2.new(0.840466917, 0, 0.357171565, 0)
 GreenButton.Size = UDim2.new(0, 23, 0, 15)
@@ -335,24 +309,21 @@ UIAspectRatioConstraint_8.Parent = GreenButton
 
 SolarTitle.Name = "SolarTitle"
 SolarTitle.Parent = TopBar
-SolarTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SolarTitle.BackgroundTransparency = 1.000
-SolarTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+SolarTitle.BackgroundTransparency = 1
+SolarTitle.BorderColor3 = Color3.new(0, 0, 0)
 SolarTitle.BorderSizePixel = 0
 SolarTitle.Position = UDim2.new(0.0914396867, 0, 0.182491884, 0)
 SolarTitle.Size = UDim2.new(0, 129, 0, 32)
 SolarTitle.Font = Enum.Font.GothamBold
 SolarTitle.Text = "SOLAR"
-SolarTitle.TextColor3 = Color3.fromRGB(212, 212, 212)
-SolarTitle.TextSize = 34.000
-
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_6.Parent = SolarTitle
+SolarTitle.TextColor3 = Color3.new(0.831373, 0.831373, 0.831373)
+SolarTitle.TextSize = 34
 
 SolarLogoButton.Name = "SolarLogoButton"
 SolarLogoButton.Parent = TopBar
-SolarLogoButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SolarLogoButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarLogoButton.BackgroundColor3 = Color3.new(1, 1, 1)
+SolarLogoButton.BorderColor3 = Color3.new(0, 0, 0)
 SolarLogoButton.BorderSizePixel = 0
 SolarLogoButton.Position = UDim2.new(0.0136186769, 0, 0.0961538479, 0)
 SolarLogoButton.Size = UDim2.new(0, 40, 0, 43)
@@ -360,43 +331,43 @@ SolarLogoButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 UIAspectRatioConstraint_9.Parent = SolarLogoButton
 
-UICorner_2.CornerRadius = UDim.new(0, 30)
 UICorner_2.Parent = SolarLogoButton
+UICorner_2.CornerRadius = UDim.new(0, 30)
 
 Main.Name = "Main"
 Main.Parent = FramePetite
-Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Main.BackgroundTransparency = 1.000
-Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundColor3 = Color3.new(1, 1, 1)
+Main.BackgroundTransparency = 1
+Main.BorderColor3 = Color3.new(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.134241238, 0, 0.184895828, 0)
 Main.Size = UDim2.new(0, 420, 0, 300)
 
 HomeFrame.Name = "HomeFrame"
 HomeFrame.Parent = Main
-HomeFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-HomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+HomeFrame.BorderColor3 = Color3.new(0, 0, 0)
 HomeFrame.BorderSizePixel = 0
 HomeFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 HomeFrame.Size = UDim2.new(0, 420, 0, 300)
 
-UICorner_3.CornerRadius = UDim.new(0, 15)
 UICorner_3.Parent = HomeFrame
+UICorner_3.CornerRadius = UDim.new(0, 15)
 
 Frame.Parent = HomeFrame
-Frame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(-0.169047624, 0, 1.10666668, 0)
 Frame.Size = UDim2.new(0, 514, 0, 77)
 
-UICorner_4.CornerRadius = UDim.new(0, 15)
 UICorner_4.Parent = Frame
+UICorner_4.CornerRadius = UDim.new(0, 15)
 
 Frame_2.Parent = Frame
 Frame_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BorderColor3 = Color3.fromRGB(80, 80, 80)
+Frame_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_2.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
 Frame_2.Position = UDim2.new(0.731604457, 0, 0.365243882, 0)
 Frame_2.Size = UDim2.new(0.401647598, 0, 0.116883114, 20)
 Frame_2.ZIndex = 3
@@ -404,42 +375,39 @@ Frame_2.ZIndex = 3
 Button.Name = "Button"
 Button.Parent = Frame_2
 Button.AnchorPoint = Vector2.new(0.5, 0.5)
-Button.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+Button.BorderColor3 = Color3.new(0, 0, 0)
 Button.BorderSizePixel = 0
 Button.Position = UDim2.new(0.0495049432, 0, 0.5, 0)
 Button.Size = UDim2.new(0.100000024, 0, 1, 0)
 Button.ZIndex = 3
 Button.Font = Enum.Font.FredokaOne
 Button.Text = ""
-Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button.TextSize = 40.000
+Button.TextColor3 = Color3.new(0, 0, 0)
+Button.TextSize = 40
 
-UICorner_5.CornerRadius = UDim.new(0, 30)
 UICorner_5.Parent = Button
+UICorner_5.CornerRadius = UDim.new(0, 30)
 
 TextLabel.Parent = Frame_2
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.0290631671, 0, 1.34138012, 0)
 TextLabel.Size = UDim2.new(0, 61, 0, 18)
 TextLabel.Font = Enum.Font.GothamBold
 TextLabel.Text = "Speed"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 14
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_7.Parent = Frame_2
-
-UICorner_6.CornerRadius = UDim.new(0, 15)
 UICorner_6.Parent = Frame_2
+UICorner_6.CornerRadius = UDim.new(0, 15)
 
 Frame_3.Parent = Frame
 Frame_3.AnchorPoint = Vector2.new(0.5, 0.5)
-Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_3.BorderColor3 = Color3.fromRGB(80, 80, 80)
+Frame_3.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_3.BorderColor3 = Color3.new(0.313726, 0.313726, 0.313726)
 Frame_3.Position = UDim2.new(0.264235884, 0, 0.3782309, 0)
 Frame_3.Size = UDim2.new(0.401647598, 0, 0.116883114, 20)
 Frame_3.ZIndex = 3
@@ -447,801 +415,780 @@ Frame_3.ZIndex = 3
 Button_2.Name = "Button"
 Button_2.Parent = Frame_3
 Button_2.AnchorPoint = Vector2.new(0.5, 0.5)
-Button_2.BackgroundColor3 = Color3.fromRGB(102, 102, 102)
-Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BackgroundColor3 = Color3.new(0.4, 0.4, 0.4)
+Button_2.BorderColor3 = Color3.new(0, 0, 0)
 Button_2.BorderSizePixel = 0
 Button_2.Position = UDim2.new(0.0495049432, 0, 0.5, 0)
 Button_2.Size = UDim2.new(0.100000024, 0, 1, 0)
 Button_2.ZIndex = 3
 Button_2.Font = Enum.Font.FredokaOne
 Button_2.Text = ""
-Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Button_2.TextSize = 40.000
+Button_2.TextColor3 = Color3.new(0, 0, 0)
+Button_2.TextSize = 40
 
-UICorner_7.CornerRadius = UDim.new(0, 30)
 UICorner_7.Parent = Button_2
+UICorner_7.CornerRadius = UDim.new(0, 30)
 
 TextLabel_2.Parent = Frame_3
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(-0.00484371372, 0, 1.3068974, 0)
 TextLabel_2.Size = UDim2.new(0, 86, 0, 18)
 TextLabel_2.Font = Enum.Font.GothamBold
 TextLabel_2.Text = "JumpForce"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 14.000
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 14
 
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_8.Parent = Frame_3
-
-UICorner_8.CornerRadius = UDim.new(0, 15)
 UICorner_8.Parent = Frame_3
+UICorner_8.CornerRadius = UDim.new(0, 15)
 
 Frame_4.Parent = Frame
-Frame_4.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
-Frame_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_4.BackgroundColor3 = Color3.new(0.454902, 0.454902, 0.454902)
+Frame_4.BorderColor3 = Color3.new(0, 0, 0)
 Frame_4.BorderSizePixel = 0
 Frame_4.Position = UDim2.new(0.498054475, 0, 0, 0)
 Frame_4.Size = UDim2.new(0, 1, 0, 77)
 
 CmdFrame.Name = "CmdFrame"
 CmdFrame.Parent = Main
-CmdFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-CmdFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CmdFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+CmdFrame.BorderColor3 = Color3.new(0, 0, 0)
 CmdFrame.BorderSizePixel = 0
 CmdFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 CmdFrame.Size = UDim2.new(0, 420, 0, 300)
 CmdFrame.Visible = false
 
-UICorner_9.CornerRadius = UDim.new(0, 15)
 UICorner_9.Parent = CmdFrame
+UICorner_9.CornerRadius = UDim.new(0, 15)
 
 TextBox.Parent = CmdFrame
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.BackgroundTransparency = 1.000
-TextBox.BorderColor3 = Color3.fromRGB(72, 72, 72)
+TextBox.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox.BackgroundTransparency = 1
+TextBox.BorderColor3 = Color3.new(0.282353, 0.282353, 0.282353)
 TextBox.Position = UDim2.new(0.042857144, 0, 0.0633333325, 0)
 TextBox.Size = UDim2.new(0, 384, 0, 227)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSans
 TextBox.MultiLine = true
-TextBox.PlaceholderColor3 = Color3.fromRGB(212, 0, 4)
+TextBox.PlaceholderColor3 = Color3.new(0.831373, 0, 0.0156863)
 TextBox.PlaceholderText = "-- Upload by Solar"
 TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(255, 102, 0)
-TextBox.TextSize = 14.000
+TextBox.TextColor3 = Color3.new(1, 0.4, 0)
+TextBox.TextSize = 14
 TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
 Clear.Name = "Clear"
 Clear.Parent = CmdFrame
-Clear.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
-Clear.BackgroundTransparency = 0.600
-Clear.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Clear.BackgroundColor3 = Color3.new(0.462745, 0.462745, 0.462745)
+Clear.BackgroundTransparency = 0.6000000238418579
+Clear.BorderColor3 = Color3.new(1, 0.333333, 0)
 Clear.BorderSizePixel = 0
 Clear.Position = UDim2.new(0.604761899, 0, 0.855104148, 0)
 Clear.Size = UDim2.new(0, 133, 0, 34)
 Clear.Font = Enum.Font.GothamBold
 Clear.Text = "CLEAR"
-Clear.TextColor3 = Color3.fromRGB(0, 0, 0)
-Clear.TextSize = 28.000
+Clear.TextColor3 = Color3.new(0, 0, 0)
+Clear.TextSize = 28
 Clear.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0, 15)
 UICorner_10.Parent = Clear
+UICorner_10.CornerRadius = UDim.new(0, 15)
 
 Exe.Name = "Exe"
 Exe.Parent = CmdFrame
-Exe.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
-Exe.BackgroundTransparency = 0.600
-Exe.BorderColor3 = Color3.fromRGB(255, 85, 0)
+Exe.BackgroundColor3 = Color3.new(0.462745, 0.462745, 0.462745)
+Exe.BackgroundTransparency = 0.6000000238418579
+Exe.BorderColor3 = Color3.new(1, 0.333333, 0)
 Exe.BorderSizePixel = 0
 Exe.Position = UDim2.new(0.0285714287, 0, 0.855104148, 0)
 Exe.Size = UDim2.new(0, 161, 0, 34)
 Exe.Font = Enum.Font.GothamBold
 Exe.Text = "EXECUTE"
-Exe.TextColor3 = Color3.fromRGB(0, 0, 0)
-Exe.TextSize = 28.000
+Exe.TextColor3 = Color3.new(0, 0, 0)
+Exe.TextSize = 28
 Exe.TextWrapped = true
 
-UICorner_11.CornerRadius = UDim.new(0, 15)
 UICorner_11.Parent = Exe
+UICorner_11.CornerRadius = UDim.new(0, 15)
 
 InternetFrame.Name = "InternetFrame"
 InternetFrame.Parent = Main
-InternetFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-InternetFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InternetFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+InternetFrame.BorderColor3 = Color3.new(0, 0, 0)
 InternetFrame.BorderSizePixel = 0
 InternetFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 InternetFrame.Size = UDim2.new(0, 420, 0, 300)
 InternetFrame.Visible = false
 
-UICorner_12.CornerRadius = UDim.new(0, 15)
 UICorner_12.Parent = InternetFrame
+UICorner_12.CornerRadius = UDim.new(0, 15)
 
 ScrollingFrame.Parent = InternetFrame
 ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.BackgroundTransparency = 1.000
-ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame.BackgroundTransparency = 1
+ScrollingFrame.BorderColor3 = Color3.new(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.0404761918, 0, 0.043333333, 0)
 ScrollingFrame.Size = UDim2.new(0, 385, 0, 287)
 
 InfinityYield.Name = "InfinityYield"
 InfinityYield.Parent = ScrollingFrame
-InfinityYield.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-InfinityYield.BackgroundTransparency = 1.000
-InfinityYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfinityYield.BackgroundColor3 = Color3.new(0, 0, 0)
+InfinityYield.BackgroundTransparency = 1
+InfinityYield.BorderColor3 = Color3.new(0, 0, 0)
 InfinityYield.BorderSizePixel = 0
 InfinityYield.Position = UDim2.new(-0.00438961666, 0, -0.001393707, 0)
 InfinityYield.Size = UDim2.new(0, 178, 0, 163)
 
 TextLabel_3.Parent = InfinityYield
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
 TextLabel_3.Position = UDim2.new(0.0315611772, 0, 0.0981600732, 0)
 TextLabel_3.Size = UDim2.new(0, 91, 0, 41)
 TextLabel_3.ZIndex = 2
 TextLabel_3.Font = Enum.Font.GothamBold
 TextLabel_3.Text = "Infinity Yield"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
+TextLabel_3.TextSize = 14
 TextLabel_3.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0, 15)
 UICorner_13.Parent = TextLabel_3
+UICorner_13.CornerRadius = UDim.new(0, 15)
 
 ImageButton.Parent = InfinityYield
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BackgroundTransparency = 1.000
-ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton.BackgroundTransparency = 1
+ImageButton.BorderColor3 = Color3.new(0, 0, 0)
 ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.0337083787, 0, 0.0306748468, 0)
 ImageButton.Size = UDim2.new(0, 164, 0, 152)
 ImageButton.Image = "rbxassetid://8992292705"
 
-UICorner_14.CornerRadius = UDim.new(0, 15)
 UICorner_14.Parent = ImageButton
+UICorner_14.CornerRadius = UDim.new(0, 15)
 
 OwlV2.Name = "OwlV2"
 OwlV2.Parent = ScrollingFrame
-OwlV2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-OwlV2.BackgroundTransparency = 1.000
-OwlV2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OwlV2.BackgroundColor3 = Color3.new(0, 0, 0)
+OwlV2.BackgroundTransparency = 1
+OwlV2.BorderColor3 = Color3.new(0, 0, 0)
 OwlV2.BorderSizePixel = 0
 OwlV2.Position = UDim2.new(0.499506474, 0, -0.00576548278, 0)
 OwlV2.Size = UDim2.new(0, 178, 0, 163)
 
 TextLabel_4.Parent = OwlV2
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(0.121448644, 0, 0.110429451, 0)
 TextLabel_4.Size = UDim2.new(0, 74, 0, 22)
 TextLabel_4.ZIndex = 2
 TextLabel_4.Font = Enum.Font.GothamBold
 TextLabel_4.Text = "OwlV2"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
+TextLabel_4.TextSize = 14
 TextLabel_4.TextWrapped = true
 
-UICorner_15.CornerRadius = UDim.new(0, 15)
 UICorner_15.Parent = TextLabel_4
+UICorner_15.CornerRadius = UDim.new(0, 15)
 
 ImageButton_2.Parent = OwlV2
-ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton_2.BackgroundTransparency = 1.000
-ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_2.BackgroundTransparency = 1
+ImageButton_2.BorderColor3 = Color3.new(0, 0, 0)
 ImageButton_2.BorderSizePixel = 0
 ImageButton_2.Position = UDim2.new(0.0337083787, 0, 0.0306748468, 0)
 ImageButton_2.Size = UDim2.new(0, 164, 0, 152)
 ImageButton_2.Image = "rbxassetid://8992292381"
 
-UICorner_16.CornerRadius = UDim.new(0, 15)
 UICorner_16.Parent = ImageButton_2
+UICorner_16.CornerRadius = UDim.new(0, 15)
 
 DexExplorer.Name = "DexExplorer"
 DexExplorer.Parent = ScrollingFrame
-DexExplorer.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-DexExplorer.BackgroundTransparency = 1.000
-DexExplorer.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DexExplorer.BackgroundColor3 = Color3.new(0, 0, 0)
+DexExplorer.BackgroundTransparency = 1
+DexExplorer.BorderColor3 = Color3.new(0, 0, 0)
 DexExplorer.BorderSizePixel = 0
 DexExplorer.Position = UDim2.new(-0.00438961666, 0, 0.286284983, 0)
 DexExplorer.Size = UDim2.new(0, 178, 0, 163)
 
 TextLabel_5.Parent = DexExplorer
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_5.BorderSizePixel = 0
 TextLabel_5.Position = UDim2.new(0.0765049979, 0, 0.110429451, 0)
 TextLabel_5.Size = UDim2.new(0, 91, 0, 41)
 TextLabel_5.ZIndex = 2
 TextLabel_5.Font = Enum.Font.GothamBold
 TextLabel_5.Text = "Dex Explorer"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
+TextLabel_5.TextSize = 14
 TextLabel_5.TextWrapped = true
 
-UICorner_17.CornerRadius = UDim.new(0, 15)
 UICorner_17.Parent = TextLabel_5
+UICorner_17.CornerRadius = UDim.new(0, 15)
 
 ImageButton_3.Parent = DexExplorer
-ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton_3.BackgroundTransparency = 1.000
-ImageButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_3.BackgroundTransparency = 1
+ImageButton_3.BorderColor3 = Color3.new(0, 0, 0)
 ImageButton_3.BorderSizePixel = 0
 ImageButton_3.Position = UDim2.new(0.0337083787, 0, 0.0306748468, 0)
 ImageButton_3.Size = UDim2.new(0, 164, 0, 152)
 ImageButton_3.Image = "rbxassetid://8992290931"
 
-UICorner_18.CornerRadius = UDim.new(0, 15)
 UICorner_18.Parent = ImageButton_3
+UICorner_18.CornerRadius = UDim.new(0, 15)
 
 GhostHub.Name = "GhostHub"
 GhostHub.Parent = ScrollingFrame
-GhostHub.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-GhostHub.BackgroundTransparency = 1.000
-GhostHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GhostHub.BackgroundColor3 = Color3.new(0, 0, 0)
+GhostHub.BackgroundTransparency = 1
+GhostHub.BorderColor3 = Color3.new(0, 0, 0)
 GhostHub.BorderSizePixel = 0
 GhostHub.Position = UDim2.new(0.5, 0, 0.286000013, 0)
 GhostHub.Size = UDim2.new(0, 178, 0, 163)
 
 TextLabel_6.Parent = GhostHub
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_6.BorderSizePixel = 0
 TextLabel_6.Position = UDim2.new(0.0765051693, 0, 0.0613496937, 0)
 TextLabel_6.Size = UDim2.new(0, 91, 0, 41)
 TextLabel_6.ZIndex = 2
 TextLabel_6.Font = Enum.Font.GothamBold
 TextLabel_6.Text = "GhostHub"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
+TextLabel_6.TextSize = 14
 TextLabel_6.TextWrapped = true
 
-UICorner_19.CornerRadius = UDim.new(0, 15)
 UICorner_19.Parent = TextLabel_6
+UICorner_19.CornerRadius = UDim.new(0, 15)
 
 ImageButton_4.Parent = GhostHub
-ImageButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton_4.BackgroundTransparency = 1.000
-ImageButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_4.BackgroundTransparency = 1
+ImageButton_4.BorderColor3 = Color3.new(0, 0, 0)
 ImageButton_4.BorderSizePixel = 0
 ImageButton_4.Position = UDim2.new(0.0337083787, 0, 0.0306748468, 0)
 ImageButton_4.Size = UDim2.new(0, 164, 0, 152)
 ImageButton_4.Image = "rbxassetid://8992291444"
 
-UICorner_20.CornerRadius = UDim.new(0, 15)
 UICorner_20.Parent = ImageButton_4
+UICorner_20.CornerRadius = UDim.new(0, 15)
 
 LRUi.Name = "LRUi"
 LRUi.Parent = ScrollingFrame
-LRUi.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-LRUi.BackgroundTransparency = 1.000
-LRUi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LRUi.BackgroundColor3 = Color3.new(0, 0, 0)
+LRUi.BackgroundTransparency = 1
+LRUi.BorderColor3 = Color3.new(0, 0, 0)
 LRUi.BorderSizePixel = 0
 LRUi.Position = UDim2.new(-0.00438961666, 0, 0.595231235, 0)
 LRUi.Size = UDim2.new(0, 178, 0, 163)
 
 TextLabel_7.Parent = LRUi
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BackgroundColor3 = Color3.new(0.333333, 0.333333, 0.333333)
+TextLabel_7.BackgroundTransparency = 1
+TextLabel_7.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_7.BorderSizePixel = 0
 TextLabel_7.Position = UDim2.new(0.0765049979, 0, 0.122699387, 0)
 TextLabel_7.Size = UDim2.new(0, 105, 0, 46)
 TextLabel_7.ZIndex = 2
 TextLabel_7.Font = Enum.Font.GothamBold
 TextLabel_7.Text = "La Rochelle Ui"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
+TextLabel_7.TextSize = 14
 TextLabel_7.TextWrapped = true
 
-UICorner_21.CornerRadius = UDim.new(0, 15)
 UICorner_21.Parent = TextLabel_7
+UICorner_21.CornerRadius = UDim.new(0, 15)
 
 ImageButton_5.Parent = LRUi
-ImageButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton_5.BackgroundTransparency = 1.000
-ImageButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_5.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_5.BackgroundTransparency = 1
+ImageButton_5.BorderColor3 = Color3.new(0, 0, 0)
 ImageButton_5.BorderSizePixel = 0
 ImageButton_5.Position = UDim2.new(0.0337083787, 0, 0.0306748468, 0)
 ImageButton_5.Size = UDim2.new(0, 164, 0, 152)
 ImageButton_5.Image = "rbxassetid://8992290314"
 
-UICorner_22.CornerRadius = UDim.new(0, 15)
 UICorner_22.Parent = ImageButton_5
+UICorner_22.CornerRadius = UDim.new(0, 15)
 
 SettingsFrame.Name = "SettingsFrame"
 SettingsFrame.Parent = Main
-SettingsFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+SettingsFrame.BorderColor3 = Color3.new(0, 0, 0)
 SettingsFrame.BorderSizePixel = 0
 SettingsFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 SettingsFrame.Size = UDim2.new(0, 420, 0, 300)
 SettingsFrame.Visible = false
 
-UICorner_23.CornerRadius = UDim.new(0, 15)
 UICorner_23.Parent = SettingsFrame
+UICorner_23.CornerRadius = UDim.new(0, 15)
 
 Reset.Name = "Reset"
 Reset.Parent = SettingsFrame
-Reset.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
-Reset.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Reset.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+Reset.BorderColor3 = Color3.new(0, 0, 0)
 Reset.BorderSizePixel = 0
 Reset.Position = UDim2.new(0.504761934, 0, 0.0733333305, 0)
 Reset.Size = UDim2.new(0, 175, 0, 50)
 Reset.Font = Enum.Font.Unknown
 Reset.Text = ""
-Reset.TextColor3 = Color3.fromRGB(0, 0, 0)
-Reset.TextSize = 24.000
+Reset.TextColor3 = Color3.new(0, 0, 0)
+Reset.TextSize = 24
 Reset.TextWrapped = true
 
-UICorner_24.CornerRadius = UDim.new(0, 15)
 UICorner_24.Parent = Reset
+UICorner_24.CornerRadius = UDim.new(0, 15)
 
 TextLabel_8.Parent = Reset
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_8.BackgroundTransparency = 1
+TextLabel_8.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_8.BorderSizePixel = 0
 TextLabel_8.Position = UDim2.new(0.0514285713, 0, 0, 0)
 TextLabel_8.Size = UDim2.new(0, 157, 0, 50)
 TextLabel_8.Font = Enum.Font.Gotham
 TextLabel_8.Text = "Reset"
-TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.TextSize = 30.000
-TextLabel_8.TextStrokeTransparency = 0.000
+TextLabel_8.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_8.TextSize = 30
+TextLabel_8.TextStrokeTransparency = 0
 TextLabel_8.TextWrapped = true
-
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 98, 67)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_9.Parent = TextLabel_8
 
 OptimizeGame.Name = "OptimizeGame"
 OptimizeGame.Parent = SettingsFrame
-OptimizeGame.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
-OptimizeGame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OptimizeGame.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+OptimizeGame.BorderColor3 = Color3.new(0, 0, 0)
 OptimizeGame.BorderSizePixel = 0
 OptimizeGame.Position = UDim2.new(0.0571428575, 0, 0.0733333305, 0)
 OptimizeGame.Size = UDim2.new(0, 175, 0, 50)
 OptimizeGame.Font = Enum.Font.Unknown
 OptimizeGame.Text = ""
-OptimizeGame.TextColor3 = Color3.fromRGB(0, 0, 0)
-OptimizeGame.TextSize = 24.000
+OptimizeGame.TextColor3 = Color3.new(0, 0, 0)
+OptimizeGame.TextSize = 24
 OptimizeGame.TextWrapped = true
 
-UICorner_25.CornerRadius = UDim.new(0, 15)
 UICorner_25.Parent = OptimizeGame
+UICorner_25.CornerRadius = UDim.new(0, 15)
 
 TextLabel_9.Parent = OptimizeGame
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_9.BackgroundTransparency = 1
+TextLabel_9.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_9.BorderSizePixel = 0
 TextLabel_9.Position = UDim2.new(0.0514285713, 0, 0, 0)
 TextLabel_9.Size = UDim2.new(0, 157, 0, 50)
 TextLabel_9.Font = Enum.Font.Gotham
 TextLabel_9.Text = "Optimize Game"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 26.000
-TextLabel_9.TextStrokeTransparency = 0.000
+TextLabel_9.TextSize = 26
+TextLabel_9.TextStrokeTransparency = 0
 TextLabel_9.TextWrapped = true
-
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 98, 67)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_10.Parent = TextLabel_9
 
 MusicInfo.Name = "MusicInfo"
 MusicInfo.Parent = SettingsFrame
-MusicInfo.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
-MusicInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MusicInfo.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+MusicInfo.BorderColor3 = Color3.new(0, 0, 0)
 MusicInfo.BorderSizePixel = 0
 MusicInfo.Position = UDim2.new(0.504761934, 0, 0.336666673, 0)
 MusicInfo.Size = UDim2.new(0, 175, 0, 50)
 MusicInfo.Font = Enum.Font.Unknown
 MusicInfo.Text = ""
-MusicInfo.TextColor3 = Color3.fromRGB(0, 0, 0)
-MusicInfo.TextSize = 24.000
+MusicInfo.TextColor3 = Color3.new(0, 0, 0)
+MusicInfo.TextSize = 24
 MusicInfo.TextWrapped = true
 
-UICorner_26.CornerRadius = UDim.new(0, 15)
 UICorner_26.Parent = MusicInfo
+UICorner_26.CornerRadius = UDim.new(0, 15)
 
 TextLabel_10.Parent = MusicInfo
-TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_10.BackgroundTransparency = 1
+TextLabel_10.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_10.BorderSizePixel = 0
 TextLabel_10.Position = UDim2.new(0.0514285713, 0, 0, 0)
 TextLabel_10.Size = UDim2.new(0, 157, 0, 50)
 TextLabel_10.Font = Enum.Font.Gotham
 TextLabel_10.Text = "Music Info"
-TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_10.TextScaled = true
-TextLabel_10.TextSize = 26.000
-TextLabel_10.TextStrokeTransparency = 0.000
+TextLabel_10.TextSize = 26
+TextLabel_10.TextStrokeTransparency = 0
 TextLabel_10.TextWrapped = true
-
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 98, 67)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_11.Parent = TextLabel_10
 
 Bypass.Name = "Bypass"
 Bypass.Parent = SettingsFrame
-Bypass.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
-Bypass.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bypass.BackgroundColor3 = Color3.new(0.294118, 0.294118, 0.294118)
+Bypass.BorderColor3 = Color3.new(0, 0, 0)
 Bypass.BorderSizePixel = 0
 Bypass.Position = UDim2.new(0.0571428575, 0, 0.336666673, 0)
 Bypass.Size = UDim2.new(0, 175, 0, 50)
 Bypass.Font = Enum.Font.Unknown
 Bypass.Text = ""
-Bypass.TextColor3 = Color3.fromRGB(0, 0, 0)
-Bypass.TextSize = 24.000
+Bypass.TextColor3 = Color3.new(0, 0, 0)
+Bypass.TextSize = 24
 Bypass.TextWrapped = true
 
-UICorner_27.CornerRadius = UDim.new(0, 15)
 UICorner_27.Parent = Bypass
+UICorner_27.CornerRadius = UDim.new(0, 15)
 
 TextLabel_11.Parent = Bypass
-TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_11.BackgroundTransparency = 1
+TextLabel_11.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_11.BorderSizePixel = 0
 TextLabel_11.Position = UDim2.new(0.0514285713, 0, 0, 0)
 TextLabel_11.Size = UDim2.new(0, 157, 0, 50)
 TextLabel_11.Font = Enum.Font.Gotham
 TextLabel_11.Text = "Bypass Chat"
-TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextColor3 = Color3.new(1, 1, 1)
 TextLabel_11.TextScaled = true
-TextLabel_11.TextSize = 26.000
-TextLabel_11.TextStrokeTransparency = 0.000
+TextLabel_11.TextSize = 26
+TextLabel_11.TextStrokeTransparency = 0
 TextLabel_11.TextWrapped = true
-
-UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.41, Color3.fromRGB(255, 98, 67)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_12.Parent = TextLabel_11
 
 CreditFrame.Name = "CreditFrame"
 CreditFrame.Parent = Main
-CreditFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-CreditFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CreditFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+CreditFrame.BorderColor3 = Color3.new(0, 0, 0)
 CreditFrame.BorderSizePixel = 0
 CreditFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 CreditFrame.Size = UDim2.new(0, 420, 0, 300)
 CreditFrame.Visible = false
 
-UICorner_28.CornerRadius = UDim.new(0, 15)
 UICorner_28.Parent = CreditFrame
+UICorner_28.CornerRadius = UDim.new(0, 15)
 
 TextLabel_12.Parent = CreditFrame
-TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_12.BackgroundTransparency = 1.000
-TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_12.BackgroundTransparency = 1
+TextLabel_12.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_12.BorderSizePixel = 0
 TextLabel_12.Position = UDim2.new(0.147619054, 0, 0.0466666669, 0)
 TextLabel_12.Size = UDim2.new(0, 314, 0, 55)
 TextLabel_12.Font = Enum.Font.Gotham
 TextLabel_12.Text = "Solar Ui By Censure"
-TextLabel_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.TextColor3 = Color3.new(0, 0, 0)
 TextLabel_12.TextScaled = true
-TextLabel_12.TextSize = 14.000
+TextLabel_12.TextSize = 14
 TextLabel_12.TextWrapped = true
 
 TextLabel_13.Parent = CreditFrame
-TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_13.BackgroundTransparency = 1.000
-TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_13.BackgroundTransparency = 1
+TextLabel_13.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_13.BorderSizePixel = 0
 TextLabel_13.Position = UDim2.new(0.0333333351, 0, 0.911770821, 0)
 TextLabel_13.Size = UDim2.new(0, 105, 0, 23)
 TextLabel_13.Font = Enum.Font.Gotham
 TextLabel_13.Text = "Vive la Lyks qui dominent le French Rp"
-TextLabel_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.TextColor3 = Color3.new(0, 0, 0)
 TextLabel_13.TextScaled = true
-TextLabel_13.TextSize = 14.000
+TextLabel_13.TextSize = 14
 TextLabel_13.TextWrapped = true
 TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
 
 TextLabel_14.Parent = CreditFrame
-TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_14.BackgroundTransparency = 1.000
-TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_14.BackgroundTransparency = 1
+TextLabel_14.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_14.BorderSizePixel = 0
 TextLabel_14.Position = UDim2.new(0.0166666675, 0, 0.330000013, 0)
 TextLabel_14.Size = UDim2.new(0, 98, 0, 28)
 TextLabel_14.Font = Enum.Font.Gotham
 TextLabel_14.Text = "Script by :"
-TextLabel_14.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_14.TextSize = 20.000
+TextLabel_14.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_14.TextSize = 20
 TextLabel_14.TextWrapped = true
 TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_14.TextYAlignment = Enum.TextYAlignment.Top
 
 Frame_5.Parent = CreditFrame
-Frame_5.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
-Frame_5.BackgroundTransparency = 0.400
-Frame_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_5.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+Frame_5.BackgroundTransparency = 0.4000000059604645
+Frame_5.BorderColor3 = Color3.new(0, 0, 0)
 Frame_5.BorderSizePixel = 0
 Frame_5.Position = UDim2.new(0, 0, 0.885104179, 0)
 Frame_5.Size = UDim2.new(0, 420, 0, 2)
 
 Frame_6.Parent = CreditFrame
-Frame_6.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
-Frame_6.BackgroundTransparency = 0.400
-Frame_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+Frame_6.BackgroundTransparency = 0.4000000059604645
+Frame_6.BorderColor3 = Color3.new(0, 0, 0)
 Frame_6.BorderSizePixel = 0
 Frame_6.Position = UDim2.new(0, 0, 0.278437495, 0)
 Frame_6.Size = UDim2.new(0, 420, 0, 2)
 
 TextLabel_15.Parent = CreditFrame
-TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_15.BackgroundTransparency = 1.000
-TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_15.BackgroundTransparency = 1
+TextLabel_15.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_15.BorderSizePixel = 0
 TextLabel_15.Position = UDim2.new(0.042857144, 0, 0.423333347, 0)
 TextLabel_15.Size = UDim2.new(0, 98, 0, 28)
 TextLabel_15.Font = Enum.Font.Gotham
 TextLabel_15.Text = "- Censure"
-TextLabel_15.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_15.TextSize = 20.000
+TextLabel_15.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_15.TextSize = 20
 TextLabel_15.TextWrapped = true
 TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_15.TextYAlignment = Enum.TextYAlignment.Top
 
 TextLabel_16.Parent = CreditFrame
-TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_16.BackgroundTransparency = 1.000
-TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_16.BackgroundTransparency = 1
+TextLabel_16.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_16.BorderSizePixel = 0
 TextLabel_16.Position = UDim2.new(0.042857144, 0, 0.540000021, 0)
 TextLabel_16.Size = UDim2.new(0, 98, 0, 28)
 TextLabel_16.Font = Enum.Font.Gotham
 TextLabel_16.Text = ""
-TextLabel_16.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_16.TextSize = 20.000
+TextLabel_16.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_16.TextSize = 20
 TextLabel_16.TextWrapped = true
 TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_16.TextYAlignment = Enum.TextYAlignment.Top
 
 TextLabel_17.Parent = CreditFrame
-TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_17.BackgroundTransparency = 1.000
-TextLabel_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_17.BackgroundTransparency = 1
+TextLabel_17.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_17.BorderSizePixel = 0
 TextLabel_17.Position = UDim2.new(0.042857144, 0, 0.516666651, 0)
 TextLabel_17.Size = UDim2.new(0, 384, 0, 28)
 TextLabel_17.Font = Enum.Font.Gotham
 TextLabel_17.Text = "- Lyks ( Stings , La Chouette )"
-TextLabel_17.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_17.TextSize = 20.000
+TextLabel_17.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_17.TextSize = 20
 TextLabel_17.TextWrapped = true
 TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_17.TextYAlignment = Enum.TextYAlignment.Top
 
 TextLabel_18.Parent = CreditFrame
-TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_18.BackgroundTransparency = 1.000
-TextLabel_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_18.BackgroundTransparency = 1
+TextLabel_18.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_18.BorderSizePixel = 0
 TextLabel_18.Position = UDim2.new(0.042857144, 0, 0.610000014, 0)
 TextLabel_18.Size = UDim2.new(0, 125, 0, 28)
 TextLabel_18.Font = Enum.Font.Gotham
 TextLabel_18.Text = "- V3rmillion"
-TextLabel_18.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_18.TextSize = 20.000
+TextLabel_18.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_18.TextSize = 20
 TextLabel_18.TextWrapped = true
 TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_18.TextYAlignment = Enum.TextYAlignment.Top
 
 TextLabel_19.Parent = CreditFrame
-TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_19.BackgroundTransparency = 1.000
-TextLabel_19.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_19.BackgroundTransparency = 1
+TextLabel_19.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_19.BorderSizePixel = 0
 TextLabel_19.Position = UDim2.new(0.042857144, 0, 0.703333318, 0)
 TextLabel_19.Size = UDim2.new(0, 125, 0, 28)
 TextLabel_19.Font = Enum.Font.Gotham
 TextLabel_19.Text = "- Vlua"
-TextLabel_19.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_19.TextSize = 20.000
+TextLabel_19.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_19.TextSize = 20
 TextLabel_19.TextWrapped = true
 TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_19.TextYAlignment = Enum.TextYAlignment.Top
 
 TextLabel_20.Parent = CreditFrame
-TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_20.BackgroundTransparency = 1.000
-TextLabel_20.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_20.BackgroundTransparency = 1
+TextLabel_20.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_20.BorderSizePixel = 0
 TextLabel_20.Position = UDim2.new(0.042857144, 0, 0.790000021, 0)
 TextLabel_20.Size = UDim2.new(0, 125, 0, 28)
 TextLabel_20.Font = Enum.Font.Gotham
 TextLabel_20.Text = "- Richie0866"
-TextLabel_20.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_20.TextSize = 20.000
+TextLabel_20.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_20.TextSize = 20
 TextLabel_20.TextWrapped = true
 TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
 TextLabel_20.TextYAlignment = Enum.TextYAlignment.Top
 
 ProfilFrame.Name = "ProfilFrame"
 ProfilFrame.Parent = Main
-ProfilFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-ProfilFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+ProfilFrame.BorderColor3 = Color3.new(0, 0, 0)
 ProfilFrame.BorderSizePixel = 0
 ProfilFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 ProfilFrame.Size = UDim2.new(0, 420, 0, 300)
 ProfilFrame.Visible = false
 
-UICorner_29.CornerRadius = UDim.new(0, 15)
 UICorner_29.Parent = ProfilFrame
+UICorner_29.CornerRadius = UDim.new(0, 15)
 
 TextLabel_21.Parent = ProfilFrame
-TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_21.BackgroundTransparency = 1.000
-TextLabel_21.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_21.BackgroundTransparency = 1
+TextLabel_21.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_21.BorderSizePixel = 0
 TextLabel_21.Position = UDim2.new(0.183333337, 0, 0.0833333358, 0)
 TextLabel_21.Size = UDim2.new(0, 266, 0, 50)
 TextLabel_21.Font = Enum.Font.GothamBold
 TextLabel_21.Text = "Change ta PDP"
-TextLabel_21.TextColor3 = Color3.fromRGB(255, 0, 0)
-TextLabel_21.TextSize = 30.000
+TextLabel_21.TextColor3 = Color3.new(1, 0, 0)
+TextLabel_21.TextSize = 30
 
 TextBox_2.Parent = ProfilFrame
-TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_2.BackgroundTransparency = 0.990
-TextBox_2.BorderColor3 = Color3.fromRGB(249, 249, 249)
+TextBox_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox_2.BackgroundTransparency = 0.9900000095367432
+TextBox_2.BorderColor3 = Color3.new(0.976471, 0.976471, 0.976471)
 TextBox_2.BorderSizePixel = 2
 TextBox_2.Position = UDim2.new(0.107142858, 0, 0.356666654, 0)
 TextBox_2.Size = UDim2.new(0, 329, 0, 44)
 TextBox_2.Font = Enum.Font.SourceSans
-TextBox_2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.PlaceholderColor3 = Color3.new(1, 1, 1)
 TextBox_2.PlaceholderText = "ID De L'image"
 TextBox_2.Text = ""
-TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_2.TextSize = 32.000
-TextBox_2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextColor3 = Color3.new(1, 1, 1)
+TextBox_2.TextSize = 32
+TextBox_2.TextStrokeColor3 = Color3.new(1, 1, 1)
 
-UICorner_30.CornerRadius = UDim.new(0, 15)
 UICorner_30.Parent = TextBox_2
+UICorner_30.CornerRadius = UDim.new(0, 15)
 
 TextButton.Parent = ProfilFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 0.800
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton.BackgroundTransparency = 0.800000011920929
+TextButton.BorderColor3 = Color3.new(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.285714298, 0, 0.613333344, 0)
 TextButton.Size = UDim2.new(0, 180, 0, 44)
 TextButton.Font = Enum.Font.FredokaOne
 TextButton.Text = "APPLIQUER"
-TextButton.TextColor3 = Color3.fromRGB(207, 255, 211)
-TextButton.TextSize = 23.000
+TextButton.TextColor3 = Color3.new(0.811765, 1, 0.827451)
+TextButton.TextSize = 23
 
-UICorner_31.CornerRadius = UDim.new(0, 15)
 UICorner_31.Parent = TextButton
-
-UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_13.Parent = TextButton
+UICorner_31.CornerRadius = UDim.new(0, 15)
 
 MusicInfoFrame.Name = "MusicInfoFrame"
 MusicInfoFrame.Parent = Main
-MusicInfoFrame.BackgroundColor3 = Color3.fromRGB(54, 54, 54)
-MusicInfoFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MusicInfoFrame.BackgroundColor3 = Color3.new(0.211765, 0.211765, 0.211765)
+MusicInfoFrame.BorderColor3 = Color3.new(0, 0, 0)
 MusicInfoFrame.BorderSizePixel = 0
 MusicInfoFrame.Position = UDim2.new(0.00328892306, 0, -0.00843750034, 0)
 MusicInfoFrame.Size = UDim2.new(0, 420, 0, 300)
 MusicInfoFrame.Visible = false
 
-UICorner_32.CornerRadius = UDim.new(0, 15)
 UICorner_32.Parent = MusicInfoFrame
+UICorner_32.CornerRadius = UDim.new(0, 15)
 
 TextLabel_22.Parent = MusicInfoFrame
-TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_22.BackgroundTransparency = 1.000
-TextLabel_22.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_22.BackgroundTransparency = 1
+TextLabel_22.BorderColor3 = Color3.new(0, 0, 0)
 TextLabel_22.BorderSizePixel = 0
 TextLabel_22.Position = UDim2.new(0.0880952403, 0, 0.0833333358, 0)
 TextLabel_22.Size = UDim2.new(0, 346, 0, 61)
 TextLabel_22.Font = Enum.Font.GothamBold
 TextLabel_22.Text = "Trouve des Informations sur l'id d'une musique"
-TextLabel_22.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel_22.TextColor3 = Color3.new(1, 0, 0)
 TextLabel_22.TextScaled = true
-TextLabel_22.TextSize = 30.000
+TextLabel_22.TextSize = 30
 TextLabel_22.TextWrapped = true
 
 TextBox_3.Parent = MusicInfoFrame
-TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_3.BackgroundTransparency = 0.990
-TextBox_3.BorderColor3 = Color3.fromRGB(249, 249, 249)
+TextBox_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TextBox_3.BackgroundTransparency = 0.9900000095367432
+TextBox_3.BorderColor3 = Color3.new(0.976471, 0.976471, 0.976471)
 TextBox_3.BorderSizePixel = 2
 TextBox_3.Position = UDim2.new(0.0190476198, 0, 0.446666658, 0)
 TextBox_3.Size = UDim2.new(0, 219, 0, 42)
 TextBox_3.Font = Enum.Font.SourceSans
-TextBox_3.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.PlaceholderColor3 = Color3.new(1, 1, 1)
 TextBox_3.PlaceholderText = "ID de la Musique"
 TextBox_3.Text = ""
-TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox_3.TextSize = 32.000
-TextBox_3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.TextColor3 = Color3.new(1, 1, 1)
+TextBox_3.TextSize = 32
+TextBox_3.TextStrokeColor3 = Color3.new(1, 1, 1)
 
-UICorner_33.CornerRadius = UDim.new(0, 15)
 UICorner_33.Parent = TextBox_3
+UICorner_33.CornerRadius = UDim.new(0, 15)
 
 TextButton_2.Parent = MusicInfoFrame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.BackgroundTransparency = 0.800
-TextButton_2.BorderColor3 = Color3.fromRGB(34, 255, 0)
+TextButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton_2.BackgroundTransparency = 0.800000011920929
+TextButton_2.BorderColor3 = Color3.new(0.133333, 1, 0)
 TextButton_2.BorderSizePixel = 0
 TextButton_2.Position = UDim2.new(0.0642857179, 0, 0.643333316, 0)
 TextButton_2.Size = UDim2.new(0, 180, 0, 44)
 TextButton_2.Font = Enum.Font.FredokaOne
 TextButton_2.Text = "APPLIQUER"
-TextButton_2.TextColor3 = Color3.fromRGB(207, 255, 211)
-TextButton_2.TextSize = 23.000
+TextButton_2.TextColor3 = Color3.new(0.811765, 1, 0.827451)
+TextButton_2.TextSize = 23
 
-UICorner_34.CornerRadius = UDim.new(0, 15)
 UICorner_34.Parent = TextButton_2
-
-UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_14.Parent = TextButton_2
+UICorner_34.CornerRadius = UDim.new(0, 15)
 
 TextLabelMusic.Name = "TextLabelMusic"
 TextLabelMusic.Parent = MusicInfoFrame
-TextLabelMusic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabelMusic.BackgroundTransparency = 1.000
-TextLabelMusic.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabelMusic.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabelMusic.BackgroundTransparency = 1
+TextLabelMusic.BorderColor3 = Color3.new(0, 0, 0)
 TextLabelMusic.BorderSizePixel = 0
 TextLabelMusic.Position = UDim2.new(0.566666663, 0, 0.423333347, 0)
 TextLabelMusic.Size = UDim2.new(0, 164, 0, 147)
 TextLabelMusic.Font = Enum.Font.SourceSans
 TextLabelMusic.Text = ""
-TextLabelMusic.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabelMusic.TextColor3 = Color3.new(1, 1, 1)
 TextLabelMusic.TextScaled = true
-TextLabelMusic.TextSize = 23.000
+TextLabelMusic.TextSize = 23
 TextLabelMusic.TextWrapped = true
 TextLabelMusic.TextXAlignment = Enum.TextXAlignment.Left
 TextLabelMusic.TextYAlignment = Enum.TextYAlignment.Top
 
-UICorner_35.CornerRadius = UDim.new(0, 15)
 UICorner_35.Parent = TextLabelMusic
+UICorner_35.CornerRadius = UDim.new(0, 15)
 
 FrameReduite.Name = "FrameReduite"
 FrameReduite.Parent = SolarUiImage
-FrameReduite.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-FrameReduite.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameReduite.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+FrameReduite.BorderColor3 = Color3.new(0, 0, 0)
 FrameReduite.BorderSizePixel = 0
 FrameReduite.Position = UDim2.new(0.193000004, 0, 0.215000004, 0)
 FrameReduite.Size = UDim2.new(0, 514, 0, 54)
 FrameReduite.Visible = false
 
-UICorner_36.CornerRadius = UDim.new(0, 15)
 UICorner_36.Parent = FrameReduite
+UICorner_36.CornerRadius = UDim.new(0, 15)
 
 TopBar_2.Name = "TopBar"
 TopBar_2.Parent = FrameReduite
-TopBar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBar_2.BackgroundTransparency = 1.000
-TopBar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TopBar_2.BackgroundTransparency = 1
+TopBar_2.BorderColor3 = Color3.new(0, 0, 0)
 TopBar_2.BorderSizePixel = 0
 TopBar_2.Size = UDim2.new(0, 514, 0, 52)
 
 OrangeButton_2.Name = "OrangeButton"
 OrangeButton_2.Parent = TopBar_2
-OrangeButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OrangeButton_2.BackgroundTransparency = 1.000
-OrangeButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OrangeButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+OrangeButton_2.BackgroundTransparency = 1
+OrangeButton_2.BorderColor3 = Color3.new(0, 0, 0)
 OrangeButton_2.BorderSizePixel = 0
 OrangeButton_2.Position = UDim2.new(0.891050577, 0, 0.357171565, 0)
 OrangeButton_2.Size = UDim2.new(0, 15, 0, 15)
@@ -1251,22 +1198,22 @@ UIAspectRatioConstraint_10.Parent = OrangeButton_2
 
 RedButton_2.Name = "RedButton"
 RedButton_2.Parent = TopBar_2
-RedButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RedButton_2.BackgroundTransparency = 1.000
-RedButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RedButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+RedButton_2.BackgroundTransparency = 1
+RedButton_2.BorderColor3 = Color3.new(0, 0, 0)
 RedButton_2.BorderSizePixel = 0
 RedButton_2.Position = UDim2.new(0.939688742, 0, 0.357171565, 0)
 RedButton_2.Size = UDim2.new(0, 16, 0, 15)
 RedButton_2.Image = "http://www.roblox.com/asset/?id=3075923734"
-RedButton_2.ImageColor3 = Color3.fromRGB(255, 0, 4)
+RedButton_2.ImageColor3 = Color3.new(1, 0, 0.0156863)
 
 UIAspectRatioConstraint_11.Parent = RedButton_2
 
 GreenButton_2.Name = "GreenButton"
 GreenButton_2.Parent = TopBar_2
-GreenButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GreenButton_2.BackgroundTransparency = 1.000
-GreenButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GreenButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+GreenButton_2.BackgroundTransparency = 1
+GreenButton_2.BorderColor3 = Color3.new(0, 0, 0)
 GreenButton_2.BorderSizePixel = 0
 GreenButton_2.Position = UDim2.new(0.840466917, 0, 0.357171565, 0)
 GreenButton_2.Size = UDim2.new(0, 23, 0, 15)
@@ -1276,25 +1223,22 @@ UIAspectRatioConstraint_12.Parent = GreenButton_2
 
 SolarTitle_2.Name = "SolarTitle"
 SolarTitle_2.Parent = TopBar_2
-SolarTitle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SolarTitle_2.BackgroundTransparency = 1.000
-SolarTitle_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarTitle_2.BackgroundColor3 = Color3.new(1, 1, 1)
+SolarTitle_2.BackgroundTransparency = 1
+SolarTitle_2.BorderColor3 = Color3.new(0, 0, 0)
 SolarTitle_2.BorderSizePixel = 0
 SolarTitle_2.Position = UDim2.new(0.0914396867, 0, 0.182491884, 0)
 SolarTitle_2.Size = UDim2.new(0, 129, 0, 32)
 SolarTitle_2.Font = Enum.Font.GothamBold
 SolarTitle_2.Text = "SOLAR"
-SolarTitle_2.TextColor3 = Color3.fromRGB(212, 212, 212)
-SolarTitle_2.TextSize = 34.000
+SolarTitle_2.TextColor3 = Color3.new(0.831373, 0.831373, 0.831373)
+SolarTitle_2.TextSize = 34
 SolarTitle_2.TextWrapped = true
-
-UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_15.Parent = SolarTitle_2
 
 SolarLogoButton_2.Name = "SolarLogoButton"
 SolarLogoButton_2.Parent = TopBar_2
-SolarLogoButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SolarLogoButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarLogoButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+SolarLogoButton_2.BorderColor3 = Color3.new(0, 0, 0)
 SolarLogoButton_2.BorderSizePixel = 0
 SolarLogoButton_2.Position = UDim2.new(0.0136186769, 0, 0.0961538479, 0)
 SolarLogoButton_2.Size = UDim2.new(0, 40, 0, 43)
@@ -1302,71 +1246,65 @@ SolarLogoButton_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 UIAspectRatioConstraint_13.Parent = SolarLogoButton_2
 
-UICorner_37.CornerRadius = UDim.new(0, 30)
 UICorner_37.Parent = SolarLogoButton_2
+UICorner_37.CornerRadius = UDim.new(0, 30)
 
 LaunchFrame.Name = "LaunchFrame"
 LaunchFrame.Parent = SolarUiImage
-LaunchFrame.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
-LaunchFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LaunchFrame.BackgroundColor3 = Color3.new(0.231373, 0.231373, 0.231373)
+LaunchFrame.BorderColor3 = Color3.new(0, 0, 0)
 LaunchFrame.BorderSizePixel = 0
 LaunchFrame.Position = UDim2.new(0.193311587, 0, 0.215042368, 0)
 LaunchFrame.Size = UDim2.new(0, 514, 0, 216)
 
-UICorner_38.CornerRadius = UDim.new(0, 15)
 UICorner_38.Parent = LaunchFrame
+UICorner_38.CornerRadius = UDim.new(0, 15)
 
 TopBar_3.Name = "TopBar"
 TopBar_3.Parent = LaunchFrame
-TopBar_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopBar_3.BackgroundTransparency = 1.000
-TopBar_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar_3.BackgroundColor3 = Color3.new(1, 1, 1)
+TopBar_3.BackgroundTransparency = 1
+TopBar_3.BorderColor3 = Color3.new(0, 0, 0)
 TopBar_3.BorderSizePixel = 0
 TopBar_3.Size = UDim2.new(0, 514, 0, 52)
 
 SolarTitle_3.Name = "SolarTitle"
 SolarTitle_3.Parent = TopBar_3
-SolarTitle_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SolarTitle_3.BackgroundTransparency = 1.000
-SolarTitle_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarTitle_3.BackgroundColor3 = Color3.new(1, 1, 1)
+SolarTitle_3.BackgroundTransparency = 1
+SolarTitle_3.BorderColor3 = Color3.new(0, 0, 0)
 SolarTitle_3.BorderSizePixel = 0
 SolarTitle_3.Position = UDim2.new(0.317120612, 0, 0.336337745, 0)
 SolarTitle_3.Size = UDim2.new(0, 188, 0, 45)
 SolarTitle_3.Font = Enum.Font.GothamBold
 SolarTitle_3.Text = "SOLAR"
-SolarTitle_3.TextColor3 = Color3.fromRGB(212, 212, 212)
-SolarTitle_3.TextSize = 54.000
-
-UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_16.Parent = SolarTitle_3
+SolarTitle_3.TextColor3 = Color3.new(0.831373, 0.831373, 0.831373)
+SolarTitle_3.TextSize = 54
 
 Separation_2.Name = "Separation"
 Separation_2.Parent = LaunchFrame
-Separation_2.BackgroundColor3 = Color3.fromRGB(121, 121, 121)
-Separation_2.BackgroundTransparency = 0.500
-Separation_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Separation_2.BackgroundColor3 = Color3.new(0.47451, 0.47451, 0.47451)
+Separation_2.BackgroundTransparency = 0.5
+Separation_2.BorderColor3 = Color3.new(0, 0, 0)
 Separation_2.BorderSizePixel = 0
 Separation_2.Position = UDim2.new(0, 0, 0.362529486, 0)
 Separation_2.Size = UDim2.new(0, 514, 0, 2)
 
 TextButton_3.Parent = LaunchFrame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
-TextButton_3.BackgroundTransparency = 0.500
-TextButton_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundColor3 = Color3.new(0.247059, 0.247059, 0.247059)
+TextButton_3.BackgroundTransparency = 0.5
+TextButton_3.BorderColor3 = Color3.new(1, 1, 1)
 TextButton_3.BorderSizePixel = 3
 TextButton_3.Position = UDim2.new(0.194552526, 0, 0.518518507, 0)
 TextButton_3.Size = UDim2.new(0, 314, 0, 61)
 TextButton_3.Font = Enum.Font.GothamBold
 TextButton_3.Text = "Lancer Solar UI"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextSize = 42.000
+TextButton_3.TextColor3 = Color3.new(1, 1, 1)
+TextButton_3.TextSize = 42
 
-UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 229, 152))}
-UIGradient_17.Parent = TextButton_3
+-- Scripts
 
--- Scripts:
-
-local function UOVET_fake_script() -- Home.LocalScript 
+local function CRMNYZ_fake_script() -- Home.LocalScript 
 	local script = Instance.new('LocalScript', Home)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1386,8 +1324,8 @@ local function UOVET_fake_script() -- Home.LocalScript
 	
 	end)
 end
-coroutine.wrap(UOVET_fake_script)()
-local function OZCHZZ_fake_script() -- Cmd.LocalScript 
+coroutine.wrap(CRMNYZ_fake_script)()
+local function TYVAPAY_fake_script() -- Cmd.LocalScript 
 	local script = Instance.new('LocalScript', Cmd)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1407,8 +1345,8 @@ local function OZCHZZ_fake_script() -- Cmd.LocalScript
 	
 	end)
 end
-coroutine.wrap(OZCHZZ_fake_script)()
-local function IHJOPOS_fake_script() -- Internet.LocalScript 
+coroutine.wrap(TYVAPAY_fake_script)()
+local function EVDMMQW_fake_script() -- Internet.LocalScript 
 	local script = Instance.new('LocalScript', Internet)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1428,8 +1366,8 @@ local function IHJOPOS_fake_script() -- Internet.LocalScript
 	
 	end)
 end
-coroutine.wrap(IHJOPOS_fake_script)()
-local function GXFH_fake_script() -- Settings.LocalScript 
+coroutine.wrap(EVDMMQW_fake_script)()
+local function SMQOMD_fake_script() -- Settings.LocalScript 
 	local script = Instance.new('LocalScript', Settings)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1449,8 +1387,8 @@ local function GXFH_fake_script() -- Settings.LocalScript
 	
 	end)
 end
-coroutine.wrap(GXFH_fake_script)()
-local function DIAJNHX_fake_script() -- Credit.LocalScript 
+coroutine.wrap(SMQOMD_fake_script)()
+local function IDFCIG_fake_script() -- Credit.LocalScript 
 	local script = Instance.new('LocalScript', Credit)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1470,8 +1408,8 @@ local function DIAJNHX_fake_script() -- Credit.LocalScript
 	
 	end)
 end
-coroutine.wrap(DIAJNHX_fake_script)()
-local function LEWFAX_fake_script() -- OrangeButton.LocalScript 
+coroutine.wrap(IDFCIG_fake_script)()
+local function NONRKB_fake_script() -- OrangeButton.LocalScript 
 	local script = Instance.new('LocalScript', OrangeButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1479,16 +1417,16 @@ local function LEWFAX_fake_script() -- OrangeButton.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameReduite.Visible = true
 	end)
 end
-coroutine.wrap(LEWFAX_fake_script)()
-local function YOPWEP_fake_script() -- RedButton.LocalScript 
+coroutine.wrap(NONRKB_fake_script)()
+local function YBYLSGT_fake_script() -- RedButton.LocalScript 
 	local script = Instance.new('LocalScript', RedButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.FramePetite.Visible = false
 	end)
 end
-coroutine.wrap(YOPWEP_fake_script)()
-local function VPRAOB_fake_script() -- GreenButton.LocalScript 
+coroutine.wrap(YBYLSGT_fake_script)()
+local function NIZVLK_fake_script() -- GreenButton.LocalScript 
 	local script = Instance.new('LocalScript', GreenButton)
 
 	local button = script.Parent
@@ -1504,8 +1442,8 @@ local function VPRAOB_fake_script() -- GreenButton.LocalScript
 	
 	button.MouseButton1Click:Connect(onButtonClicked)
 end
-coroutine.wrap(VPRAOB_fake_script)()
-local function PJJNB_fake_script() -- SolarLogoButton.ProfilePicture 
+coroutine.wrap(NIZVLK_fake_script)()
+local function MGHML_fake_script() -- SolarLogoButton.ProfilePicture 
 	local script = Instance.new('LocalScript', SolarLogoButton)
 
 	local Player = game.Players.LocalPlayer
@@ -1514,8 +1452,8 @@ local function PJJNB_fake_script() -- SolarLogoButton.ProfilePicture
 	script.Parent.Image = image
 	
 end
-coroutine.wrap(PJJNB_fake_script)()
-local function FYAFLFJ_fake_script() -- SolarLogoButton.LocalScript 
+coroutine.wrap(MGHML_fake_script)()
+local function JMKQMR_fake_script() -- SolarLogoButton.LocalScript 
 	local script = Instance.new('LocalScript', SolarLogoButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1535,8 +1473,8 @@ local function FYAFLFJ_fake_script() -- SolarLogoButton.LocalScript
 	
 	end)
 end
-coroutine.wrap(FYAFLFJ_fake_script)()
-local function AZUSK_fake_script() -- Button.LocalScript 
+coroutine.wrap(JMKQMR_fake_script)()
+local function GULGCJ_fake_script() -- Button.LocalScript 
 	local script = Instance.new('LocalScript', Button)
 
 	local Player = game.Players.LocalPlayer
@@ -1553,8 +1491,8 @@ local function AZUSK_fake_script() -- Button.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AZUSK_fake_script)()
-local function YMJVE_fake_script() -- Frame_2.LocalScript 
+coroutine.wrap(GULGCJ_fake_script)()
+local function KBEPVN_fake_script() -- Frame_2.LocalScript 
 	local script = Instance.new('LocalScript', Frame_2)
 
 	local Player = game.Players.LocalPlayer
@@ -1606,8 +1544,8 @@ local function YMJVE_fake_script() -- Frame_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YMJVE_fake_script)()
-local function VBOFGNA_fake_script() -- Button_2.LocalScript 
+coroutine.wrap(KBEPVN_fake_script)()
+local function LQZMNBG_fake_script() -- Button_2.LocalScript 
 	local script = Instance.new('LocalScript', Button_2)
 
 	local Player = game.Players.LocalPlayer
@@ -1624,8 +1562,8 @@ local function VBOFGNA_fake_script() -- Button_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VBOFGNA_fake_script)()
-local function URTNZ_fake_script() -- Frame_3.LocalScript 
+coroutine.wrap(LQZMNBG_fake_script)()
+local function RVMILP_fake_script() -- Frame_3.LocalScript 
 	local script = Instance.new('LocalScript', Frame_3)
 
 	local Player = game.Players.LocalPlayer
@@ -1677,8 +1615,8 @@ local function URTNZ_fake_script() -- Frame_3.LocalScript
 		end
 	end)
 end
-coroutine.wrap(URTNZ_fake_script)()
-local function FITP_fake_script() -- Frame.BorderScript 
+coroutine.wrap(RVMILP_fake_script)()
+local function DMSJBN_fake_script() -- Frame.BorderScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Définition des couleurs du gradient
@@ -1731,8 +1669,8 @@ local function FITP_fake_script() -- Frame.BorderScript
 		end
 	end
 end
-coroutine.wrap(FITP_fake_script)()
-local function YMTLX_fake_script() -- Clear.LocalScript 
+coroutine.wrap(DMSJBN_fake_script)()
+local function RKOSHKR_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	while true do
@@ -1742,16 +1680,16 @@ local function YMTLX_fake_script() -- Clear.LocalScript
 		end
 	end
 end
-coroutine.wrap(YMTLX_fake_script)()
-local function HIKDNIW_fake_script() -- Clear.LocalScript 
+coroutine.wrap(RKOSHKR_fake_script)()
+local function SXICS_fake_script() -- Clear.LocalScript 
 	local script = Instance.new('LocalScript', Clear)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.TextBox.Text = ""
 	end)
 end
-coroutine.wrap(HIKDNIW_fake_script)()
-local function FUZXHP_fake_script() -- Exe.LocalScript 
+coroutine.wrap(SXICS_fake_script)()
+local function AVWX_fake_script() -- Exe.LocalScript 
 	local script = Instance.new('LocalScript', Exe)
 
 	while true do
@@ -1761,8 +1699,8 @@ local function FUZXHP_fake_script() -- Exe.LocalScript
 		end
 	end
 end
-coroutine.wrap(FUZXHP_fake_script)()
-local function CRYCU_fake_script() -- Exe.LocalScript 
+coroutine.wrap(AVWX_fake_script)()
+local function JXWKWO_fake_script() -- Exe.LocalScript 
 	local script = Instance.new('LocalScript', Exe)
 
 	local TextExe = script.Parent.Parent.TextBox
@@ -1771,48 +1709,48 @@ local function CRYCU_fake_script() -- Exe.LocalScript
 		loadstring(TextExe.Text)()
 	end)
 end
-coroutine.wrap(CRYCU_fake_script)()
-local function GMOZSGY_fake_script() -- ImageButton.Script 
+coroutine.wrap(JXWKWO_fake_script)()
+local function GDLUYS_fake_script() -- ImageButton.Script 
 	local script = Instance.new('Script', ImageButton)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(GMOZSGY_fake_script)()
-local function SRPTSFN_fake_script() -- ImageButton_2.Script 
+coroutine.wrap(GDLUYS_fake_script)()
+local function EOLDG_fake_script() -- ImageButton_2.Script 
 	local script = Instance.new('Script', ImageButton_2)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hugodubois1/Script/main/Owl_GUI_v2_1-1.lua"))()
 	end)
 end
-coroutine.wrap(SRPTSFN_fake_script)()
-local function OFKQZM_fake_script() -- ImageButton_3.Script 
+coroutine.wrap(EOLDG_fake_script)()
+local function GGMAHH_fake_script() -- ImageButton_3.Script 
 	local script = Instance.new('Script', ImageButton_3)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkNetworks/Infinite-Yield/main/dex.lua"))()
 	end)
 end
-coroutine.wrap(OFKQZM_fake_script)()
-local function WUQZ_fake_script() -- ImageButton_4.Script 
+coroutine.wrap(GGMAHH_fake_script)()
+local function NPIZHUT_fake_script() -- ImageButton_4.Script 
 	local script = Instance.new('Script', ImageButton_4)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
 	end)
 end
-coroutine.wrap(WUQZ_fake_script)()
-local function CYNBV_fake_script() -- ImageButton_5.Script 
+coroutine.wrap(NPIZHUT_fake_script)()
+local function UONV_fake_script() -- ImageButton_5.Script 
 	local script = Instance.new('Script', ImageButton_5)
 
 	script.Parent.MouseButton1Down:connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Hugodubois1/Script/main/LRNewVersion.lua"))()
 	end)
 end
-coroutine.wrap(CYNBV_fake_script)()
-local function MKIH_fake_script() -- Reset.LocalScript 
+coroutine.wrap(UONV_fake_script)()
+local function CZQUCP_fake_script() -- Reset.LocalScript 
 	local script = Instance.new('LocalScript', Reset)
 
 	function onButtonClicked()
@@ -1822,8 +1760,8 @@ local function MKIH_fake_script() -- Reset.LocalScript
 	script.Parent.MouseButton1Click:connect(onButtonClicked)
 	
 end
-coroutine.wrap(MKIH_fake_script)()
-local function UQIV_fake_script() -- MusicInfo.LocalScript 
+coroutine.wrap(CZQUCP_fake_script)()
+local function PAOZ_fake_script() -- MusicInfo.LocalScript 
 	local script = Instance.new('LocalScript', MusicInfo)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1843,8 +1781,8 @@ local function UQIV_fake_script() -- MusicInfo.LocalScript
 	
 	end)
 end
-coroutine.wrap(UQIV_fake_script)()
-local function YGMDN_fake_script() -- TextLabel_12.LocalScript 
+coroutine.wrap(PAOZ_fake_script)()
+local function WAYPQMY_fake_script() -- TextLabel_12.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_12)
 
 	while true do
@@ -1854,8 +1792,8 @@ local function YGMDN_fake_script() -- TextLabel_12.LocalScript
 		end
 	end
 end
-coroutine.wrap(YGMDN_fake_script)()
-local function AHJML_fake_script() -- TextLabel_21.LocalScript 
+coroutine.wrap(WAYPQMY_fake_script)()
+local function OSGMESN_fake_script() -- TextLabel_21.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_21)
 
 	while true do
@@ -1865,8 +1803,8 @@ local function AHJML_fake_script() -- TextLabel_21.LocalScript
 		end
 	end
 end
-coroutine.wrap(AHJML_fake_script)()
-local function HREAWI_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OSGMESN_fake_script)()
+local function QMVWAG_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local textBox = script.Parent.Parent.TextBox
@@ -1881,8 +1819,8 @@ local function HREAWI_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HREAWI_fake_script)()
-local function DUIUNF_fake_script() -- TextLabel_22.LocalScript 
+coroutine.wrap(QMVWAG_fake_script)()
+local function TNSFN_fake_script() -- TextLabel_22.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_22)
 
 	while true do
@@ -1892,8 +1830,8 @@ local function DUIUNF_fake_script() -- TextLabel_22.LocalScript
 		end
 	end
 end
-coroutine.wrap(DUIUNF_fake_script)()
-local function BBDMMVG_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(TNSFN_fake_script)()
+local function OMQYWO_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local textBox = script.Parent.Parent.TextBox
@@ -1949,15 +1887,15 @@ local function BBDMMVG_fake_script() -- TextButton_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BBDMMVG_fake_script)()
-local function HKBZUZ_fake_script() -- FramePetite.DragScript 
+coroutine.wrap(OMQYWO_fake_script)()
+local function ALQB_fake_script() -- FramePetite.DragScript 
 	local script = Instance.new('LocalScript', FramePetite)
 
 	script.Parent.Parent.LaunchFrame.Active = true
 	script.Parent.Parent.LaunchFrame.Draggable = true
 end
-coroutine.wrap(HKBZUZ_fake_script)()
-local function ODGN_fake_script() -- FramePetite.NotifScript 
+coroutine.wrap(ALQB_fake_script)()
+local function IQKY_fake_script() -- FramePetite.NotifScript 
 	local script = Instance.new('LocalScript', FramePetite)
 
 	game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -1967,8 +1905,8 @@ local function ODGN_fake_script() -- FramePetite.NotifScript
 		Duration = 4;
 	})
 end
-coroutine.wrap(ODGN_fake_script)()
-local function HEFPW_fake_script() -- FramePetite.BorderScript 
+coroutine.wrap(IQKY_fake_script)()
+local function RXFYLL_fake_script() -- FramePetite.BorderScript 
 	local script = Instance.new('LocalScript', FramePetite)
 
 	-- Définition des couleurs du gradient
@@ -2021,8 +1959,8 @@ local function HEFPW_fake_script() -- FramePetite.BorderScript
 		end
 	end
 end
-coroutine.wrap(HEFPW_fake_script)()
-local function ZISMJS_fake_script() -- OrangeButton_2.LocalScript 
+coroutine.wrap(RXFYLL_fake_script)()
+local function HWAN_fake_script() -- OrangeButton_2.LocalScript 
 	local script = Instance.new('LocalScript', OrangeButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2030,16 +1968,16 @@ local function ZISMJS_fake_script() -- OrangeButton_2.LocalScript
 		script.Parent.Parent.Parent.Parent.FrameReduite.Visible = false
 	end)
 end
-coroutine.wrap(ZISMJS_fake_script)()
-local function KBPIQZI_fake_script() -- RedButton_2.LocalScript 
+coroutine.wrap(HWAN_fake_script)()
+local function VYSJPVW_fake_script() -- RedButton_2.LocalScript 
 	local script = Instance.new('LocalScript', RedButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.Parent.FrameReduite.Visible = false
 	end)
 end
-coroutine.wrap(KBPIQZI_fake_script)()
-local function KCIO_fake_script() -- GreenButton_2.LocalScript 
+coroutine.wrap(VYSJPVW_fake_script)()
+local function MCNV_fake_script() -- GreenButton_2.LocalScript 
 	local script = Instance.new('LocalScript', GreenButton_2)
 
 	local button = script.Parent
@@ -2055,8 +1993,8 @@ local function KCIO_fake_script() -- GreenButton_2.LocalScript
 	
 	button.MouseButton1Click:Connect(onButtonClicked)
 end
-coroutine.wrap(KCIO_fake_script)()
-local function NTMFV_fake_script() -- SolarLogoButton_2.ProfilePicture 
+coroutine.wrap(MCNV_fake_script)()
+local function IHXM_fake_script() -- SolarLogoButton_2.ProfilePicture 
 	local script = Instance.new('LocalScript', SolarLogoButton_2)
 
 	local Player = game.Players.LocalPlayer
@@ -2065,15 +2003,15 @@ local function NTMFV_fake_script() -- SolarLogoButton_2.ProfilePicture
 	script.Parent.Image = image
 	
 end
-coroutine.wrap(NTMFV_fake_script)()
-local function BWSEHR_fake_script() -- FrameReduite.DragScript 
+coroutine.wrap(IHXM_fake_script)()
+local function UGZTMX_fake_script() -- FrameReduite.DragScript 
 	local script = Instance.new('LocalScript', FrameReduite)
 
 	script.Parent.Parent.FrameReduite.Active = true
 	script.Parent.Parent.FrameReduite.Draggable = true
 end
-coroutine.wrap(BWSEHR_fake_script)()
-local function LRBMP_fake_script() -- FrameReduite.BorderScript 
+coroutine.wrap(UGZTMX_fake_script)()
+local function WMEXRV_fake_script() -- FrameReduite.BorderScript 
 	local script = Instance.new('LocalScript', FrameReduite)
 
 	-- Définition des couleurs du gradient
@@ -2126,15 +2064,15 @@ local function LRBMP_fake_script() -- FrameReduite.BorderScript
 		end
 	end
 end
-coroutine.wrap(LRBMP_fake_script)()
-local function MMKHOM_fake_script() -- LaunchFrame.DragScript 
+coroutine.wrap(WMEXRV_fake_script)()
+local function HMOS_fake_script() -- LaunchFrame.DragScript 
 	local script = Instance.new('LocalScript', LaunchFrame)
 
 	script.Parent.Parent.FramePetite.Active = true
 	script.Parent.Parent.FramePetite.Draggable = true
 end
-coroutine.wrap(MMKHOM_fake_script)()
-local function LWXZFQ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(HMOS_fake_script)()
+local function DJDBSQ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -2142,8 +2080,8 @@ local function LWXZFQ_fake_script() -- TextButton_3.LocalScript
 		script.Parent.Parent.Parent.LaunchFrame.Visible = false
 	end)
 end
-coroutine.wrap(LWXZFQ_fake_script)()
-local function DTQIXW_fake_script() -- SolarUiImage.SolaraDetectScript 
+coroutine.wrap(DJDBSQ_fake_script)()
+local function XKYTPR_fake_script() -- SolarUiImage.SolaraDetectScript 
 	local script = Instance.new('LocalScript', SolarUiImage)
 
 	if (identifyexecutor()) == "Solara" then
@@ -2154,4 +2092,4 @@ local function DTQIXW_fake_script() -- SolarUiImage.SolaraDetectScript
 		})
 	end
 end
-coroutine.wrap(DTQIXW_fake_script)()
+coroutine.wrap(XKYTPR_fake_script)()
