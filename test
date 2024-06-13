@@ -1,0 +1,3236 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SolarUIV2 = {
+	SolarUIV2 = Instance.new("ScreenGui"),
+	Panel = Instance.new("ImageButton"),
+	header = Instance.new("TextLabel"),
+	focused_bg = Instance.new("UIGradient"),
+	focused_bgg = Instance.new("UIGradient"),
+	prism = Instance.new("ImageLabel"),
+	corner = Instance.new("UICorner"),
+	fade_top = Instance.new("ImageLabel"),
+	gradient = Instance.new("UIGradient"),
+	close = Instance.new("ImageButton"),
+	corner_2 = Instance.new("UICorner"),
+	icon = Instance.new("ImageLabel"),
+	scale = Instance.new("UIScale"),
+	gradient_2 = Instance.new("UIGradient"),
+	padding = Instance.new("UIPadding"),
+	scale_2 = Instance.new("UIScale"),
+	size_constraint = Instance.new("UISizeConstraint"),
+	fade_bottom = Instance.new("ImageLabel"),
+	gradient_3 = Instance.new("UIGradient"),
+	shadow = Instance.new("ImageLabel"),
+	focused_bg_2 = Instance.new("UIGradient"),
+	gradient_4 = Instance.new("UIGradient"),
+	menu = Instance.new("ImageLabel"),
+	corner_3 = Instance.new("UICorner"),
+	shadow_2 = Instance.new("ImageLabel"),
+	scale_3 = Instance.new("UIScale"),
+	buttons = Instance.new("Frame"),
+	Home = Instance.new("ImageButton"),
+	icon_2 = Instance.new("ImageLabel"),
+	scale_4 = Instance.new("UIScale"),
+	corner_4 = Instance.new("UICorner"),
+	gradient_5 = Instance.new("UIGradient"),
+	list = Instance.new("UIListLayout"),
+	Internet = Instance.new("ImageButton"),
+	Internet_2 = Instance.new("ImageLabel"),
+	scale_5 = Instance.new("UIScale"),
+	corner_5 = Instance.new("UICorner"),
+	gradient_6 = Instance.new("UIGradient"),
+	Settings = Instance.new("ImageButton"),
+	icon_3 = Instance.new("ImageLabel"),
+	scale_6 = Instance.new("UIScale"),
+	corner_6 = Instance.new("UICorner"),
+	gradient_7 = Instance.new("UIGradient"),
+	Exe = Instance.new("ImageLabel"),
+	scale_7 = Instance.new("UIScale"),
+	corner_7 = Instance.new("UICorner"),
+	TextBox1 = Instance.new("TextBox"),
+	Exe_2 = Instance.new("ImageLabel"),
+	scale_8 = Instance.new("UIScale"),
+	buttons_2 = Instance.new("Frame"),
+	_1 = Instance.new("ImageButton"),
+	gradient_8 = Instance.new("UIGradient"),
+	header_2 = Instance.new("TextLabel"),
+	list_2 = Instance.new("UIListLayout"),
+	_2 = Instance.new("ImageButton"),
+	gradient_9 = Instance.new("UIGradient"),
+	header_3 = Instance.new("TextLabel"),
+	_3 = Instance.new("ImageButton"),
+	gradient_10 = Instance.new("UIGradient"),
+	header_4 = Instance.new("TextLabel"),
+	_4 = Instance.new("ImageButton"),
+	gradient_11 = Instance.new("UIGradient"),
+	header_5 = Instance.new("TextLabel"),
+	_5 = Instance.new("ImageButton"),
+	gradient_12 = Instance.new("UIGradient"),
+	header_6 = Instance.new("TextLabel"),
+	_6 = Instance.new("ImageButton"),
+	gradient_13 = Instance.new("UIGradient"),
+	header_7 = Instance.new("TextLabel"),
+	TextBox2 = Instance.new("TextBox"),
+	TextBox3 = Instance.new("TextBox"),
+	TextBox4 = Instance.new("TextBox"),
+	TextBox5 = Instance.new("TextBox"),
+	TextBox6 = Instance.new("TextBox"),
+	Launch = Instance.new("ImageLabel"),
+	corner_8 = Instance.new("UICorner"),
+	scale_9 = Instance.new("UIScale"),
+	buttons_3 = Instance.new("Frame"),
+	players = Instance.new("ImageButton"),
+	icon_4 = Instance.new("ImageLabel"),
+	scale_10 = Instance.new("UIScale"),
+	gradient_14 = Instance.new("UIGradient"),
+	corner_9 = Instance.new("UICorner"),
+	list_3 = Instance.new("UIListLayout"),
+	Clear = Instance.new("ImageLabel"),
+	corner_10 = Instance.new("UICorner"),
+	scale_11 = Instance.new("UIScale"),
+	buttons_4 = Instance.new("Frame"),
+	players_2 = Instance.new("ImageButton"),
+	icon_5 = Instance.new("ImageLabel"),
+	scale_12 = Instance.new("UIScale"),
+	gradient_15 = Instance.new("UIGradient"),
+	corner_11 = Instance.new("UICorner"),
+	list_4 = Instance.new("UIListLayout"),
+	Up = Instance.new("ImageButton"),
+	corner_12 = Instance.new("UICorner"),
+	icon_6 = Instance.new("ImageLabel"),
+	scale_13 = Instance.new("UIScale"),
+	gradient_16 = Instance.new("UIGradient"),
+	Down = Instance.new("ImageButton"),
+	corner_13 = Instance.new("UICorner"),
+	icon_7 = Instance.new("ImageLabel"),
+	scale_14 = Instance.new("UIScale"),
+	gradient_17 = Instance.new("UIGradient"),
+	Internet_3 = Instance.new("ImageLabel"),
+	scale_15 = Instance.new("UIScale"),
+	corner_14 = Instance.new("UICorner"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	list_5 = Instance.new("UIListLayout"),
+	UIGridLayout = Instance.new("UIGridLayout"),
+	Ligne1 = Instance.new("Frame"),
+	_1_2 = Instance.new("ImageLabel"),
+	scale_16 = Instance.new("UIScale"),
+	corner_15 = Instance.new("UICorner"),
+	header_8 = Instance.new("TextLabel"),
+	Button = Instance.new("ImageLabel"),
+	corner_16 = Instance.new("UICorner"),
+	shadow_3 = Instance.new("ImageLabel"),
+	scale_17 = Instance.new("UIScale"),
+	buttons_5 = Instance.new("Frame"),
+	ExeScript = Instance.new("ImageButton"),
+	icon_8 = Instance.new("ImageLabel"),
+	scale_18 = Instance.new("UIScale"),
+	corner_17 = Instance.new("UICorner"),
+	gradient_18 = Instance.new("UIGradient"),
+	list_6 = Instance.new("UIListLayout"),
+	description = Instance.new("TextLabel"),
+	credit = Instance.new("TextLabel"),
+	_2_2 = Instance.new("ImageLabel"),
+	scale_19 = Instance.new("UIScale"),
+	corner_18 = Instance.new("UICorner"),
+	header_9 = Instance.new("TextLabel"),
+	Button_2 = Instance.new("ImageLabel"),
+	corner_19 = Instance.new("UICorner"),
+	shadow_4 = Instance.new("ImageLabel"),
+	scale_20 = Instance.new("UIScale"),
+	buttons_6 = Instance.new("Frame"),
+	ExeScript_2 = Instance.new("ImageButton"),
+	icon_9 = Instance.new("ImageLabel"),
+	scale_21 = Instance.new("UIScale"),
+	corner_20 = Instance.new("UICorner"),
+	gradient_19 = Instance.new("UIGradient"),
+	list_7 = Instance.new("UIListLayout"),
+	description_2 = Instance.new("TextLabel"),
+	credit_2 = Instance.new("TextLabel"),
+	Ligne2 = Instance.new("Frame"),
+	_1_3 = Instance.new("ImageLabel"),
+	scale_22 = Instance.new("UIScale"),
+	corner_21 = Instance.new("UICorner"),
+	header_10 = Instance.new("TextLabel"),
+	Button_3 = Instance.new("ImageLabel"),
+	corner_22 = Instance.new("UICorner"),
+	shadow_5 = Instance.new("ImageLabel"),
+	scale_23 = Instance.new("UIScale"),
+	buttons_7 = Instance.new("Frame"),
+	ExeScript_3 = Instance.new("ImageButton"),
+	icon_10 = Instance.new("ImageLabel"),
+	scale_24 = Instance.new("UIScale"),
+	corner_23 = Instance.new("UICorner"),
+	gradient_20 = Instance.new("UIGradient"),
+	list_8 = Instance.new("UIListLayout"),
+	description_3 = Instance.new("TextLabel"),
+	credit_3 = Instance.new("TextLabel"),
+	_2_3 = Instance.new("ImageLabel"),
+	scale_25 = Instance.new("UIScale"),
+	corner_24 = Instance.new("UICorner"),
+	header_11 = Instance.new("TextLabel"),
+	Button_4 = Instance.new("ImageLabel"),
+	corner_25 = Instance.new("UICorner"),
+	shadow_6 = Instance.new("ImageLabel"),
+	scale_26 = Instance.new("UIScale"),
+	buttons_8 = Instance.new("Frame"),
+	ExeScript_4 = Instance.new("ImageButton"),
+	icon_11 = Instance.new("ImageLabel"),
+	scale_27 = Instance.new("UIScale"),
+	corner_26 = Instance.new("UICorner"),
+	gradient_21 = Instance.new("UIGradient"),
+	list_9 = Instance.new("UIListLayout"),
+	description_4 = Instance.new("TextLabel"),
+	credit_4 = Instance.new("TextLabel"),
+	Ligne3 = Instance.new("Frame"),
+	_1_4 = Instance.new("ImageLabel"),
+	scale_28 = Instance.new("UIScale"),
+	corner_27 = Instance.new("UICorner"),
+	header_12 = Instance.new("TextLabel"),
+	Button_5 = Instance.new("ImageLabel"),
+	corner_28 = Instance.new("UICorner"),
+	shadow_7 = Instance.new("ImageLabel"),
+	scale_29 = Instance.new("UIScale"),
+	buttons_9 = Instance.new("Frame"),
+	ExeScript_5 = Instance.new("ImageButton"),
+	icon_12 = Instance.new("ImageLabel"),
+	scale_30 = Instance.new("UIScale"),
+	corner_29 = Instance.new("UICorner"),
+	gradient_22 = Instance.new("UIGradient"),
+	list_10 = Instance.new("UIListLayout"),
+	description_5 = Instance.new("TextLabel"),
+	credit_5 = Instance.new("TextLabel"),
+	_2_4 = Instance.new("ImageLabel"),
+	scale_31 = Instance.new("UIScale"),
+	corner_30 = Instance.new("UICorner"),
+	header_13 = Instance.new("TextLabel"),
+	Button_6 = Instance.new("ImageLabel"),
+	corner_31 = Instance.new("UICorner"),
+	shadow_8 = Instance.new("ImageLabel"),
+	scale_32 = Instance.new("UIScale"),
+	buttons_10 = Instance.new("Frame"),
+	ExeScript_6 = Instance.new("ImageButton"),
+	icon_13 = Instance.new("ImageLabel"),
+	scale_33 = Instance.new("UIScale"),
+	corner_32 = Instance.new("UICorner"),
+	gradient_23 = Instance.new("UIGradient"),
+	list_11 = Instance.new("UIListLayout"),
+	description_6 = Instance.new("TextLabel"),
+	credit_6 = Instance.new("TextLabel"),
+	Setting = Instance.new("ImageLabel"),
+	scale_34 = Instance.new("UIScale"),
+	corner_33 = Instance.new("UICorner"),
+	Frame = Instance.new("Frame"),
+	TitleChange = Instance.new("ImageLabel"),
+	scale_35 = Instance.new("UIScale"),
+	corner_34 = Instance.new("UICorner"),
+	header_14 = Instance.new("TextLabel"),
+	Element = Instance.new("ImageButton"),
+	Knob = Instance.new("ImageLabel"),
+	Fill = Instance.new("ImageLabel"),
+	list_12 = Instance.new("UIListLayout"),
+	BTransparency = Instance.new("ImageLabel"),
+	scale_36 = Instance.new("UIScale"),
+	corner_35 = Instance.new("UICorner"),
+	header_15 = Instance.new("TextLabel"),
+	Element_2 = Instance.new("ImageButton"),
+	Knob_2 = Instance.new("ImageLabel"),
+	Fill_2 = Instance.new("ImageLabel"),
+	LDMode = Instance.new("ImageLabel"),
+	scale_37 = Instance.new("UIScale"),
+	corner_36 = Instance.new("UICorner"),
+	header_16 = Instance.new("TextLabel"),
+	Element_3 = Instance.new("ImageButton"),
+	Knob_3 = Instance.new("ImageLabel"),
+	Fill_3 = Instance.new("ImageLabel"),
+	Crefit = Instance.new("ImageLabel"),
+	scale_38 = Instance.new("UIScale"),
+	corner_37 = Instance.new("UICorner"),
+	header_17 = Instance.new("TextLabel"),
+	ImageButton = Instance.new("ImageButton"),
+	corner_38 = Instance.new("UICorner"),
+	gradient_24 = Instance.new("UIGradient"),
+	UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint"),
+	icon_14 = Instance.new("ImageLabel"),
+	scale_39 = Instance.new("UIScale"),
+	ClearButton = Instance.new("TextButton"),
+	LaunchButton = Instance.new("TextButton"),
+	icon_15 = Instance.new("ImageLabel"),
+	scale_40 = Instance.new("UIScale"),
+	focused_bg_3 = Instance.new("UIGradient"),
+	focused_bgg_2 = Instance.new("UIGradient"),
+	Credits = Instance.new("ImageLabel"),
+	scale_41 = Instance.new("UIScale"),
+	corner_39 = Instance.new("UICorner"),
+	Frame_2 = Instance.new("Frame"),
+	Frame_3 = Instance.new("Frame"),
+	list_13 = Instance.new("UIListLayout"),
+	_3_2 = Instance.new("ImageLabel"),
+	scale_42 = Instance.new("UIScale"),
+	corner_40 = Instance.new("UICorner"),
+	_1_5 = Instance.new("TextLabel"),
+	_1_6 = Instance.new("TextLabel"),
+	_1_7 = Instance.new("ImageLabel"),
+	scale_43 = Instance.new("UIScale"),
+	corner_41 = Instance.new("UICorner"),
+	_1_8 = Instance.new("TextLabel"),
+	_1_9 = Instance.new("TextLabel"),
+	_2_5 = Instance.new("ImageLabel"),
+	scale_44 = Instance.new("UIScale"),
+	corner_42 = Instance.new("UICorner"),
+	_1_10 = Instance.new("TextLabel"),
+	_1_11 = Instance.new("TextLabel"),
+	close_2 = Instance.new("ImageButton"),
+	corner_43 = Instance.new("UICorner"),
+	icon_16 = Instance.new("ImageLabel"),
+	scale_45 = Instance.new("UIScale"),
+	gradient_25 = Instance.new("UIGradient"),
+}
+
+--Properties:
+
+SolarUIV2.SolarUIV2.Name = "SolarUIV.2"
+SolarUIV2.SolarUIV2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SolarUIV2.SolarUIV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SolarUIV2.Panel.Name = "Panel"
+SolarUIV2.Panel.Parent = SolarUIV2.SolarUIV2
+SolarUIV2.Panel.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Panel.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+SolarUIV2.Panel.BackgroundTransparency = 1.000
+SolarUIV2.Panel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Panel.BorderSizePixel = 0
+SolarUIV2.Panel.ClipsDescendants = true
+SolarUIV2.Panel.Position = UDim2.new(0.499578774, 0, 0.5, 0)
+SolarUIV2.Panel.Selectable = false
+SolarUIV2.Panel.Size = UDim2.new(0.487784326, 250, 0.324152529, 200)
+SolarUIV2.Panel.Image = "rbxassetid://16286719854"
+SolarUIV2.Panel.ImageColor3 = Color3.fromRGB(70, 70, 70)
+SolarUIV2.Panel.ImageTransparency = 0.100
+SolarUIV2.Panel.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Panel.SliceCenter = Rect.new(512, 512, 512, 512)
+SolarUIV2.Panel.SliceScale = 0.100
+
+SolarUIV2.header.Name = "header"
+SolarUIV2.header.Parent = SolarUIV2.Panel
+SolarUIV2.header.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header.BackgroundTransparency = 1.000
+SolarUIV2.header.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header.BorderSizePixel = 0
+SolarUIV2.header.Position = UDim2.new(0.108333334, 0, 0.00208333344, 0)
+SolarUIV2.header.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header.ZIndex = 2
+SolarUIV2.header.Font = Enum.Font.Unknown
+SolarUIV2.header.Text = "Solar"
+SolarUIV2.header.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header.TextSize = 36.000
+SolarUIV2.header.TextTransparency = 0.100
+
+SolarUIV2.focused_bg.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 0, 2)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(177, 0, 3)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(214, 96, 0)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(202, 119, 2)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(208, 150, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(193, 161, 0))}
+SolarUIV2.focused_bg.Offset = Vector2.new(-0.5, 0)
+SolarUIV2.focused_bg.Name = "focused_bg"
+SolarUIV2.focused_bg.Parent = SolarUIV2.header
+
+SolarUIV2.focused_bgg.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 0, 2)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(177, 0, 3)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(214, 96, 0)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(202, 119, 2)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(208, 150, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(193, 161, 0))}
+SolarUIV2.focused_bgg.Offset = Vector2.new(-0.5, 0)
+SolarUIV2.focused_bgg.Name = "focused_bgg"
+SolarUIV2.focused_bgg.Parent = SolarUIV2.header
+
+SolarUIV2.prism.Name = "prism"
+SolarUIV2.prism.Parent = SolarUIV2.Panel
+SolarUIV2.prism.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.prism.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.prism.BackgroundTransparency = 1.000
+SolarUIV2.prism.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.prism.BorderSizePixel = 0
+SolarUIV2.prism.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.prism.Rotation = 0.000
+SolarUIV2.prism.Size = UDim2.new(1, 19, 1, 19)
+SolarUIV2.prism.ZIndex = -10
+SolarUIV2.prism.Image = "rbxassetid://16255699706"
+SolarUIV2.prism.ImageColor3 = Color3.fromRGB(143, 143, 143)
+SolarUIV2.prism.ImageTransparency = 0.800
+SolarUIV2.prism.ScaleType = Enum.ScaleType.Crop
+SolarUIV2.prism.SliceCenter = Rect.new(512, 512, 512, 512)
+SolarUIV2.prism.SliceScale = 0.190
+
+SolarUIV2.corner.CornerRadius = UDim.new(0, 27)
+SolarUIV2.corner.Name = "corner"
+SolarUIV2.corner.Parent = SolarUIV2.prism
+
+SolarUIV2.fade_top.Name = "fade_top"
+SolarUIV2.fade_top.Parent = SolarUIV2.Panel
+SolarUIV2.fade_top.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.fade_top.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+SolarUIV2.fade_top.BackgroundTransparency = 1.000
+SolarUIV2.fade_top.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.fade_top.BorderSizePixel = 0
+SolarUIV2.fade_top.Position = UDim2.new(0.5, 0, 0, -10)
+SolarUIV2.fade_top.Size = UDim2.new(1, 20, 0, 100)
+SolarUIV2.fade_top.Image = "rbxassetid://16286719854"
+SolarUIV2.fade_top.ImageColor3 = Color3.fromRGB(64, 66, 68)
+SolarUIV2.fade_top.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.fade_top.SliceCenter = Rect.new(512, 669, 576, 1024)
+
+SolarUIV2.gradient.Rotation = 90
+SolarUIV2.gradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+SolarUIV2.gradient.Name = "gradient"
+SolarUIV2.gradient.Parent = SolarUIV2.fade_top
+
+SolarUIV2.close.Name = "close"
+SolarUIV2.close.Parent = SolarUIV2.Panel
+SolarUIV2.close.AnchorPoint = Vector2.new(1, 0)
+SolarUIV2.close.BackgroundColor3 = Color3.fromRGB(94, 98, 99)
+SolarUIV2.close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.close.BorderSizePixel = 0
+SolarUIV2.close.Position = UDim2.new(1, -5, 0, 5)
+SolarUIV2.close.Size = UDim2.new(0, 30, 0, 30)
+SolarUIV2.close.ZIndex = 2
+SolarUIV2.close.AutoButtonColor = false
+
+SolarUIV2.corner_2.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_2.Name = "corner"
+SolarUIV2.corner_2.Parent = SolarUIV2.close
+
+SolarUIV2.icon.Name = "icon"
+SolarUIV2.icon.Parent = SolarUIV2.close
+SolarUIV2.icon.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon.BackgroundTransparency = 1.000
+SolarUIV2.icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon.BorderSizePixel = 0
+SolarUIV2.icon.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon.Size = UDim2.new(0, 16, 0, 16)
+SolarUIV2.icon.ZIndex = 2
+SolarUIV2.icon.Image = "rbxassetid://10747384394"
+SolarUIV2.icon.ImageTransparency = 0.200
+SolarUIV2.icon.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale.Name = "scale"
+SolarUIV2.scale.Parent = SolarUIV2.icon
+
+SolarUIV2.gradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.47)}
+SolarUIV2.gradient_2.Name = "gradient"
+SolarUIV2.gradient_2.Parent = SolarUIV2.close
+
+SolarUIV2.padding.Name = "padding"
+SolarUIV2.padding.Parent = SolarUIV2.Panel
+SolarUIV2.padding.PaddingBottom = UDim.new(0, 10)
+SolarUIV2.padding.PaddingLeft = UDim.new(0, 10)
+SolarUIV2.padding.PaddingRight = UDim.new(0, 10)
+SolarUIV2.padding.PaddingTop = UDim.new(0, 10)
+
+SolarUIV2.scale_2.Name = "scale"
+SolarUIV2.scale_2.Parent = SolarUIV2.Panel
+
+SolarUIV2.size_constraint.Name = "size_constraint"
+SolarUIV2.size_constraint.Parent = SolarUIV2.Panel
+SolarUIV2.size_constraint.MaxSize = Vector2.new(800, 500)
+
+SolarUIV2.fade_bottom.Name = "fade_bottom"
+SolarUIV2.fade_bottom.Parent = SolarUIV2.Panel
+SolarUIV2.fade_bottom.AnchorPoint = Vector2.new(0.5, 1)
+SolarUIV2.fade_bottom.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+SolarUIV2.fade_bottom.BackgroundTransparency = 1.000
+SolarUIV2.fade_bottom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.fade_bottom.BorderSizePixel = 0
+SolarUIV2.fade_bottom.Position = UDim2.new(0.5, 0, 1, 11)
+SolarUIV2.fade_bottom.Rotation = 180.000
+SolarUIV2.fade_bottom.Size = UDim2.new(1, 20, 0, 100)
+SolarUIV2.fade_bottom.Image = "rbxassetid://16286719854"
+SolarUIV2.fade_bottom.ImageColor3 = Color3.fromRGB(64, 66, 68)
+SolarUIV2.fade_bottom.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.fade_bottom.SliceCenter = Rect.new(512, 669, 576, 1024)
+
+SolarUIV2.gradient_3.Rotation = 90
+SolarUIV2.gradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+SolarUIV2.gradient_3.Name = "gradient"
+SolarUIV2.gradient_3.Parent = SolarUIV2.fade_bottom
+
+SolarUIV2.shadow.Name = "shadow"
+SolarUIV2.shadow.Parent = SolarUIV2.Panel
+SolarUIV2.shadow.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow.BackgroundTransparency = 1.000
+SolarUIV2.shadow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow.BorderSizePixel = 0
+SolarUIV2.shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow.Rotation = 0.000
+SolarUIV2.shadow.Size = UDim2.new(1, 110, 1, 110)
+SolarUIV2.shadow.ZIndex = -10
+SolarUIV2.shadow.Image = "rbxassetid://16286730454"
+SolarUIV2.shadow.ImageTransparency = 0.500
+SolarUIV2.shadow.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow.SliceCenter = Rect.new(512, 512, 512, 512)
+SolarUIV2.shadow.SliceScale = 0.190
+
+SolarUIV2.focused_bg_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(29, 59, 95)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(81, 32, 124))}
+SolarUIV2.focused_bg_2.Offset = Vector2.new(-0.5, 0)
+SolarUIV2.focused_bg_2.Name = "focused_bg"
+SolarUIV2.focused_bg_2.Parent = SolarUIV2.shadow
+
+SolarUIV2.gradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 213, 1))}
+SolarUIV2.gradient_4.Rotation = 90
+SolarUIV2.gradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 1.00)}
+SolarUIV2.gradient_4.Name = "gradient"
+SolarUIV2.gradient_4.Parent = SolarUIV2.Panel
+
+SolarUIV2.menu.Name = "menu"
+SolarUIV2.menu.Parent = SolarUIV2.Panel
+SolarUIV2.menu.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.menu.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.menu.BorderSizePixel = 0
+SolarUIV2.menu.Position = UDim2.new(-0.0179487187, 60, 0.5, 0)
+SolarUIV2.menu.Size = UDim2.new(0, 60, 0, 180)
+SolarUIV2.menu.Image = "rbxassetid://16255699706"
+SolarUIV2.menu.ImageTransparency = 0.800
+SolarUIV2.menu.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_3.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_3.Name = "corner"
+SolarUIV2.corner_3.Parent = SolarUIV2.menu
+
+SolarUIV2.shadow_2.Name = "shadow"
+SolarUIV2.shadow_2.Parent = SolarUIV2.menu
+SolarUIV2.shadow_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_2.BackgroundTransparency = 1.000
+SolarUIV2.shadow_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_2.BorderSizePixel = 0
+SolarUIV2.shadow_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_2.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_2.ZIndex = 0
+SolarUIV2.shadow_2.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_2.ImageTransparency = 0.800
+SolarUIV2.shadow_2.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_2.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_3.Name = "scale"
+SolarUIV2.scale_3.Parent = SolarUIV2.menu
+
+SolarUIV2.buttons.Name = "buttons"
+SolarUIV2.buttons.Parent = SolarUIV2.menu
+SolarUIV2.buttons.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons.BackgroundTransparency = 1.000
+SolarUIV2.buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons.BorderSizePixel = 0
+SolarUIV2.buttons.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.Home.Name = "Home"
+SolarUIV2.Home.Parent = SolarUIV2.buttons
+SolarUIV2.Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Home.BackgroundTransparency = 1.000
+SolarUIV2.Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Home.BorderSizePixel = 0
+SolarUIV2.Home.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.Home.AutoButtonColor = false
+
+SolarUIV2.icon_2.Name = "icon"
+SolarUIV2.icon_2.Parent = SolarUIV2.Home
+SolarUIV2.icon_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_2.BackgroundTransparency = 1.000
+SolarUIV2.icon_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_2.BorderSizePixel = 0
+SolarUIV2.icon_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_2.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_2.Image = "rbxassetid://10723407389"
+SolarUIV2.icon_2.ImageTransparency = 0.200
+SolarUIV2.icon_2.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_4.Name = "scale"
+SolarUIV2.scale_4.Parent = SolarUIV2.icon_2
+
+SolarUIV2.corner_4.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_4.Name = "corner"
+SolarUIV2.corner_4.Parent = SolarUIV2.Home
+
+SolarUIV2.gradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_5.Name = "gradient"
+SolarUIV2.gradient_5.Parent = SolarUIV2.Home
+
+SolarUIV2.list.Name = "list"
+SolarUIV2.list.Parent = SolarUIV2.buttons
+SolarUIV2.list.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list.Padding = UDim.new(0, 10)
+
+SolarUIV2.Internet.Name = "Internet"
+SolarUIV2.Internet.Parent = SolarUIV2.buttons
+SolarUIV2.Internet.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Internet.BackgroundTransparency = 1.000
+SolarUIV2.Internet.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Internet.BorderSizePixel = 0
+SolarUIV2.Internet.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.Internet.AutoButtonColor = false
+
+SolarUIV2.Internet_2.Name = "Internet"
+SolarUIV2.Internet_2.Parent = SolarUIV2.Internet
+SolarUIV2.Internet_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Internet_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Internet_2.BackgroundTransparency = 1.000
+SolarUIV2.Internet_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Internet_2.BorderSizePixel = 0
+SolarUIV2.Internet_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.Internet_2.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.Internet_2.Image = "rbxassetid://10734943448"
+SolarUIV2.Internet_2.ImageTransparency = 0.200
+SolarUIV2.Internet_2.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_5.Name = "scale"
+SolarUIV2.scale_5.Parent = SolarUIV2.Internet_2
+
+SolarUIV2.corner_5.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_5.Name = "corner"
+SolarUIV2.corner_5.Parent = SolarUIV2.Internet
+
+SolarUIV2.gradient_6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.36), NumberSequenceKeypoint.new(1.00, 0.65)}
+SolarUIV2.gradient_6.Name = "gradient"
+SolarUIV2.gradient_6.Parent = SolarUIV2.Internet
+
+SolarUIV2.Settings.Name = "Settings"
+SolarUIV2.Settings.Parent = SolarUIV2.buttons
+SolarUIV2.Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Settings.BackgroundTransparency = 1.000
+SolarUIV2.Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Settings.BorderSizePixel = 0
+SolarUIV2.Settings.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.Settings.AutoButtonColor = false
+
+SolarUIV2.icon_3.Name = "icon"
+SolarUIV2.icon_3.Parent = SolarUIV2.Settings
+SolarUIV2.icon_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_3.BackgroundTransparency = 1.000
+SolarUIV2.icon_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_3.BorderSizePixel = 0
+SolarUIV2.icon_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_3.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_3.Image = "rbxassetid://10734950309"
+SolarUIV2.icon_3.ImageTransparency = 0.200
+SolarUIV2.icon_3.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_6.Name = "scale"
+SolarUIV2.scale_6.Parent = SolarUIV2.icon_3
+
+SolarUIV2.corner_6.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_6.Name = "corner"
+SolarUIV2.corner_6.Parent = SolarUIV2.Settings
+
+SolarUIV2.gradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.36), NumberSequenceKeypoint.new(1.00, 0.65)}
+SolarUIV2.gradient_7.Name = "gradient"
+SolarUIV2.gradient_7.Parent = SolarUIV2.Settings
+
+SolarUIV2.Exe.Name = "Exe"
+SolarUIV2.Exe.Parent = SolarUIV2.Panel
+SolarUIV2.Exe.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Exe.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Exe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Exe.BorderSizePixel = 0
+SolarUIV2.Exe.Position = UDim2.new(0.45256409, 60, 0.5, 0)
+SolarUIV2.Exe.Size = UDim2.new(0, 624, 0, 338)
+SolarUIV2.Exe.Visible = false
+SolarUIV2.Exe.Image = "rbxassetid://16255699706"
+SolarUIV2.Exe.ImageTransparency = 0.800
+SolarUIV2.Exe.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_7.Name = "scale"
+SolarUIV2.scale_7.Parent = SolarUIV2.Exe
+
+SolarUIV2.corner_7.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_7.Name = "corner"
+SolarUIV2.corner_7.Parent = SolarUIV2.Exe
+
+SolarUIV2.TextBox1.Name = "TextBox1"
+SolarUIV2.TextBox1.Parent = SolarUIV2.Exe
+SolarUIV2.TextBox1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.TextBox1.BackgroundTransparency = 1.000
+SolarUIV2.TextBox1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TextBox1.BorderSizePixel = 0
+SolarUIV2.TextBox1.Position = UDim2.new(0.113782048, 0, 0.0325443782, 0)
+SolarUIV2.TextBox1.Size = UDim2.new(0, 538, 0, 317)
+SolarUIV2.TextBox1.ClearTextOnFocus = false
+SolarUIV2.TextBox1.Font = Enum.Font.SourceSans
+SolarUIV2.TextBox1.Text = ""
+SolarUIV2.TextBox1.TextColor3 = Color3.fromRGB(138, 138, 138)
+SolarUIV2.TextBox1.TextSize = 20.000
+SolarUIV2.TextBox1.TextXAlignment = Enum.TextXAlignment.Left
+SolarUIV2.TextBox1.TextYAlignment = Enum.TextYAlignment.Top
+
+SolarUIV2.Exe_2.Name = "Exe"
+SolarUIV2.Exe_2.Parent = SolarUIV2.Exe
+SolarUIV2.Exe_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Exe_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+SolarUIV2.Exe_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Exe_2.BorderSizePixel = 0
+SolarUIV2.Exe_2.Position = UDim2.new(-0.0501602367, 60, 0.5, 0)
+SolarUIV2.Exe_2.Size = UDim2.new(0, 58, 0, 338)
+SolarUIV2.Exe_2.Image = "rbxassetid://16255699706"
+SolarUIV2.Exe_2.ImageTransparency = 0.800
+SolarUIV2.Exe_2.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_8.Name = "scale"
+SolarUIV2.scale_8.Parent = SolarUIV2.Exe_2
+
+SolarUIV2.buttons_2.Name = "buttons"
+SolarUIV2.buttons_2.Parent = SolarUIV2.Exe_2
+SolarUIV2.buttons_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_2.BackgroundTransparency = 1.000
+SolarUIV2.buttons_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_2.BorderSizePixel = 0
+SolarUIV2.buttons_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_2.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2._1.Name = "1"
+SolarUIV2._1.Parent = SolarUIV2.buttons_2
+SolarUIV2._1.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+SolarUIV2._1.BackgroundTransparency = 1.000
+SolarUIV2._1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1.BorderSizePixel = 0
+SolarUIV2._1.Position = UDim2.new(0.043103449, 0, 0, 0)
+SolarUIV2._1.Size = UDim2.new(0, 55, 0, 50)
+SolarUIV2._1.AutoButtonColor = false
+SolarUIV2._1.ScaleType = Enum.ScaleType.Tile
+
+SolarUIV2.gradient_8.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_8.Name = "gradient"
+SolarUIV2.gradient_8.Parent = SolarUIV2._1
+
+SolarUIV2.header_2.Name = "header"
+SolarUIV2.header_2.Parent = SolarUIV2._1
+SolarUIV2.header_2.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_2.BackgroundTransparency = 1.000
+SolarUIV2.header_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_2.BorderSizePixel = 0
+SolarUIV2.header_2.Position = UDim2.new(0, 27, 0, 5)
+SolarUIV2.header_2.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header_2.ZIndex = 2
+SolarUIV2.header_2.Font = Enum.Font.Unknown
+SolarUIV2.header_2.Text = "1"
+SolarUIV2.header_2.TextColor3 = Color3.fromRGB(141, 141, 141)
+SolarUIV2.header_2.TextSize = 26.000
+SolarUIV2.header_2.TextTransparency = 0.100
+
+SolarUIV2.list_2.Name = "list"
+SolarUIV2.list_2.Parent = SolarUIV2.buttons_2
+SolarUIV2.list_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_2.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_2.Padding = UDim.new(0, 1)
+
+SolarUIV2._2.Name = "2"
+SolarUIV2._2.Parent = SolarUIV2.buttons_2
+SolarUIV2._2.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+SolarUIV2._2.BackgroundTransparency = 1.000
+SolarUIV2._2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._2.BorderSizePixel = 0
+SolarUIV2._2.Position = UDim2.new(0.043103449, 0, 0, 0)
+SolarUIV2._2.Size = UDim2.new(0, 55, 0, 50)
+SolarUIV2._2.Visible = false
+SolarUIV2._2.AutoButtonColor = false
+SolarUIV2._2.ScaleType = Enum.ScaleType.Tile
+
+SolarUIV2.gradient_9.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_9.Name = "gradient"
+SolarUIV2.gradient_9.Parent = SolarUIV2._2
+
+SolarUIV2.header_3.Name = "header"
+SolarUIV2.header_3.Parent = SolarUIV2._2
+SolarUIV2.header_3.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_3.BackgroundTransparency = 1.000
+SolarUIV2.header_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_3.BorderSizePixel = 0
+SolarUIV2.header_3.Position = UDim2.new(0, 27, 0, 5)
+SolarUIV2.header_3.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header_3.ZIndex = 2
+SolarUIV2.header_3.Font = Enum.Font.Unknown
+SolarUIV2.header_3.Text = "2"
+SolarUIV2.header_3.TextColor3 = Color3.fromRGB(141, 141, 141)
+SolarUIV2.header_3.TextSize = 26.000
+SolarUIV2.header_3.TextTransparency = 0.100
+
+SolarUIV2._3.Name = "3"
+SolarUIV2._3.Parent = SolarUIV2.buttons_2
+SolarUIV2._3.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+SolarUIV2._3.BackgroundTransparency = 1.000
+SolarUIV2._3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._3.BorderSizePixel = 0
+SolarUIV2._3.Position = UDim2.new(0.043103449, 0, 0, 0)
+SolarUIV2._3.Size = UDim2.new(0, 55, 0, 50)
+SolarUIV2._3.Visible = false
+SolarUIV2._3.AutoButtonColor = false
+SolarUIV2._3.ScaleType = Enum.ScaleType.Tile
+
+SolarUIV2.gradient_10.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_10.Name = "gradient"
+SolarUIV2.gradient_10.Parent = SolarUIV2._3
+
+SolarUIV2.header_4.Name = "header"
+SolarUIV2.header_4.Parent = SolarUIV2._3
+SolarUIV2.header_4.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_4.BackgroundTransparency = 1.000
+SolarUIV2.header_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_4.BorderSizePixel = 0
+SolarUIV2.header_4.Position = UDim2.new(0, 27, 0, 5)
+SolarUIV2.header_4.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header_4.ZIndex = 2
+SolarUIV2.header_4.Font = Enum.Font.Unknown
+SolarUIV2.header_4.Text = "3"
+SolarUIV2.header_4.TextColor3 = Color3.fromRGB(141, 141, 141)
+SolarUIV2.header_4.TextSize = 26.000
+SolarUIV2.header_4.TextTransparency = 0.100
+
+SolarUIV2._4.Name = "4"
+SolarUIV2._4.Parent = SolarUIV2.buttons_2
+SolarUIV2._4.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+SolarUIV2._4.BackgroundTransparency = 1.000
+SolarUIV2._4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._4.BorderSizePixel = 0
+SolarUIV2._4.Position = UDim2.new(0.043103449, 0, 0, 0)
+SolarUIV2._4.Size = UDim2.new(0, 55, 0, 50)
+SolarUIV2._4.Visible = false
+SolarUIV2._4.AutoButtonColor = false
+SolarUIV2._4.ScaleType = Enum.ScaleType.Tile
+
+SolarUIV2.gradient_11.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_11.Name = "gradient"
+SolarUIV2.gradient_11.Parent = SolarUIV2._4
+
+SolarUIV2.header_5.Name = "header"
+SolarUIV2.header_5.Parent = SolarUIV2._4
+SolarUIV2.header_5.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_5.BackgroundTransparency = 1.000
+SolarUIV2.header_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_5.BorderSizePixel = 0
+SolarUIV2.header_5.Position = UDim2.new(0, 27, 0, 5)
+SolarUIV2.header_5.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header_5.ZIndex = 2
+SolarUIV2.header_5.Font = Enum.Font.Unknown
+SolarUIV2.header_5.Text = "4"
+SolarUIV2.header_5.TextColor3 = Color3.fromRGB(141, 141, 141)
+SolarUIV2.header_5.TextSize = 26.000
+SolarUIV2.header_5.TextTransparency = 0.100
+
+SolarUIV2._5.Name = "5"
+SolarUIV2._5.Parent = SolarUIV2.buttons_2
+SolarUIV2._5.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+SolarUIV2._5.BackgroundTransparency = 1.000
+SolarUIV2._5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._5.BorderSizePixel = 0
+SolarUIV2._5.Position = UDim2.new(0.043103449, 0, 0, 0)
+SolarUIV2._5.Size = UDim2.new(0, 55, 0, 50)
+SolarUIV2._5.Visible = false
+SolarUIV2._5.AutoButtonColor = false
+SolarUIV2._5.ScaleType = Enum.ScaleType.Tile
+
+SolarUIV2.gradient_12.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_12.Name = "gradient"
+SolarUIV2.gradient_12.Parent = SolarUIV2._5
+
+SolarUIV2.header_6.Name = "header"
+SolarUIV2.header_6.Parent = SolarUIV2._5
+SolarUIV2.header_6.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_6.BackgroundTransparency = 1.000
+SolarUIV2.header_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_6.BorderSizePixel = 0
+SolarUIV2.header_6.Position = UDim2.new(0, 27, 0, 5)
+SolarUIV2.header_6.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header_6.ZIndex = 2
+SolarUIV2.header_6.Font = Enum.Font.Unknown
+SolarUIV2.header_6.Text = "5"
+SolarUIV2.header_6.TextColor3 = Color3.fromRGB(141, 141, 141)
+SolarUIV2.header_6.TextSize = 26.000
+SolarUIV2.header_6.TextTransparency = 0.100
+
+SolarUIV2._6.Name = "6"
+SolarUIV2._6.Parent = SolarUIV2.buttons_2
+SolarUIV2._6.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+SolarUIV2._6.BackgroundTransparency = 1.000
+SolarUIV2._6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._6.BorderSizePixel = 0
+SolarUIV2._6.Position = UDim2.new(0.043103449, 0, 0, 0)
+SolarUIV2._6.Size = UDim2.new(0, 55, 0, 50)
+SolarUIV2._6.Visible = false
+SolarUIV2._6.AutoButtonColor = false
+SolarUIV2._6.ScaleType = Enum.ScaleType.Tile
+
+SolarUIV2.gradient_13.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_13.Name = "gradient"
+SolarUIV2.gradient_13.Parent = SolarUIV2._6
+
+SolarUIV2.header_7.Name = "header"
+SolarUIV2.header_7.Parent = SolarUIV2._6
+SolarUIV2.header_7.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_7.BackgroundTransparency = 1.000
+SolarUIV2.header_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_7.BorderSizePixel = 0
+SolarUIV2.header_7.Position = UDim2.new(0, 27, 0, 5)
+SolarUIV2.header_7.Size = UDim2.new(0.129487187, 0, 0, 40)
+SolarUIV2.header_7.ZIndex = 2
+SolarUIV2.header_7.Font = Enum.Font.Unknown
+SolarUIV2.header_7.Text = "6"
+SolarUIV2.header_7.TextColor3 = Color3.fromRGB(141, 141, 141)
+SolarUIV2.header_7.TextSize = 26.000
+SolarUIV2.header_7.TextTransparency = 0.100
+
+SolarUIV2.TextBox2.Name = "TextBox2"
+SolarUIV2.TextBox2.Parent = SolarUIV2.Exe
+SolarUIV2.TextBox2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.TextBox2.BackgroundTransparency = 1.000
+SolarUIV2.TextBox2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TextBox2.BorderSizePixel = 0
+SolarUIV2.TextBox2.Position = UDim2.new(0.113782048, 0, 0.0325443782, 0)
+SolarUIV2.TextBox2.Size = UDim2.new(0, 538, 0, 317)
+SolarUIV2.TextBox2.Visible = false
+SolarUIV2.TextBox2.ClearTextOnFocus = false
+SolarUIV2.TextBox2.Font = Enum.Font.SourceSans
+SolarUIV2.TextBox2.Text = ""
+SolarUIV2.TextBox2.TextColor3 = Color3.fromRGB(138, 138, 138)
+SolarUIV2.TextBox2.TextSize = 20.000
+SolarUIV2.TextBox2.TextXAlignment = Enum.TextXAlignment.Left
+SolarUIV2.TextBox2.TextYAlignment = Enum.TextYAlignment.Top
+
+SolarUIV2.TextBox3.Name = "TextBox3"
+SolarUIV2.TextBox3.Parent = SolarUIV2.Exe
+SolarUIV2.TextBox3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.TextBox3.BackgroundTransparency = 1.000
+SolarUIV2.TextBox3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TextBox3.BorderSizePixel = 0
+SolarUIV2.TextBox3.Position = UDim2.new(0.113782048, 0, 0.0325443782, 0)
+SolarUIV2.TextBox3.Size = UDim2.new(0, 538, 0, 317)
+SolarUIV2.TextBox3.Visible = false
+SolarUIV2.TextBox3.ClearTextOnFocus = false
+SolarUIV2.TextBox3.Font = Enum.Font.SourceSans
+SolarUIV2.TextBox3.Text = ""
+SolarUIV2.TextBox3.TextColor3 = Color3.fromRGB(138, 138, 138)
+SolarUIV2.TextBox3.TextSize = 20.000
+SolarUIV2.TextBox3.TextXAlignment = Enum.TextXAlignment.Left
+SolarUIV2.TextBox3.TextYAlignment = Enum.TextYAlignment.Top
+
+SolarUIV2.TextBox4.Name = "TextBox4"
+SolarUIV2.TextBox4.Parent = SolarUIV2.Exe
+SolarUIV2.TextBox4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.TextBox4.BackgroundTransparency = 1.000
+SolarUIV2.TextBox4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TextBox4.BorderSizePixel = 0
+SolarUIV2.TextBox4.Position = UDim2.new(0.113782048, 0, 0.0325443782, 0)
+SolarUIV2.TextBox4.Size = UDim2.new(0, 538, 0, 317)
+SolarUIV2.TextBox4.Visible = false
+SolarUIV2.TextBox4.ClearTextOnFocus = false
+SolarUIV2.TextBox4.Font = Enum.Font.SourceSans
+SolarUIV2.TextBox4.Text = ""
+SolarUIV2.TextBox4.TextColor3 = Color3.fromRGB(138, 138, 138)
+SolarUIV2.TextBox4.TextSize = 20.000
+SolarUIV2.TextBox4.TextXAlignment = Enum.TextXAlignment.Left
+SolarUIV2.TextBox4.TextYAlignment = Enum.TextYAlignment.Top
+
+SolarUIV2.TextBox5.Name = "TextBox5"
+SolarUIV2.TextBox5.Parent = SolarUIV2.Exe
+SolarUIV2.TextBox5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.TextBox5.BackgroundTransparency = 1.000
+SolarUIV2.TextBox5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TextBox5.BorderSizePixel = 0
+SolarUIV2.TextBox5.Position = UDim2.new(0.113782048, 0, 0.0325443782, 0)
+SolarUIV2.TextBox5.Size = UDim2.new(0, 538, 0, 317)
+SolarUIV2.TextBox5.Visible = false
+SolarUIV2.TextBox5.ClearTextOnFocus = false
+SolarUIV2.TextBox5.Font = Enum.Font.SourceSans
+SolarUIV2.TextBox5.Text = ""
+SolarUIV2.TextBox5.TextColor3 = Color3.fromRGB(138, 138, 138)
+SolarUIV2.TextBox5.TextSize = 20.000
+SolarUIV2.TextBox5.TextXAlignment = Enum.TextXAlignment.Left
+SolarUIV2.TextBox5.TextYAlignment = Enum.TextYAlignment.Top
+
+SolarUIV2.TextBox6.Name = "TextBox6"
+SolarUIV2.TextBox6.Parent = SolarUIV2.Exe
+SolarUIV2.TextBox6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.TextBox6.BackgroundTransparency = 1.000
+SolarUIV2.TextBox6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TextBox6.BorderSizePixel = 0
+SolarUIV2.TextBox6.Position = UDim2.new(0.113782048, 0, 0.0325443782, 0)
+SolarUIV2.TextBox6.Size = UDim2.new(0, 538, 0, 317)
+SolarUIV2.TextBox6.Visible = false
+SolarUIV2.TextBox6.ClearTextOnFocus = false
+SolarUIV2.TextBox6.Font = Enum.Font.SourceSans
+SolarUIV2.TextBox6.Text = ""
+SolarUIV2.TextBox6.TextColor3 = Color3.fromRGB(138, 138, 138)
+SolarUIV2.TextBox6.TextSize = 20.000
+SolarUIV2.TextBox6.TextXAlignment = Enum.TextXAlignment.Left
+SolarUIV2.TextBox6.TextYAlignment = Enum.TextYAlignment.Top
+
+SolarUIV2.Launch.Name = "Launch"
+SolarUIV2.Launch.Parent = SolarUIV2.Panel
+SolarUIV2.Launch.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Launch.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Launch.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Launch.BorderSizePixel = 0
+SolarUIV2.Launch.LayoutOrder = 1
+SolarUIV2.Launch.Position = UDim2.new(0.111538462, 60, 0.933333337, 0)
+SolarUIV2.Launch.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.Launch.Visible = false
+SolarUIV2.Launch.Image = "rbxassetid://16255699706"
+SolarUIV2.Launch.ImageTransparency = 0.800
+SolarUIV2.Launch.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_8.CornerRadius = UDim.new(0, 15)
+SolarUIV2.corner_8.Name = "corner"
+SolarUIV2.corner_8.Parent = SolarUIV2.Launch
+
+SolarUIV2.scale_9.Name = "scale"
+SolarUIV2.scale_9.Parent = SolarUIV2.Launch
+
+SolarUIV2.buttons_3.Name = "buttons"
+SolarUIV2.buttons_3.Parent = SolarUIV2.Launch
+SolarUIV2.buttons_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_3.BackgroundTransparency = 1.000
+SolarUIV2.buttons_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_3.BorderSizePixel = 0
+SolarUIV2.buttons_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_3.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.players.Name = "players"
+SolarUIV2.players.Parent = SolarUIV2.buttons_3
+SolarUIV2.players.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.players.BackgroundTransparency = 1.000
+SolarUIV2.players.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.players.BorderSizePixel = 0
+SolarUIV2.players.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.players.AutoButtonColor = false
+
+SolarUIV2.icon_4.Name = "icon"
+SolarUIV2.icon_4.Parent = SolarUIV2.players
+SolarUIV2.icon_4.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_4.BackgroundTransparency = 1.000
+SolarUIV2.icon_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_4.BorderSizePixel = 0
+SolarUIV2.icon_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_4.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_4.Image = "rbxassetid://10734923549"
+SolarUIV2.icon_4.ImageTransparency = 0.200
+SolarUIV2.icon_4.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_10.Name = "scale"
+SolarUIV2.scale_10.Parent = SolarUIV2.icon_4
+
+SolarUIV2.gradient_14.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_14.Name = "gradient"
+SolarUIV2.gradient_14.Parent = SolarUIV2.players
+
+SolarUIV2.corner_9.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_9.Name = "corner"
+SolarUIV2.corner_9.Parent = SolarUIV2.players
+
+SolarUIV2.list_3.Name = "list"
+SolarUIV2.list_3.Parent = SolarUIV2.buttons_3
+SolarUIV2.list_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_3.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_3.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_3.Padding = UDim.new(0, 10)
+
+SolarUIV2.Clear.Name = "Clear"
+SolarUIV2.Clear.Parent = SolarUIV2.Panel
+SolarUIV2.Clear.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Clear.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Clear.BorderSizePixel = 0
+SolarUIV2.Clear.LayoutOrder = 1
+SolarUIV2.Clear.Position = UDim2.new(0.198717952, 60, 0.933333337, 0)
+SolarUIV2.Clear.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.Clear.Visible = false
+SolarUIV2.Clear.Image = "rbxassetid://16255699706"
+SolarUIV2.Clear.ImageTransparency = 0.800
+SolarUIV2.Clear.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_10.CornerRadius = UDim.new(0, 15)
+SolarUIV2.corner_10.Name = "corner"
+SolarUIV2.corner_10.Parent = SolarUIV2.Clear
+
+SolarUIV2.scale_11.Name = "scale"
+SolarUIV2.scale_11.Parent = SolarUIV2.Clear
+
+SolarUIV2.buttons_4.Name = "buttons"
+SolarUIV2.buttons_4.Parent = SolarUIV2.Clear
+SolarUIV2.buttons_4.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_4.BackgroundTransparency = 1.000
+SolarUIV2.buttons_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_4.BorderSizePixel = 0
+SolarUIV2.buttons_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_4.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.players_2.Name = "players"
+SolarUIV2.players_2.Parent = SolarUIV2.buttons_4
+SolarUIV2.players_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.players_2.BackgroundTransparency = 1.000
+SolarUIV2.players_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.players_2.BorderSizePixel = 0
+SolarUIV2.players_2.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.players_2.ZIndex = 100
+SolarUIV2.players_2.AutoButtonColor = false
+
+SolarUIV2.icon_5.Name = "icon"
+SolarUIV2.icon_5.Parent = SolarUIV2.players_2
+SolarUIV2.icon_5.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_5.BackgroundTransparency = 1.000
+SolarUIV2.icon_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_5.BorderSizePixel = 0
+SolarUIV2.icon_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_5.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_5.Image = "rbxassetid://10709819059"
+SolarUIV2.icon_5.ImageTransparency = 0.200
+SolarUIV2.icon_5.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_12.Name = "scale"
+SolarUIV2.scale_12.Parent = SolarUIV2.icon_5
+
+SolarUIV2.gradient_15.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_15.Name = "gradient"
+SolarUIV2.gradient_15.Parent = SolarUIV2.players_2
+
+SolarUIV2.corner_11.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_11.Name = "corner"
+SolarUIV2.corner_11.Parent = SolarUIV2.players_2
+
+SolarUIV2.list_4.Name = "list"
+SolarUIV2.list_4.Parent = SolarUIV2.buttons_4
+SolarUIV2.list_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_4.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_4.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_4.Padding = UDim.new(0, 10)
+
+SolarUIV2.Up.Name = "Up"
+SolarUIV2.Up.Parent = SolarUIV2.Panel
+SolarUIV2.Up.AnchorPoint = Vector2.new(1, 0)
+SolarUIV2.Up.BackgroundColor3 = Color3.fromRGB(94, 98, 99)
+SolarUIV2.Up.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Up.BorderSizePixel = 0
+SolarUIV2.Up.Position = UDim2.new(0.951282024, -5, 0, 5)
+SolarUIV2.Up.Size = UDim2.new(0, 30, 0, 30)
+SolarUIV2.Up.ZIndex = 2
+SolarUIV2.Up.AutoButtonColor = false
+
+SolarUIV2.corner_12.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_12.Name = "corner"
+SolarUIV2.corner_12.Parent = SolarUIV2.Up
+
+SolarUIV2.icon_6.Name = "icon"
+SolarUIV2.icon_6.Parent = SolarUIV2.Up
+SolarUIV2.icon_6.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_6.BackgroundTransparency = 1.000
+SolarUIV2.icon_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_6.BorderSizePixel = 0
+SolarUIV2.icon_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_6.Size = UDim2.new(0, 16, 0, 16)
+SolarUIV2.icon_6.ZIndex = 2
+SolarUIV2.icon_6.Image = "rbxassetid://10734886735"
+SolarUIV2.icon_6.ImageTransparency = 0.200
+SolarUIV2.icon_6.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_13.Name = "scale"
+SolarUIV2.scale_13.Parent = SolarUIV2.icon_6
+
+SolarUIV2.gradient_16.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.47)}
+SolarUIV2.gradient_16.Name = "gradient"
+SolarUIV2.gradient_16.Parent = SolarUIV2.Up
+
+SolarUIV2.Down.Name = "Down"
+SolarUIV2.Down.Parent = SolarUIV2.Panel
+SolarUIV2.Down.AnchorPoint = Vector2.new(1, 0)
+SolarUIV2.Down.BackgroundColor3 = Color3.fromRGB(94, 98, 99)
+SolarUIV2.Down.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Down.BorderSizePixel = 0
+SolarUIV2.Down.Position = UDim2.new(0.902564108, -5, 0, 5)
+SolarUIV2.Down.Size = UDim2.new(0, 30, 0, 30)
+SolarUIV2.Down.ZIndex = 2
+SolarUIV2.Down.AutoButtonColor = false
+
+SolarUIV2.corner_13.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_13.Name = "corner"
+SolarUIV2.corner_13.Parent = SolarUIV2.Down
+
+SolarUIV2.icon_7.Name = "icon"
+SolarUIV2.icon_7.Parent = SolarUIV2.Down
+SolarUIV2.icon_7.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_7.BackgroundTransparency = 1.000
+SolarUIV2.icon_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_7.BorderSizePixel = 0
+SolarUIV2.icon_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_7.Size = UDim2.new(0, 16, 0, 16)
+SolarUIV2.icon_7.ZIndex = 2
+SolarUIV2.icon_7.Image = "rbxassetid://10734897250"
+SolarUIV2.icon_7.ImageTransparency = 0.200
+SolarUIV2.icon_7.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_14.Name = "scale"
+SolarUIV2.scale_14.Parent = SolarUIV2.icon_7
+
+SolarUIV2.gradient_17.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.47)}
+SolarUIV2.gradient_17.Name = "gradient"
+SolarUIV2.gradient_17.Parent = SolarUIV2.Down
+
+SolarUIV2.Internet_3.Name = "Internet"
+SolarUIV2.Internet_3.Parent = SolarUIV2.Panel
+SolarUIV2.Internet_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Internet_3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Internet_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Internet_3.BorderSizePixel = 0
+SolarUIV2.Internet_3.Position = UDim2.new(0.45256409, 60, 0.5, 0)
+SolarUIV2.Internet_3.Size = UDim2.new(0, 624, 0, 338)
+SolarUIV2.Internet_3.Image = "rbxassetid://16255699706"
+SolarUIV2.Internet_3.ImageTransparency = 0.800
+SolarUIV2.Internet_3.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_15.Name = "scale"
+SolarUIV2.scale_15.Parent = SolarUIV2.Internet_3
+
+SolarUIV2.corner_14.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_14.Name = "corner"
+SolarUIV2.corner_14.Parent = SolarUIV2.Internet_3
+
+SolarUIV2.ScrollingFrame.Parent = SolarUIV2.Internet_3
+SolarUIV2.ScrollingFrame.Active = true
+SolarUIV2.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ScrollingFrame.BackgroundTransparency = 1.000
+SolarUIV2.ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ScrollingFrame.BorderSizePixel = 0
+SolarUIV2.ScrollingFrame.Position = UDim2.new(0.020833334, 0, 0.035502959, 0)
+SolarUIV2.ScrollingFrame.Size = UDim2.new(0, 600, 0, 315)
+SolarUIV2.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+
+SolarUIV2.list_5.Name = "list"
+SolarUIV2.list_5.Parent = SolarUIV2.ScrollingFrame
+SolarUIV2.list_5.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_5.Padding = UDim.new(0, 10)
+
+SolarUIV2.UIGridLayout.Parent = SolarUIV2.ScrollingFrame
+SolarUIV2.UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+SolarUIV2.Ligne1.Name = "Ligne1"
+SolarUIV2.Ligne1.Parent = SolarUIV2.ScrollingFrame
+SolarUIV2.Ligne1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Ligne1.BackgroundTransparency = 1.000
+SolarUIV2.Ligne1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Ligne1.BorderSizePixel = 0
+SolarUIV2.Ligne1.Size = UDim2.new(0, 593, 0, 255)
+
+SolarUIV2._1_2.Name = "1"
+SolarUIV2._1_2.Parent = SolarUIV2.Ligne1
+SolarUIV2._1_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._1_2.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2._1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_2.BorderSizePixel = 0
+SolarUIV2._1_2.Position = UDim2.new(0.159806103, 60, 0.52633059, 0)
+SolarUIV2._1_2.Size = UDim2.new(0, 280, 0, 255)
+SolarUIV2._1_2.Image = "rbxassetid://8992290931"
+SolarUIV2._1_2.ImageTransparency = 0.900
+SolarUIV2._1_2.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_16.Name = "scale"
+SolarUIV2.scale_16.Parent = SolarUIV2._1_2
+
+SolarUIV2.corner_15.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_15.Name = "corner"
+SolarUIV2.corner_15.Parent = SolarUIV2._1_2
+
+SolarUIV2.header_8.Name = "header"
+SolarUIV2.header_8.Parent = SolarUIV2._1_2
+SolarUIV2.header_8.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_8.BackgroundTransparency = 1.000
+SolarUIV2.header_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_8.BorderSizePixel = 0
+SolarUIV2.header_8.Position = UDim2.new(0.4972772, 0, 0.0274509806, 0)
+SolarUIV2.header_8.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.header_8.ZIndex = 2
+SolarUIV2.header_8.Font = Enum.Font.Unknown
+SolarUIV2.header_8.Text = "Dex Explorer"
+SolarUIV2.header_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_8.TextSize = 36.000
+SolarUIV2.header_8.TextTransparency = 0.100
+
+SolarUIV2.Button.Name = "Button"
+SolarUIV2.Button.Parent = SolarUIV2._1_2
+SolarUIV2.Button.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Button.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Button.BorderSizePixel = 0
+SolarUIV2.Button.Position = UDim2.new(0.65781033, 60, 0.871078432, 0)
+SolarUIV2.Button.Size = UDim2.new(0, 48, 0, 48)
+SolarUIV2.Button.Image = "rbxassetid://16255699706"
+SolarUIV2.Button.ImageTransparency = 0.800
+SolarUIV2.Button.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_16.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_16.Name = "corner"
+SolarUIV2.corner_16.Parent = SolarUIV2.Button
+
+SolarUIV2.shadow_3.Name = "shadow"
+SolarUIV2.shadow_3.Parent = SolarUIV2.Button
+SolarUIV2.shadow_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_3.BackgroundTransparency = 1.000
+SolarUIV2.shadow_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_3.BorderSizePixel = 0
+SolarUIV2.shadow_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_3.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_3.ZIndex = 0
+SolarUIV2.shadow_3.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_3.ImageTransparency = 0.800
+SolarUIV2.shadow_3.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_3.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_17.Name = "scale"
+SolarUIV2.scale_17.Parent = SolarUIV2.Button
+
+SolarUIV2.buttons_5.Name = "buttons"
+SolarUIV2.buttons_5.Parent = SolarUIV2.Button
+SolarUIV2.buttons_5.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_5.BackgroundTransparency = 1.000
+SolarUIV2.buttons_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_5.BorderSizePixel = 0
+SolarUIV2.buttons_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_5.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.ExeScript.Name = "ExeScript"
+SolarUIV2.ExeScript.Parent = SolarUIV2.buttons_5
+SolarUIV2.ExeScript.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ExeScript.BackgroundTransparency = 1.000
+SolarUIV2.ExeScript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ExeScript.BorderSizePixel = 0
+SolarUIV2.ExeScript.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ExeScript.AutoButtonColor = false
+
+SolarUIV2.icon_8.Name = "icon"
+SolarUIV2.icon_8.Parent = SolarUIV2.ExeScript
+SolarUIV2.icon_8.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_8.BackgroundTransparency = 1.000
+SolarUIV2.icon_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_8.BorderSizePixel = 0
+SolarUIV2.icon_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_8.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_8.Image = "rbxassetid://10734923214"
+SolarUIV2.icon_8.ImageTransparency = 0.200
+SolarUIV2.icon_8.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_18.Name = "scale"
+SolarUIV2.scale_18.Parent = SolarUIV2.icon_8
+
+SolarUIV2.corner_17.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_17.Name = "corner"
+SolarUIV2.corner_17.Parent = SolarUIV2.ExeScript
+
+SolarUIV2.gradient_18.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_18.Name = "gradient"
+SolarUIV2.gradient_18.Parent = SolarUIV2.ExeScript
+
+SolarUIV2.list_6.Name = "list"
+SolarUIV2.list_6.Parent = SolarUIV2.buttons_5
+SolarUIV2.list_6.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_6.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_6.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_6.Padding = UDim.new(0, 10)
+
+SolarUIV2.description.Name = "description"
+SolarUIV2.description.Parent = SolarUIV2._1_2
+SolarUIV2.description.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.description.BackgroundTransparency = 1.000
+SolarUIV2.description.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.description.BorderSizePixel = 0
+SolarUIV2.description.Position = UDim2.new(0.492136806, 0, 0.184313729, 0)
+SolarUIV2.description.Size = UDim2.new(0.845632792, 0, 0.450980395, 40)
+SolarUIV2.description.ZIndex = 2
+SolarUIV2.description.Font = Enum.Font.Unknown
+SolarUIV2.description.Text = "Une puissante interface graphique d'exploration de jeux. \\nAffiche chaque instance du jeu et toutes leurs propriétés.\\nUtile pour les développeurs."
+SolarUIV2.description.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.description.TextScaled = true
+SolarUIV2.description.TextSize = 24.000
+SolarUIV2.description.TextTransparency = 0.100
+SolarUIV2.description.TextWrapped = true
+SolarUIV2.description.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.credit.Name = "credit"
+SolarUIV2.credit.Parent = SolarUIV2._1_2
+SolarUIV2.credit.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.credit.BackgroundTransparency = 1.000
+SolarUIV2.credit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.credit.BorderSizePixel = 0
+SolarUIV2.credit.Position = UDim2.new(0.407991469, 0, 0.792156875, 0)
+SolarUIV2.credit.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.credit.ZIndex = 2
+SolarUIV2.credit.Font = Enum.Font.Unknown
+SolarUIV2.credit.Text = "By : Moon"
+SolarUIV2.credit.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.credit.TextSize = 24.000
+SolarUIV2.credit.TextTransparency = 0.100
+SolarUIV2.credit.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2._2_2.Name = "2"
+SolarUIV2._2_2.Parent = SolarUIV2.Ligne1
+SolarUIV2._2_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._2_2.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2._2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._2_2.BorderSizePixel = 0
+SolarUIV2._2_2.Position = UDim2.new(0.653903902, 60, 0.52633059, 0)
+SolarUIV2._2_2.Size = UDim2.new(0, 280, 0, 255)
+SolarUIV2._2_2.Image = "rbxassetid://8992290714"
+SolarUIV2._2_2.ImageTransparency = 0.900
+SolarUIV2._2_2.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_19.Name = "scale"
+SolarUIV2.scale_19.Parent = SolarUIV2._2_2
+
+SolarUIV2.corner_18.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_18.Name = "corner"
+SolarUIV2.corner_18.Parent = SolarUIV2._2_2
+
+SolarUIV2.header_9.Name = "header"
+SolarUIV2.header_9.Parent = SolarUIV2._2_2
+SolarUIV2.header_9.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_9.BackgroundTransparency = 1.000
+SolarUIV2.header_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_9.BorderSizePixel = 0
+SolarUIV2.header_9.Position = UDim2.new(0.4972772, 0, 0.0274509806, 0)
+SolarUIV2.header_9.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.header_9.ZIndex = 2
+SolarUIV2.header_9.Font = Enum.Font.Unknown
+SolarUIV2.header_9.Text = "Infinity Yield"
+SolarUIV2.header_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_9.TextSize = 36.000
+SolarUIV2.header_9.TextTransparency = 0.100
+
+SolarUIV2.Button_2.Name = "Button"
+SolarUIV2.Button_2.Parent = SolarUIV2._2_2
+SolarUIV2.Button_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Button_2.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Button_2.BorderSizePixel = 0
+SolarUIV2.Button_2.Position = UDim2.new(0.65781033, 60, 0.871078432, 0)
+SolarUIV2.Button_2.Size = UDim2.new(0, 48, 0, 48)
+SolarUIV2.Button_2.Image = "rbxassetid://16255699706"
+SolarUIV2.Button_2.ImageTransparency = 0.800
+SolarUIV2.Button_2.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_19.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_19.Name = "corner"
+SolarUIV2.corner_19.Parent = SolarUIV2.Button_2
+
+SolarUIV2.shadow_4.Name = "shadow"
+SolarUIV2.shadow_4.Parent = SolarUIV2.Button_2
+SolarUIV2.shadow_4.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_4.BackgroundTransparency = 1.000
+SolarUIV2.shadow_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_4.BorderSizePixel = 0
+SolarUIV2.shadow_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_4.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_4.ZIndex = 0
+SolarUIV2.shadow_4.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_4.ImageTransparency = 0.800
+SolarUIV2.shadow_4.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_4.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_20.Name = "scale"
+SolarUIV2.scale_20.Parent = SolarUIV2.Button_2
+
+SolarUIV2.buttons_6.Name = "buttons"
+SolarUIV2.buttons_6.Parent = SolarUIV2.Button_2
+SolarUIV2.buttons_6.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_6.BackgroundTransparency = 1.000
+SolarUIV2.buttons_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_6.BorderSizePixel = 0
+SolarUIV2.buttons_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_6.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.ExeScript_2.Name = "ExeScript"
+SolarUIV2.ExeScript_2.Parent = SolarUIV2.buttons_6
+SolarUIV2.ExeScript_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ExeScript_2.BackgroundTransparency = 1.000
+SolarUIV2.ExeScript_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ExeScript_2.BorderSizePixel = 0
+SolarUIV2.ExeScript_2.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ExeScript_2.AutoButtonColor = false
+
+SolarUIV2.icon_9.Name = "icon"
+SolarUIV2.icon_9.Parent = SolarUIV2.ExeScript_2
+SolarUIV2.icon_9.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_9.BackgroundTransparency = 1.000
+SolarUIV2.icon_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_9.BorderSizePixel = 0
+SolarUIV2.icon_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_9.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_9.Image = "rbxassetid://10734923214"
+SolarUIV2.icon_9.ImageTransparency = 0.200
+SolarUIV2.icon_9.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_21.Name = "scale"
+SolarUIV2.scale_21.Parent = SolarUIV2.icon_9
+
+SolarUIV2.corner_20.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_20.Name = "corner"
+SolarUIV2.corner_20.Parent = SolarUIV2.ExeScript_2
+
+SolarUIV2.gradient_19.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_19.Name = "gradient"
+SolarUIV2.gradient_19.Parent = SolarUIV2.ExeScript_2
+
+SolarUIV2.list_7.Name = "list"
+SolarUIV2.list_7.Parent = SolarUIV2.buttons_6
+SolarUIV2.list_7.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_7.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_7.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_7.Padding = UDim.new(0, 10)
+
+SolarUIV2.description_2.Name = "description"
+SolarUIV2.description_2.Parent = SolarUIV2._2_2
+SolarUIV2.description_2.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.description_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.description_2.BackgroundTransparency = 1.000
+SolarUIV2.description_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.description_2.BorderSizePixel = 0
+SolarUIV2.description_2.Position = UDim2.new(0.492137134, 0, 0.184313729, 0)
+SolarUIV2.description_2.Size = UDim2.new(0.845633388, 0, 0.43578431, 40)
+SolarUIV2.description_2.ZIndex = 2
+SolarUIV2.description_2.Font = Enum.Font.Unknown
+SolarUIV2.description_2.Text = "Panel de commande pour executer des commandes admin sur roblox."
+SolarUIV2.description_2.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.description_2.TextSize = 20.000
+SolarUIV2.description_2.TextTransparency = 0.100
+SolarUIV2.description_2.TextWrapped = true
+SolarUIV2.description_2.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.credit_2.Name = "credit"
+SolarUIV2.credit_2.Parent = SolarUIV2._2_2
+SolarUIV2.credit_2.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.credit_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.credit_2.BackgroundTransparency = 1.000
+SolarUIV2.credit_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.credit_2.BorderSizePixel = 0
+SolarUIV2.credit_2.Position = UDim2.new(0.407991469, 0, 0.792156875, 0)
+SolarUIV2.credit_2.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.credit_2.ZIndex = 2
+SolarUIV2.credit_2.Font = Enum.Font.Unknown
+SolarUIV2.credit_2.Text = "By : EdgeIY"
+SolarUIV2.credit_2.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.credit_2.TextSize = 24.000
+SolarUIV2.credit_2.TextTransparency = 0.100
+SolarUIV2.credit_2.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.Ligne2.Name = "Ligne2"
+SolarUIV2.Ligne2.Parent = SolarUIV2.ScrollingFrame
+SolarUIV2.Ligne2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Ligne2.BackgroundTransparency = 1.000
+SolarUIV2.Ligne2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Ligne2.BorderSizePixel = 0
+SolarUIV2.Ligne2.Size = UDim2.new(0, 593, 0, 255)
+
+SolarUIV2._1_3.Name = "1"
+SolarUIV2._1_3.Parent = SolarUIV2.Ligne2
+SolarUIV2._1_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._1_3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2._1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_3.BorderSizePixel = 0
+SolarUIV2._1_3.Position = UDim2.new(0.159806103, 60, 0.52633059, 0)
+SolarUIV2._1_3.Size = UDim2.new(0, 280, 0, 255)
+SolarUIV2._1_3.Image = "rbxassetid://8992292705"
+SolarUIV2._1_3.ImageTransparency = 0.900
+SolarUIV2._1_3.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_22.Name = "scale"
+SolarUIV2.scale_22.Parent = SolarUIV2._1_3
+
+SolarUIV2.corner_21.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_21.Name = "corner"
+SolarUIV2.corner_21.Parent = SolarUIV2._1_3
+
+SolarUIV2.header_10.Name = "header"
+SolarUIV2.header_10.Parent = SolarUIV2._1_3
+SolarUIV2.header_10.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_10.BackgroundTransparency = 1.000
+SolarUIV2.header_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_10.BorderSizePixel = 0
+SolarUIV2.header_10.Position = UDim2.new(0.4972772, 0, 0.0274509806, 0)
+SolarUIV2.header_10.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.header_10.ZIndex = 2
+SolarUIV2.header_10.Font = Enum.Font.Unknown
+SolarUIV2.header_10.Text = "ACS Editor V2"
+SolarUIV2.header_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_10.TextSize = 36.000
+SolarUIV2.header_10.TextTransparency = 0.100
+
+SolarUIV2.Button_3.Name = "Button"
+SolarUIV2.Button_3.Parent = SolarUIV2._1_3
+SolarUIV2.Button_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Button_3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Button_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Button_3.BorderSizePixel = 0
+SolarUIV2.Button_3.Position = UDim2.new(0.65781033, 60, 0.871078432, 0)
+SolarUIV2.Button_3.Size = UDim2.new(0, 48, 0, 48)
+SolarUIV2.Button_3.Image = "rbxassetid://16255699706"
+SolarUIV2.Button_3.ImageTransparency = 0.800
+SolarUIV2.Button_3.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_22.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_22.Name = "corner"
+SolarUIV2.corner_22.Parent = SolarUIV2.Button_3
+
+SolarUIV2.shadow_5.Name = "shadow"
+SolarUIV2.shadow_5.Parent = SolarUIV2.Button_3
+SolarUIV2.shadow_5.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_5.BackgroundTransparency = 1.000
+SolarUIV2.shadow_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_5.BorderSizePixel = 0
+SolarUIV2.shadow_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_5.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_5.ZIndex = 0
+SolarUIV2.shadow_5.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_5.ImageTransparency = 0.800
+SolarUIV2.shadow_5.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_5.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_23.Name = "scale"
+SolarUIV2.scale_23.Parent = SolarUIV2.Button_3
+
+SolarUIV2.buttons_7.Name = "buttons"
+SolarUIV2.buttons_7.Parent = SolarUIV2.Button_3
+SolarUIV2.buttons_7.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_7.BackgroundTransparency = 1.000
+SolarUIV2.buttons_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_7.BorderSizePixel = 0
+SolarUIV2.buttons_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_7.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.ExeScript_3.Name = "ExeScript"
+SolarUIV2.ExeScript_3.Parent = SolarUIV2.buttons_7
+SolarUIV2.ExeScript_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ExeScript_3.BackgroundTransparency = 1.000
+SolarUIV2.ExeScript_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ExeScript_3.BorderSizePixel = 0
+SolarUIV2.ExeScript_3.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ExeScript_3.AutoButtonColor = false
+
+SolarUIV2.icon_10.Name = "icon"
+SolarUIV2.icon_10.Parent = SolarUIV2.ExeScript_3
+SolarUIV2.icon_10.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_10.BackgroundTransparency = 1.000
+SolarUIV2.icon_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_10.BorderSizePixel = 0
+SolarUIV2.icon_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_10.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_10.Image = "rbxassetid://10734923214"
+SolarUIV2.icon_10.ImageTransparency = 0.200
+SolarUIV2.icon_10.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_24.Name = "scale"
+SolarUIV2.scale_24.Parent = SolarUIV2.icon_10
+
+SolarUIV2.corner_23.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_23.Name = "corner"
+SolarUIV2.corner_23.Parent = SolarUIV2.ExeScript_3
+
+SolarUIV2.gradient_20.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_20.Name = "gradient"
+SolarUIV2.gradient_20.Parent = SolarUIV2.ExeScript_3
+
+SolarUIV2.list_8.Name = "list"
+SolarUIV2.list_8.Parent = SolarUIV2.buttons_7
+SolarUIV2.list_8.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_8.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_8.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_8.Padding = UDim.new(0, 10)
+
+SolarUIV2.description_3.Name = "description"
+SolarUIV2.description_3.Parent = SolarUIV2._1_3
+SolarUIV2.description_3.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.description_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.description_3.BackgroundTransparency = 1.000
+SolarUIV2.description_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.description_3.BorderSizePixel = 0
+SolarUIV2.description_3.Position = UDim2.new(0.492136806, 0, 0.184313729, 0)
+SolarUIV2.description_3.Size = UDim2.new(0.845632732, 0, 0.431372553, 40)
+SolarUIV2.description_3.ZIndex = 2
+SolarUIV2.description_3.Font = Enum.Font.Unknown
+SolarUIV2.description_3.Text = "Permet de changer les valeurs des armes sur ACS Engine"
+SolarUIV2.description_3.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.description_3.TextSize = 20.000
+SolarUIV2.description_3.TextTransparency = 0.100
+SolarUIV2.description_3.TextWrapped = true
+SolarUIV2.description_3.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.credit_3.Name = "credit"
+SolarUIV2.credit_3.Parent = SolarUIV2._1_3
+SolarUIV2.credit_3.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.credit_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.credit_3.BackgroundTransparency = 1.000
+SolarUIV2.credit_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.credit_3.BorderSizePixel = 0
+SolarUIV2.credit_3.Position = UDim2.new(0.407991469, 0, 0.792156875, 0)
+SolarUIV2.credit_3.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.credit_3.ZIndex = 2
+SolarUIV2.credit_3.Font = Enum.Font.Unknown
+SolarUIV2.credit_3.Text = "By : Gattoi"
+SolarUIV2.credit_3.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.credit_3.TextSize = 24.000
+SolarUIV2.credit_3.TextTransparency = 0.100
+SolarUIV2.credit_3.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2._2_3.Name = "2"
+SolarUIV2._2_3.Parent = SolarUIV2.Ligne2
+SolarUIV2._2_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._2_3.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2._2_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._2_3.BorderSizePixel = 0
+SolarUIV2._2_3.Position = UDim2.new(0.653903902, 60, 0.52633059, 0)
+SolarUIV2._2_3.Size = UDim2.new(0, 280, 0, 255)
+SolarUIV2._2_3.Image = "rbxassetid://8992290314"
+SolarUIV2._2_3.ImageTransparency = 0.900
+SolarUIV2._2_3.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_25.Name = "scale"
+SolarUIV2.scale_25.Parent = SolarUIV2._2_3
+
+SolarUIV2.corner_24.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_24.Name = "corner"
+SolarUIV2.corner_24.Parent = SolarUIV2._2_3
+
+SolarUIV2.header_11.Name = "header"
+SolarUIV2.header_11.Parent = SolarUIV2._2_3
+SolarUIV2.header_11.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_11.BackgroundTransparency = 1.000
+SolarUIV2.header_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_11.BorderSizePixel = 0
+SolarUIV2.header_11.Position = UDim2.new(0.4972772, 0, 0.0274509806, 0)
+SolarUIV2.header_11.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.header_11.ZIndex = 2
+SolarUIV2.header_11.Font = Enum.Font.Unknown
+SolarUIV2.header_11.Text = "GhostHub"
+SolarUIV2.header_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_11.TextSize = 36.000
+SolarUIV2.header_11.TextTransparency = 0.100
+
+SolarUIV2.Button_4.Name = "Button"
+SolarUIV2.Button_4.Parent = SolarUIV2._2_3
+SolarUIV2.Button_4.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Button_4.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Button_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Button_4.BorderSizePixel = 0
+SolarUIV2.Button_4.Position = UDim2.new(0.65781033, 60, 0.871078432, 0)
+SolarUIV2.Button_4.Size = UDim2.new(0, 48, 0, 48)
+SolarUIV2.Button_4.Image = "rbxassetid://16255699706"
+SolarUIV2.Button_4.ImageTransparency = 0.800
+SolarUIV2.Button_4.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_25.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_25.Name = "corner"
+SolarUIV2.corner_25.Parent = SolarUIV2.Button_4
+
+SolarUIV2.shadow_6.Name = "shadow"
+SolarUIV2.shadow_6.Parent = SolarUIV2.Button_4
+SolarUIV2.shadow_6.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_6.BackgroundTransparency = 1.000
+SolarUIV2.shadow_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_6.BorderSizePixel = 0
+SolarUIV2.shadow_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_6.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_6.ZIndex = 0
+SolarUIV2.shadow_6.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_6.ImageTransparency = 0.800
+SolarUIV2.shadow_6.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_6.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_26.Name = "scale"
+SolarUIV2.scale_26.Parent = SolarUIV2.Button_4
+
+SolarUIV2.buttons_8.Name = "buttons"
+SolarUIV2.buttons_8.Parent = SolarUIV2.Button_4
+SolarUIV2.buttons_8.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_8.BackgroundTransparency = 1.000
+SolarUIV2.buttons_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_8.BorderSizePixel = 0
+SolarUIV2.buttons_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_8.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.ExeScript_4.Name = "ExeScript"
+SolarUIV2.ExeScript_4.Parent = SolarUIV2.buttons_8
+SolarUIV2.ExeScript_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ExeScript_4.BackgroundTransparency = 1.000
+SolarUIV2.ExeScript_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ExeScript_4.BorderSizePixel = 0
+SolarUIV2.ExeScript_4.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ExeScript_4.AutoButtonColor = false
+
+SolarUIV2.icon_11.Name = "icon"
+SolarUIV2.icon_11.Parent = SolarUIV2.ExeScript_4
+SolarUIV2.icon_11.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_11.BackgroundTransparency = 1.000
+SolarUIV2.icon_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_11.BorderSizePixel = 0
+SolarUIV2.icon_11.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_11.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_11.Image = "rbxassetid://10734923214"
+SolarUIV2.icon_11.ImageTransparency = 0.200
+SolarUIV2.icon_11.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_27.Name = "scale"
+SolarUIV2.scale_27.Parent = SolarUIV2.icon_11
+
+SolarUIV2.corner_26.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_26.Name = "corner"
+SolarUIV2.corner_26.Parent = SolarUIV2.ExeScript_4
+
+SolarUIV2.gradient_21.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_21.Name = "gradient"
+SolarUIV2.gradient_21.Parent = SolarUIV2.ExeScript_4
+
+SolarUIV2.list_9.Name = "list"
+SolarUIV2.list_9.Parent = SolarUIV2.buttons_8
+SolarUIV2.list_9.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_9.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_9.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_9.Padding = UDim.new(0, 10)
+
+SolarUIV2.description_4.Name = "description"
+SolarUIV2.description_4.Parent = SolarUIV2._2_3
+SolarUIV2.description_4.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.description_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.description_4.BackgroundTransparency = 1.000
+SolarUIV2.description_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.description_4.BorderSizePixel = 0
+SolarUIV2.description_4.Position = UDim2.new(0.492137134, 0, 0.184313729, 0)
+SolarUIV2.description_4.Size = UDim2.new(0.845632911, 0, 0.431372553, 40)
+SolarUIV2.description_4.ZIndex = 2
+SolarUIV2.description_4.Font = Enum.Font.Unknown
+SolarUIV2.description_4.Text = "Un panel qui regroupe des scripts pour des jeux et les script crée par le développeur"
+SolarUIV2.description_4.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.description_4.TextSize = 20.000
+SolarUIV2.description_4.TextTransparency = 0.100
+SolarUIV2.description_4.TextWrapped = true
+SolarUIV2.description_4.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.credit_4.Name = "credit"
+SolarUIV2.credit_4.Parent = SolarUIV2._2_3
+SolarUIV2.credit_4.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.credit_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.credit_4.BackgroundTransparency = 1.000
+SolarUIV2.credit_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.credit_4.BorderSizePixel = 0
+SolarUIV2.credit_4.Position = UDim2.new(0.407991469, 0, 0.792156875, 0)
+SolarUIV2.credit_4.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.credit_4.ZIndex = 2
+SolarUIV2.credit_4.Font = Enum.Font.Unknown
+SolarUIV2.credit_4.Text = "By : GhostPlayer352"
+SolarUIV2.credit_4.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.credit_4.TextSize = 22.000
+SolarUIV2.credit_4.TextTransparency = 0.100
+SolarUIV2.credit_4.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.Ligne3.Name = "Ligne3"
+SolarUIV2.Ligne3.Parent = SolarUIV2.ScrollingFrame
+SolarUIV2.Ligne3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Ligne3.BackgroundTransparency = 1.000
+SolarUIV2.Ligne3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Ligne3.BorderSizePixel = 0
+SolarUIV2.Ligne3.Size = UDim2.new(0, 593, 0, 255)
+
+SolarUIV2._1_4.Name = "1"
+SolarUIV2._1_4.Parent = SolarUIV2.Ligne3
+SolarUIV2._1_4.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._1_4.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2._1_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_4.BorderSizePixel = 0
+SolarUIV2._1_4.Position = UDim2.new(0.159806103, 60, 0.52633059, 0)
+SolarUIV2._1_4.Size = UDim2.new(0, 280, 0, 255)
+SolarUIV2._1_4.Image = "rbxassetid://8992291444"
+SolarUIV2._1_4.ImageTransparency = 0.900
+SolarUIV2._1_4.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_28.Name = "scale"
+SolarUIV2.scale_28.Parent = SolarUIV2._1_4
+
+SolarUIV2.corner_27.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_27.Name = "corner"
+SolarUIV2.corner_27.Parent = SolarUIV2._1_4
+
+SolarUIV2.header_12.Name = "header"
+SolarUIV2.header_12.Parent = SolarUIV2._1_4
+SolarUIV2.header_12.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_12.BackgroundTransparency = 1.000
+SolarUIV2.header_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_12.BorderSizePixel = 0
+SolarUIV2.header_12.Position = UDim2.new(0.4972772, 0, 0.0274509806, 0)
+SolarUIV2.header_12.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.header_12.ZIndex = 2
+SolarUIV2.header_12.Font = Enum.Font.Unknown
+SolarUIV2.header_12.Text = "VapeV4"
+SolarUIV2.header_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_12.TextSize = 36.000
+SolarUIV2.header_12.TextTransparency = 0.100
+
+SolarUIV2.Button_5.Name = "Button"
+SolarUIV2.Button_5.Parent = SolarUIV2._1_4
+SolarUIV2.Button_5.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Button_5.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Button_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Button_5.BorderSizePixel = 0
+SolarUIV2.Button_5.Position = UDim2.new(0.65781033, 60, 0.871078432, 0)
+SolarUIV2.Button_5.Size = UDim2.new(0, 48, 0, 48)
+SolarUIV2.Button_5.Image = "rbxassetid://16255699706"
+SolarUIV2.Button_5.ImageTransparency = 0.800
+SolarUIV2.Button_5.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_28.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_28.Name = "corner"
+SolarUIV2.corner_28.Parent = SolarUIV2.Button_5
+
+SolarUIV2.shadow_7.Name = "shadow"
+SolarUIV2.shadow_7.Parent = SolarUIV2.Button_5
+SolarUIV2.shadow_7.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_7.BackgroundTransparency = 1.000
+SolarUIV2.shadow_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_7.BorderSizePixel = 0
+SolarUIV2.shadow_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_7.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_7.ZIndex = 0
+SolarUIV2.shadow_7.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_7.ImageTransparency = 0.800
+SolarUIV2.shadow_7.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_7.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_29.Name = "scale"
+SolarUIV2.scale_29.Parent = SolarUIV2.Button_5
+
+SolarUIV2.buttons_9.Name = "buttons"
+SolarUIV2.buttons_9.Parent = SolarUIV2.Button_5
+SolarUIV2.buttons_9.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_9.BackgroundTransparency = 1.000
+SolarUIV2.buttons_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_9.BorderSizePixel = 0
+SolarUIV2.buttons_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_9.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.ExeScript_5.Name = "ExeScript"
+SolarUIV2.ExeScript_5.Parent = SolarUIV2.buttons_9
+SolarUIV2.ExeScript_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ExeScript_5.BackgroundTransparency = 1.000
+SolarUIV2.ExeScript_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ExeScript_5.BorderSizePixel = 0
+SolarUIV2.ExeScript_5.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ExeScript_5.AutoButtonColor = false
+
+SolarUIV2.icon_12.Name = "icon"
+SolarUIV2.icon_12.Parent = SolarUIV2.ExeScript_5
+SolarUIV2.icon_12.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_12.BackgroundTransparency = 1.000
+SolarUIV2.icon_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_12.BorderSizePixel = 0
+SolarUIV2.icon_12.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_12.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_12.Image = "rbxassetid://10734923214"
+SolarUIV2.icon_12.ImageTransparency = 0.200
+SolarUIV2.icon_12.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_30.Name = "scale"
+SolarUIV2.scale_30.Parent = SolarUIV2.icon_12
+
+SolarUIV2.corner_29.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_29.Name = "corner"
+SolarUIV2.corner_29.Parent = SolarUIV2.ExeScript_5
+
+SolarUIV2.gradient_22.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_22.Name = "gradient"
+SolarUIV2.gradient_22.Parent = SolarUIV2.ExeScript_5
+
+SolarUIV2.list_10.Name = "list"
+SolarUIV2.list_10.Parent = SolarUIV2.buttons_9
+SolarUIV2.list_10.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_10.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_10.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_10.Padding = UDim.new(0, 10)
+
+SolarUIV2.description_5.Name = "description"
+SolarUIV2.description_5.Parent = SolarUIV2._1_4
+SolarUIV2.description_5.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.description_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.description_5.BackgroundTransparency = 1.000
+SolarUIV2.description_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.description_5.BorderSizePixel = 0
+SolarUIV2.description_5.Position = UDim2.new(0.492136806, 0, 0.184313729, 0)
+SolarUIV2.description_5.Size = UDim2.new(0.845632732, 0, 0.431372553, 40)
+SolarUIV2.description_5.ZIndex = 2
+SolarUIV2.description_5.Font = Enum.Font.Unknown
+SolarUIV2.description_5.Text = "L'un des meilleurs ESP et Aimbot et plein d'autres utilitées qui est indetectable "
+SolarUIV2.description_5.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.description_5.TextSize = 24.000
+SolarUIV2.description_5.TextTransparency = 0.100
+SolarUIV2.description_5.TextWrapped = true
+SolarUIV2.description_5.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.credit_5.Name = "credit"
+SolarUIV2.credit_5.Parent = SolarUIV2._1_4
+SolarUIV2.credit_5.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.credit_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.credit_5.BackgroundTransparency = 1.000
+SolarUIV2.credit_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.credit_5.BorderSizePixel = 0
+SolarUIV2.credit_5.Position = UDim2.new(0.407991469, 0, 0.792156875, 0)
+SolarUIV2.credit_5.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.credit_5.ZIndex = 2
+SolarUIV2.credit_5.Font = Enum.Font.Unknown
+SolarUIV2.credit_5.Text = "By : 7GrandDadPGN"
+SolarUIV2.credit_5.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.credit_5.TextSize = 22.000
+SolarUIV2.credit_5.TextTransparency = 0.100
+SolarUIV2.credit_5.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2._2_4.Name = "2"
+SolarUIV2._2_4.Parent = SolarUIV2.Ligne3
+SolarUIV2._2_4.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._2_4.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2._2_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._2_4.BorderSizePixel = 0
+SolarUIV2._2_4.Position = UDim2.new(0.653903902, 60, 0.52633059, 0)
+SolarUIV2._2_4.Size = UDim2.new(0, 280, 0, 255)
+SolarUIV2._2_4.Image = "rbxassetid://8992292381"
+SolarUIV2._2_4.ImageTransparency = 0.900
+SolarUIV2._2_4.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_31.Name = "scale"
+SolarUIV2.scale_31.Parent = SolarUIV2._2_4
+
+SolarUIV2.corner_30.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_30.Name = "corner"
+SolarUIV2.corner_30.Parent = SolarUIV2._2_4
+
+SolarUIV2.header_13.Name = "header"
+SolarUIV2.header_13.Parent = SolarUIV2._2_4
+SolarUIV2.header_13.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_13.BackgroundTransparency = 1.000
+SolarUIV2.header_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_13.BorderSizePixel = 0
+SolarUIV2.header_13.Position = UDim2.new(0.4972772, 0, 0.0274509806, 0)
+SolarUIV2.header_13.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.header_13.ZIndex = 2
+SolarUIV2.header_13.Font = Enum.Font.Unknown
+SolarUIV2.header_13.Text = "N/A"
+SolarUIV2.header_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_13.TextSize = 36.000
+SolarUIV2.header_13.TextTransparency = 0.100
+
+SolarUIV2.Button_6.Name = "Button"
+SolarUIV2.Button_6.Parent = SolarUIV2._2_4
+SolarUIV2.Button_6.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Button_6.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Button_6.BorderSizePixel = 0
+SolarUIV2.Button_6.Position = UDim2.new(0.65781033, 60, 0.871078432, 0)
+SolarUIV2.Button_6.Size = UDim2.new(0, 48, 0, 48)
+SolarUIV2.Button_6.Image = "rbxassetid://16255699706"
+SolarUIV2.Button_6.ImageTransparency = 0.800
+SolarUIV2.Button_6.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.corner_31.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_31.Name = "corner"
+SolarUIV2.corner_31.Parent = SolarUIV2.Button_6
+
+SolarUIV2.shadow_8.Name = "shadow"
+SolarUIV2.shadow_8.Parent = SolarUIV2.Button_6
+SolarUIV2.shadow_8.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.shadow_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.shadow_8.BackgroundTransparency = 1.000
+SolarUIV2.shadow_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.shadow_8.BorderSizePixel = 0
+SolarUIV2.shadow_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.shadow_8.Size = UDim2.new(1, 50, 1, 50)
+SolarUIV2.shadow_8.ZIndex = 0
+SolarUIV2.shadow_8.Image = "rbxassetid://16264499577"
+SolarUIV2.shadow_8.ImageTransparency = 0.800
+SolarUIV2.shadow_8.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.shadow_8.SliceCenter = Rect.new(379, 379, 379, 379)
+
+SolarUIV2.scale_32.Name = "scale"
+SolarUIV2.scale_32.Parent = SolarUIV2.Button_6
+
+SolarUIV2.buttons_10.Name = "buttons"
+SolarUIV2.buttons_10.Parent = SolarUIV2.Button_6
+SolarUIV2.buttons_10.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.buttons_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.buttons_10.BackgroundTransparency = 1.000
+SolarUIV2.buttons_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.buttons_10.BorderSizePixel = 0
+SolarUIV2.buttons_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.buttons_10.Size = UDim2.new(1, 0, 1, 0)
+
+SolarUIV2.ExeScript_6.Name = "ExeScript"
+SolarUIV2.ExeScript_6.Parent = SolarUIV2.buttons_10
+SolarUIV2.ExeScript_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ExeScript_6.BackgroundTransparency = 1.000
+SolarUIV2.ExeScript_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ExeScript_6.BorderSizePixel = 0
+SolarUIV2.ExeScript_6.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ExeScript_6.AutoButtonColor = false
+
+SolarUIV2.icon_13.Name = "icon"
+SolarUIV2.icon_13.Parent = SolarUIV2.ExeScript_6
+SolarUIV2.icon_13.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_13.BackgroundTransparency = 1.000
+SolarUIV2.icon_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_13.BorderSizePixel = 0
+SolarUIV2.icon_13.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_13.Size = UDim2.new(0, 24, 0, 24)
+SolarUIV2.icon_13.Image = "rbxassetid://10734923214"
+SolarUIV2.icon_13.ImageTransparency = 0.200
+SolarUIV2.icon_13.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_33.Name = "scale"
+SolarUIV2.scale_33.Parent = SolarUIV2.icon_13
+
+SolarUIV2.corner_32.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_32.Name = "corner"
+SolarUIV2.corner_32.Parent = SolarUIV2.ExeScript_6
+
+SolarUIV2.gradient_23.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.32)}
+SolarUIV2.gradient_23.Name = "gradient"
+SolarUIV2.gradient_23.Parent = SolarUIV2.ExeScript_6
+
+SolarUIV2.list_11.Name = "list"
+SolarUIV2.list_11.Parent = SolarUIV2.buttons_10
+SolarUIV2.list_11.HorizontalAlignment = Enum.HorizontalAlignment.Center
+SolarUIV2.list_11.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_11.VerticalAlignment = Enum.VerticalAlignment.Center
+SolarUIV2.list_11.Padding = UDim.new(0, 10)
+
+SolarUIV2.description_6.Name = "description"
+SolarUIV2.description_6.Parent = SolarUIV2._2_4
+SolarUIV2.description_6.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.description_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.description_6.BackgroundTransparency = 1.000
+SolarUIV2.description_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.description_6.BorderSizePixel = 0
+SolarUIV2.description_6.Position = UDim2.new(0.49727717, 0, 0.184313729, 0)
+SolarUIV2.description_6.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.description_6.ZIndex = 2
+SolarUIV2.description_6.Font = Enum.Font.Unknown
+SolarUIV2.description_6.Text = "N/A"
+SolarUIV2.description_6.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.description_6.TextSize = 24.000
+SolarUIV2.description_6.TextTransparency = 0.100
+
+SolarUIV2.credit_6.Name = "credit"
+SolarUIV2.credit_6.Parent = SolarUIV2._2_4
+SolarUIV2.credit_6.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.credit_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.credit_6.BackgroundTransparency = 1.000
+SolarUIV2.credit_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.credit_6.BorderSizePixel = 0
+SolarUIV2.credit_6.Position = UDim2.new(0.407991469, 0, 0.792156875, 0)
+SolarUIV2.credit_6.Size = UDim2.new(0.677341998, 0, 0, 40)
+SolarUIV2.credit_6.ZIndex = 2
+SolarUIV2.credit_6.Font = Enum.Font.Unknown
+SolarUIV2.credit_6.Text = "By : N/A"
+SolarUIV2.credit_6.TextColor3 = Color3.fromRGB(148, 148, 148)
+SolarUIV2.credit_6.TextSize = 24.000
+SolarUIV2.credit_6.TextTransparency = 0.100
+SolarUIV2.credit_6.TextXAlignment = Enum.TextXAlignment.Left
+
+SolarUIV2.Setting.Name = "Setting"
+SolarUIV2.Setting.Parent = SolarUIV2.Panel
+SolarUIV2.Setting.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Setting.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Setting.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Setting.BorderSizePixel = 0
+SolarUIV2.Setting.Position = UDim2.new(0.45256409, 60, 0.5, 0)
+SolarUIV2.Setting.Size = UDim2.new(0, 624, 0, 338)
+SolarUIV2.Setting.Visible = false
+SolarUIV2.Setting.Image = "rbxassetid://16255699706"
+SolarUIV2.Setting.ImageTransparency = 0.800
+SolarUIV2.Setting.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_34.Name = "scale"
+SolarUIV2.scale_34.Parent = SolarUIV2.Setting
+
+SolarUIV2.corner_33.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_33.Name = "corner"
+SolarUIV2.corner_33.Parent = SolarUIV2.Setting
+
+SolarUIV2.Frame.Parent = SolarUIV2.Setting
+SolarUIV2.Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Frame.BackgroundTransparency = 1.000
+SolarUIV2.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Frame.BorderSizePixel = 0
+SolarUIV2.Frame.Position = UDim2.new(0.0384615399, 0, 0.0710059181, 0)
+SolarUIV2.Frame.Size = UDim2.new(0, 574, 0, 296)
+
+SolarUIV2.TitleChange.Name = "TitleChange"
+SolarUIV2.TitleChange.Parent = SolarUIV2.Frame
+SolarUIV2.TitleChange.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.TitleChange.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2.TitleChange.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.TitleChange.BorderSizePixel = 0
+SolarUIV2.TitleChange.Position = UDim2.new(0.397013694, 60, 0.0692567602, 0)
+SolarUIV2.TitleChange.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2.TitleChange.Image = "rbxassetid://16255699706"
+SolarUIV2.TitleChange.ImageTransparency = 0.800
+SolarUIV2.TitleChange.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_35.Name = "scale"
+SolarUIV2.scale_35.Parent = SolarUIV2.TitleChange
+
+SolarUIV2.corner_34.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_34.Name = "corner"
+SolarUIV2.corner_34.Parent = SolarUIV2.TitleChange
+
+SolarUIV2.header_14.Name = "header"
+SolarUIV2.header_14.Parent = SolarUIV2.TitleChange
+SolarUIV2.header_14.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_14.BackgroundTransparency = 1.000
+SolarUIV2.header_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_14.BorderSizePixel = 0
+SolarUIV2.header_14.Position = UDim2.new(0.367915332, 0, 0.100122787, 0)
+SolarUIV2.header_14.Size = UDim2.new(0.704400122, 0, 0, 40)
+SolarUIV2.header_14.ZIndex = 2
+SolarUIV2.header_14.Font = Enum.Font.Unknown
+SolarUIV2.header_14.Text = "Solar Title Color Change"
+SolarUIV2.header_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_14.TextSize = 36.000
+SolarUIV2.header_14.TextTransparency = 0.100
+
+SolarUIV2.Element.Name = "Element"
+SolarUIV2.Element.Parent = SolarUIV2.TitleChange
+SolarUIV2.Element.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Element.BackgroundTransparency = 1.000
+SolarUIV2.Element.Position = UDim2.new(0.899999976, 0, 0.5, 0)
+SolarUIV2.Element.Size = UDim2.new(0, 60, 0, 36)
+SolarUIV2.Element.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Element.ImageRectOffset = Vector2.new(287, 0)
+SolarUIV2.Element.ImageRectSize = Vector2.new(36, 36)
+SolarUIV2.Element.ImageTransparency = 0.300
+SolarUIV2.Element.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Element.SliceCenter = Rect.new(18, 18, 18, 18)
+
+SolarUIV2.Knob.Name = "Knob"
+SolarUIV2.Knob.Parent = SolarUIV2.Element
+SolarUIV2.Knob.AnchorPoint = Vector2.new(0, 0.5)
+SolarUIV2.Knob.BackgroundTransparency = 1.000
+SolarUIV2.Knob.Position = UDim2.new(1, -39, 0.5, 0)
+SolarUIV2.Knob.Size = UDim2.new(0, 42, 0, 42)
+SolarUIV2.Knob.ZIndex = 2
+SolarUIV2.Knob.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Knob.ImageRectOffset = Vector2.new(0, 208)
+SolarUIV2.Knob.ImageRectSize = Vector2.new(42, 42)
+
+SolarUIV2.Fill.Name = "Fill"
+SolarUIV2.Fill.Parent = SolarUIV2.Element
+SolarUIV2.Fill.BackgroundTransparency = 1.000
+SolarUIV2.Fill.Size = UDim2.new(1, 0, 1, 0)
+SolarUIV2.Fill.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Fill.ImageColor3 = Color3.fromRGB(0, 176, 111)
+SolarUIV2.Fill.ImageRectOffset = Vector2.new(324, 0)
+SolarUIV2.Fill.ImageRectSize = Vector2.new(36, 36)
+SolarUIV2.Fill.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Fill.SliceCenter = Rect.new(18, 18, 18, 18)
+
+SolarUIV2.list_12.Name = "list"
+SolarUIV2.list_12.Parent = SolarUIV2.Frame
+SolarUIV2.list_12.SortOrder = Enum.SortOrder.LayoutOrder
+SolarUIV2.list_12.Padding = UDim.new(0, 10)
+
+SolarUIV2.BTransparency.Name = "BTransparency"
+SolarUIV2.BTransparency.Parent = SolarUIV2.Frame
+SolarUIV2.BTransparency.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.BTransparency.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2.BTransparency.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.BTransparency.BorderSizePixel = 0
+SolarUIV2.BTransparency.Position = UDim2.new(0.397013694, 60, 0.0692567602, 0)
+SolarUIV2.BTransparency.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2.BTransparency.Image = "rbxassetid://16255699706"
+SolarUIV2.BTransparency.ImageTransparency = 0.800
+SolarUIV2.BTransparency.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_36.Name = "scale"
+SolarUIV2.scale_36.Parent = SolarUIV2.BTransparency
+
+SolarUIV2.corner_35.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_35.Name = "corner"
+SolarUIV2.corner_35.Parent = SolarUIV2.BTransparency
+
+SolarUIV2.header_15.Name = "header"
+SolarUIV2.header_15.Parent = SolarUIV2.BTransparency
+SolarUIV2.header_15.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_15.BackgroundTransparency = 1.000
+SolarUIV2.header_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_15.BorderSizePixel = 0
+SolarUIV2.header_15.Position = UDim2.new(0.367915332, 0, 0.100122787, 0)
+SolarUIV2.header_15.Size = UDim2.new(0.704400122, 0, 0, 40)
+SolarUIV2.header_15.ZIndex = 2
+SolarUIV2.header_15.Font = Enum.Font.Unknown
+SolarUIV2.header_15.Text = "Background Transparency "
+SolarUIV2.header_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_15.TextSize = 36.000
+SolarUIV2.header_15.TextTransparency = 0.100
+
+SolarUIV2.Element_2.Name = "Element"
+SolarUIV2.Element_2.Parent = SolarUIV2.BTransparency
+SolarUIV2.Element_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Element_2.BackgroundTransparency = 1.000
+SolarUIV2.Element_2.Position = UDim2.new(0.899999976, 0, 0.5, 0)
+SolarUIV2.Element_2.Size = UDim2.new(0, 60, 0, 36)
+SolarUIV2.Element_2.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Element_2.ImageRectOffset = Vector2.new(287, 0)
+SolarUIV2.Element_2.ImageRectSize = Vector2.new(36, 36)
+SolarUIV2.Element_2.ImageTransparency = 0.300
+SolarUIV2.Element_2.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Element_2.SliceCenter = Rect.new(18, 18, 18, 18)
+
+SolarUIV2.Knob_2.Name = "Knob"
+SolarUIV2.Knob_2.Parent = SolarUIV2.Element_2
+SolarUIV2.Knob_2.AnchorPoint = Vector2.new(0, 0.5)
+SolarUIV2.Knob_2.BackgroundTransparency = 1.000
+SolarUIV2.Knob_2.Position = UDim2.new(1, -39, 0.5, 0)
+SolarUIV2.Knob_2.Size = UDim2.new(0, 42, 0, 42)
+SolarUIV2.Knob_2.ZIndex = 2
+SolarUIV2.Knob_2.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Knob_2.ImageRectOffset = Vector2.new(0, 208)
+SolarUIV2.Knob_2.ImageRectSize = Vector2.new(42, 42)
+
+SolarUIV2.Fill_2.Name = "Fill"
+SolarUIV2.Fill_2.Parent = SolarUIV2.Element_2
+SolarUIV2.Fill_2.BackgroundTransparency = 1.000
+SolarUIV2.Fill_2.Size = UDim2.new(1, 0, 1, 0)
+SolarUIV2.Fill_2.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Fill_2.ImageColor3 = Color3.fromRGB(0, 176, 111)
+SolarUIV2.Fill_2.ImageRectOffset = Vector2.new(324, 0)
+SolarUIV2.Fill_2.ImageRectSize = Vector2.new(36, 36)
+SolarUIV2.Fill_2.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Fill_2.SliceCenter = Rect.new(18, 18, 18, 18)
+
+SolarUIV2.LDMode.Name = "L/DMode"
+SolarUIV2.LDMode.Parent = SolarUIV2.Frame
+SolarUIV2.LDMode.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.LDMode.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2.LDMode.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.LDMode.BorderSizePixel = 0
+SolarUIV2.LDMode.Position = UDim2.new(0.397013694, 60, 0.0692567602, 0)
+SolarUIV2.LDMode.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2.LDMode.Image = "rbxassetid://16255699706"
+SolarUIV2.LDMode.ImageTransparency = 0.800
+SolarUIV2.LDMode.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_37.Name = "scale"
+SolarUIV2.scale_37.Parent = SolarUIV2.LDMode
+
+SolarUIV2.corner_36.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_36.Name = "corner"
+SolarUIV2.corner_36.Parent = SolarUIV2.LDMode
+
+SolarUIV2.header_16.Name = "header"
+SolarUIV2.header_16.Parent = SolarUIV2.LDMode
+SolarUIV2.header_16.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_16.BackgroundTransparency = 1.000
+SolarUIV2.header_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_16.BorderSizePixel = 0
+SolarUIV2.header_16.Position = UDim2.new(0.367915332, 0, 0.100122787, 0)
+SolarUIV2.header_16.Size = UDim2.new(0.704400122, 0, 0, 40)
+SolarUIV2.header_16.ZIndex = 2
+SolarUIV2.header_16.Font = Enum.Font.Unknown
+SolarUIV2.header_16.Text = "Light / Dark Mode"
+SolarUIV2.header_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_16.TextSize = 36.000
+SolarUIV2.header_16.TextTransparency = 0.100
+
+SolarUIV2.Element_3.Name = "Element"
+SolarUIV2.Element_3.Parent = SolarUIV2.LDMode
+SolarUIV2.Element_3.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Element_3.BackgroundTransparency = 1.000
+SolarUIV2.Element_3.Position = UDim2.new(0.899999976, 0, 0.5, 0)
+SolarUIV2.Element_3.Size = UDim2.new(0, 60, 0, 36)
+SolarUIV2.Element_3.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Element_3.ImageRectOffset = Vector2.new(287, 0)
+SolarUIV2.Element_3.ImageRectSize = Vector2.new(36, 36)
+SolarUIV2.Element_3.ImageTransparency = 0.300
+SolarUIV2.Element_3.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Element_3.SliceCenter = Rect.new(18, 18, 18, 18)
+
+SolarUIV2.Knob_3.Name = "Knob"
+SolarUIV2.Knob_3.Parent = SolarUIV2.Element_3
+SolarUIV2.Knob_3.AnchorPoint = Vector2.new(0, 0.5)
+SolarUIV2.Knob_3.BackgroundTransparency = 1.000
+SolarUIV2.Knob_3.Position = UDim2.new(1, -39, 0.5, 0)
+SolarUIV2.Knob_3.Size = UDim2.new(0, 42, 0, 42)
+SolarUIV2.Knob_3.ZIndex = 2
+SolarUIV2.Knob_3.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Knob_3.ImageRectOffset = Vector2.new(0, 208)
+SolarUIV2.Knob_3.ImageRectSize = Vector2.new(42, 42)
+
+SolarUIV2.Fill_3.Name = "Fill"
+SolarUIV2.Fill_3.Parent = SolarUIV2.Element_3
+SolarUIV2.Fill_3.BackgroundTransparency = 1.000
+SolarUIV2.Fill_3.Size = UDim2.new(1, 0, 1, 0)
+SolarUIV2.Fill_3.Image = "rbxasset://textures/ui/ImageSet/InGameMenu/img_set_1x_1.png"
+SolarUIV2.Fill_3.ImageColor3 = Color3.fromRGB(0, 176, 111)
+SolarUIV2.Fill_3.ImageRectOffset = Vector2.new(324, 0)
+SolarUIV2.Fill_3.ImageRectSize = Vector2.new(36, 36)
+SolarUIV2.Fill_3.ScaleType = Enum.ScaleType.Slice
+SolarUIV2.Fill_3.SliceCenter = Rect.new(18, 18, 18, 18)
+
+SolarUIV2.Crefit.Name = "Crefit"
+SolarUIV2.Crefit.Parent = SolarUIV2.Frame
+SolarUIV2.Crefit.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Crefit.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2.Crefit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Crefit.BorderSizePixel = 0
+SolarUIV2.Crefit.Position = UDim2.new(0.397013694, 60, 0.0692567602, 0)
+SolarUIV2.Crefit.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2.Crefit.Image = "rbxassetid://16255699706"
+SolarUIV2.Crefit.ImageTransparency = 0.800
+SolarUIV2.Crefit.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_38.Name = "scale"
+SolarUIV2.scale_38.Parent = SolarUIV2.Crefit
+
+SolarUIV2.corner_37.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_37.Name = "corner"
+SolarUIV2.corner_37.Parent = SolarUIV2.Crefit
+
+SolarUIV2.header_17.Name = "header"
+SolarUIV2.header_17.Parent = SolarUIV2.Crefit
+SolarUIV2.header_17.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2.header_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_17.BackgroundTransparency = 1.000
+SolarUIV2.header_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.header_17.BorderSizePixel = 0
+SolarUIV2.header_17.Position = UDim2.new(0.320005953, 0, 0.100122787, 0)
+SolarUIV2.header_17.Size = UDim2.new(0.371647507, 0, 0, 40)
+SolarUIV2.header_17.ZIndex = 2
+SolarUIV2.header_17.Font = Enum.Font.Unknown
+SolarUIV2.header_17.Text = "Credits"
+SolarUIV2.header_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.header_17.TextSize = 36.000
+SolarUIV2.header_17.TextTransparency = 0.100
+
+SolarUIV2.ImageButton.Parent = SolarUIV2.Crefit
+SolarUIV2.ImageButton.BackgroundColor3 = Color3.fromRGB(94, 98, 99)
+SolarUIV2.ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ImageButton.BorderSizePixel = 0
+SolarUIV2.ImageButton.Position = UDim2.new(0.864111483, 0, 0.0980392173, 0)
+SolarUIV2.ImageButton.Size = UDim2.new(0, 51, 0, 41)
+
+SolarUIV2.corner_38.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_38.Name = "corner"
+SolarUIV2.corner_38.Parent = SolarUIV2.ImageButton
+
+SolarUIV2.gradient_24.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.47)}
+SolarUIV2.gradient_24.Name = "gradient"
+SolarUIV2.gradient_24.Parent = SolarUIV2.ImageButton
+
+SolarUIV2.UIAspectRatioConstraint.Parent = SolarUIV2.ImageButton
+
+SolarUIV2.icon_14.Name = "icon"
+SolarUIV2.icon_14.Parent = SolarUIV2.ImageButton
+SolarUIV2.icon_14.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_14.BackgroundTransparency = 1.000
+SolarUIV2.icon_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_14.BorderSizePixel = 0
+SolarUIV2.icon_14.Position = UDim2.new(0.481707305, 0, 0.50739342, 0)
+SolarUIV2.icon_14.Size = UDim2.new(0, 28, 0, 27)
+SolarUIV2.icon_14.ZIndex = 2
+SolarUIV2.icon_14.Image = "rbxassetid://10734898355"
+SolarUIV2.icon_14.ImageTransparency = 0.200
+SolarUIV2.icon_14.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_39.Name = "scale"
+SolarUIV2.scale_39.Parent = SolarUIV2.icon_14
+
+SolarUIV2.ClearButton.Name = "ClearButton"
+SolarUIV2.ClearButton.Parent = SolarUIV2.Panel
+SolarUIV2.ClearButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.ClearButton.BackgroundTransparency = 1.000
+SolarUIV2.ClearButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ClearButton.BorderSizePixel = 0
+SolarUIV2.ClearButton.Position = UDim2.new(0.243589744, 0, 0.881250024, 0)
+SolarUIV2.ClearButton.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.ClearButton.Visible = false
+SolarUIV2.ClearButton.Font = Enum.Font.SourceSans
+SolarUIV2.ClearButton.Text = ""
+SolarUIV2.ClearButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.ClearButton.TextSize = 14.000
+
+SolarUIV2.LaunchButton.Name = "LaunchButton"
+SolarUIV2.LaunchButton.Parent = SolarUIV2.Panel
+SolarUIV2.LaunchButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.LaunchButton.BackgroundTransparency = 1.000
+SolarUIV2.LaunchButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.LaunchButton.BorderSizePixel = 0
+SolarUIV2.LaunchButton.Position = UDim2.new(0.156410262, 0, 0.881250024, 0)
+SolarUIV2.LaunchButton.Size = UDim2.new(0, 50, 0, 50)
+SolarUIV2.LaunchButton.Visible = false
+SolarUIV2.LaunchButton.Font = Enum.Font.SourceSans
+SolarUIV2.LaunchButton.Text = ""
+SolarUIV2.LaunchButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.LaunchButton.TextSize = 14.000
+
+SolarUIV2.icon_15.Name = "icon"
+SolarUIV2.icon_15.Parent = SolarUIV2.Panel
+SolarUIV2.icon_15.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_15.BackgroundTransparency = 1.000
+SolarUIV2.icon_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_15.BorderSizePixel = 0
+SolarUIV2.icon_15.Position = UDim2.new(0.0282051284, 0, 0.0416666679, 0)
+SolarUIV2.icon_15.Size = UDim2.new(0, 48, 0, 38)
+SolarUIV2.icon_15.Image = "rbxassetid://10734974297"
+SolarUIV2.icon_15.ImageTransparency = 0.200
+SolarUIV2.icon_15.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_40.Name = "scale"
+SolarUIV2.scale_40.Parent = SolarUIV2.icon_15
+
+SolarUIV2.focused_bg_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 0, 2)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(177, 0, 3)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(214, 96, 0)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(202, 119, 2)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(208, 150, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(193, 161, 0))}
+SolarUIV2.focused_bg_3.Offset = Vector2.new(-0.5, 0)
+SolarUIV2.focused_bg_3.Name = "focused_bg"
+SolarUIV2.focused_bg_3.Parent = SolarUIV2.icon_15
+
+SolarUIV2.focused_bgg_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 0, 2)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(177, 0, 3)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(214, 96, 0)), ColorSequenceKeypoint.new(0.66, Color3.fromRGB(202, 119, 2)), ColorSequenceKeypoint.new(0.83, Color3.fromRGB(208, 150, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(193, 161, 0))}
+SolarUIV2.focused_bgg_2.Offset = Vector2.new(-0.5, 0)
+SolarUIV2.focused_bgg_2.Name = "focused_bgg"
+SolarUIV2.focused_bgg_2.Parent = SolarUIV2.icon_15
+
+SolarUIV2.Credits.Name = "Credits"
+SolarUIV2.Credits.Parent = SolarUIV2.Panel
+SolarUIV2.Credits.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.Credits.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+SolarUIV2.Credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Credits.BorderSizePixel = 0
+SolarUIV2.Credits.Position = UDim2.new(0.45256409, 60, 0.5, 0)
+SolarUIV2.Credits.Size = UDim2.new(0, 624, 0, 338)
+SolarUIV2.Credits.Visible = false
+SolarUIV2.Credits.Image = "rbxassetid://16255699706"
+SolarUIV2.Credits.ImageTransparency = 0.800
+SolarUIV2.Credits.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_41.Name = "scale"
+SolarUIV2.scale_41.Parent = SolarUIV2.Credits
+
+SolarUIV2.corner_39.CornerRadius = UDim.new(0, 20)
+SolarUIV2.corner_39.Name = "corner"
+SolarUIV2.corner_39.Parent = SolarUIV2.Credits
+
+SolarUIV2.Frame_2.Parent = SolarUIV2.Credits
+SolarUIV2.Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Frame_2.BackgroundTransparency = 1.000
+SolarUIV2.Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Frame_2.BorderSizePixel = 0
+SolarUIV2.Frame_2.Position = UDim2.new(0.0384615399, 0, 0.0710059181, 0)
+SolarUIV2.Frame_2.Size = UDim2.new(0, 574, 0, 296)
+
+SolarUIV2.Frame_3.Parent = SolarUIV2.Frame_2
+SolarUIV2.Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.Frame_3.BackgroundTransparency = 1.000
+SolarUIV2.Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.Frame_3.BorderSizePixel = 0
+SolarUIV2.Frame_3.Position = UDim2.new(0, 0, 0.101351351, 0)
+SolarUIV2.Frame_3.Size = UDim2.new(0, 573, 0, 196)
+
+SolarUIV2.list_13.Name = "list"
+SolarUIV2.list_13.Parent = SolarUIV2.Frame_3
+SolarUIV2.list_13.Padding = UDim.new(0, 10)
+
+SolarUIV2._3_2.Name = "3"
+SolarUIV2._3_2.Parent = SolarUIV2.Frame_3
+SolarUIV2._3_2.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._3_2.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2._3_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._3_2.BorderSizePixel = 0
+SolarUIV2._3_2.Position = UDim2.new(0.205933675, 60, 0.122406639, 0)
+SolarUIV2._3_2.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2._3_2.Image = "rbxassetid://16255699706"
+SolarUIV2._3_2.ImageTransparency = 0.800
+SolarUIV2._3_2.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_42.Name = "scale"
+SolarUIV2.scale_42.Parent = SolarUIV2._3_2
+
+SolarUIV2.corner_40.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_40.Name = "corner"
+SolarUIV2.corner_40.Parent = SolarUIV2._3_2
+
+SolarUIV2._1_5.Name = "1"
+SolarUIV2._1_5.Parent = SolarUIV2._3_2
+SolarUIV2._1_5.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2._1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_5.BackgroundTransparency = 1.000
+SolarUIV2._1_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_5.BorderSizePixel = 0
+SolarUIV2._1_5.Position = UDim2.new(0.238995492, 0, 0.100122787, 0)
+SolarUIV2._1_5.Size = UDim2.new(0.446560413, 0, 0, 40)
+SolarUIV2._1_5.ZIndex = 2
+SolarUIV2._1_5.Font = Enum.Font.Unknown
+SolarUIV2._1_5.Text = "IconMaker   :"
+SolarUIV2._1_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_5.TextSize = 36.000
+SolarUIV2._1_5.TextTransparency = 0.100
+
+SolarUIV2._1_6.Name = "1"
+SolarUIV2._1_6.Parent = SolarUIV2._3_2
+SolarUIV2._1_6.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2._1_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_6.BackgroundTransparency = 1.000
+SolarUIV2._1_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_6.BorderSizePixel = 0
+SolarUIV2._1_6.Position = UDim2.new(0.603978038, 0, 0.100122787, 0)
+SolarUIV2._1_6.Size = UDim2.new(0.274086565, 0, 0, 40)
+SolarUIV2._1_6.ZIndex = 2
+SolarUIV2._1_6.Font = Enum.Font.Unknown
+SolarUIV2._1_6.Text = "Lucide"
+SolarUIV2._1_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_6.TextSize = 31.000
+SolarUIV2._1_6.TextTransparency = 0.100
+
+SolarUIV2._1_7.Name = "1"
+SolarUIV2._1_7.Parent = SolarUIV2.Frame_3
+SolarUIV2._1_7.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._1_7.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2._1_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_7.BorderSizePixel = 0
+SolarUIV2._1_7.Position = UDim2.new(0.205933675, 60, 0.122406639, 0)
+SolarUIV2._1_7.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2._1_7.Image = "rbxassetid://16255699706"
+SolarUIV2._1_7.ImageTransparency = 0.800
+SolarUIV2._1_7.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_43.Name = "scale"
+SolarUIV2.scale_43.Parent = SolarUIV2._1_7
+
+SolarUIV2.corner_41.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_41.Name = "corner"
+SolarUIV2.corner_41.Parent = SolarUIV2._1_7
+
+SolarUIV2._1_8.Name = "1"
+SolarUIV2._1_8.Parent = SolarUIV2._1_7
+SolarUIV2._1_8.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2._1_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_8.BackgroundTransparency = 1.000
+SolarUIV2._1_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_8.BorderSizePixel = 0
+SolarUIV2._1_8.Position = UDim2.new(0.273838699, 0, 0.100122787, 0)
+SolarUIV2._1_8.Size = UDim2.new(0.446560413, 0, 0, 40)
+SolarUIV2._1_8.ZIndex = 2
+SolarUIV2._1_8.Font = Enum.Font.Unknown
+SolarUIV2._1_8.Text = "UIMaker   :"
+SolarUIV2._1_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_8.TextSize = 36.000
+SolarUIV2._1_8.TextTransparency = 0.100
+
+SolarUIV2._1_9.Name = "1"
+SolarUIV2._1_9.Parent = SolarUIV2._1_7
+SolarUIV2._1_9.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2._1_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_9.BackgroundTransparency = 1.000
+SolarUIV2._1_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_9.BorderSizePixel = 0
+SolarUIV2._1_9.Position = UDim2.new(0.713432491, 0, 0.100122787, 0)
+SolarUIV2._1_9.Size = UDim2.new(0.49299562, 0, 0, 40)
+SolarUIV2._1_9.ZIndex = 2
+SolarUIV2._1_9.Font = Enum.Font.Unknown
+SolarUIV2._1_9.Text = "Censure and blve_hxrizon"
+SolarUIV2._1_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_9.TextSize = 24.000
+SolarUIV2._1_9.TextTransparency = 0.100
+SolarUIV2._1_9.TextWrapped = true
+
+SolarUIV2._2_5.Name = "2"
+SolarUIV2._2_5.Parent = SolarUIV2.Frame_3
+SolarUIV2._2_5.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2._2_5.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+SolarUIV2._2_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._2_5.BorderSizePixel = 0
+SolarUIV2._2_5.Position = UDim2.new(0.205933675, 60, 0.122406639, 0)
+SolarUIV2._2_5.Size = UDim2.new(0, 574, 0, 51)
+SolarUIV2._2_5.Image = "rbxassetid://16255699706"
+SolarUIV2._2_5.ImageTransparency = 0.800
+SolarUIV2._2_5.ScaleType = Enum.ScaleType.Crop
+
+SolarUIV2.scale_44.Name = "scale"
+SolarUIV2.scale_44.Parent = SolarUIV2._2_5
+
+SolarUIV2.corner_42.CornerRadius = UDim.new(0, 10)
+SolarUIV2.corner_42.Name = "corner"
+SolarUIV2.corner_42.Parent = SolarUIV2._2_5
+
+SolarUIV2._1_10.Name = "1"
+SolarUIV2._1_10.Parent = SolarUIV2._2_5
+SolarUIV2._1_10.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2._1_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_10.BackgroundTransparency = 1.000
+SolarUIV2._1_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_10.BorderSizePixel = 0
+SolarUIV2._1_10.Position = UDim2.new(0.238995492, 0, 0.100122787, 0)
+SolarUIV2._1_10.Size = UDim2.new(0.446560413, 0, 0, 40)
+SolarUIV2._1_10.ZIndex = 2
+SolarUIV2._1_10.Font = Enum.Font.Unknown
+SolarUIV2._1_10.Text = "ScriptMaker   :"
+SolarUIV2._1_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_10.TextSize = 36.000
+SolarUIV2._1_10.TextTransparency = 0.100
+
+SolarUIV2._1_11.Name = "1"
+SolarUIV2._1_11.Parent = SolarUIV2._2_5
+SolarUIV2._1_11.AnchorPoint = Vector2.new(0.5, 0)
+SolarUIV2._1_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_11.BackgroundTransparency = 1.000
+SolarUIV2._1_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2._1_11.BorderSizePixel = 0
+SolarUIV2._1_11.Position = UDim2.new(0.603978038, 0, 0.100122787, 0)
+SolarUIV2._1_11.Size = UDim2.new(0.274086565, 0, 0, 40)
+SolarUIV2._1_11.ZIndex = 2
+SolarUIV2._1_11.Font = Enum.Font.Unknown
+SolarUIV2._1_11.Text = "Censure"
+SolarUIV2._1_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2._1_11.TextSize = 31.000
+SolarUIV2._1_11.TextTransparency = 0.100
+
+SolarUIV2.close_2.Name = "close"
+SolarUIV2.close_2.Parent = SolarUIV2.Credits
+SolarUIV2.close_2.AnchorPoint = Vector2.new(1, 0)
+SolarUIV2.close_2.BackgroundColor3 = Color3.fromRGB(94, 98, 99)
+SolarUIV2.close_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.close_2.BorderSizePixel = 0
+SolarUIV2.close_2.Position = UDim2.new(0.977564096, -5, 0.0236686394, 5)
+SolarUIV2.close_2.Size = UDim2.new(0, 30, 0, 30)
+SolarUIV2.close_2.ZIndex = 2
+SolarUIV2.close_2.AutoButtonColor = false
+
+SolarUIV2.corner_43.CornerRadius = UDim.new(1, 0)
+SolarUIV2.corner_43.Name = "corner"
+SolarUIV2.corner_43.Parent = SolarUIV2.close_2
+
+SolarUIV2.icon_16.Name = "icon"
+SolarUIV2.icon_16.Parent = SolarUIV2.close_2
+SolarUIV2.icon_16.AnchorPoint = Vector2.new(0.5, 0.5)
+SolarUIV2.icon_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SolarUIV2.icon_16.BackgroundTransparency = 1.000
+SolarUIV2.icon_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SolarUIV2.icon_16.BorderSizePixel = 0
+SolarUIV2.icon_16.Position = UDim2.new(0.5, 0, 0.5, 0)
+SolarUIV2.icon_16.Size = UDim2.new(0, 16, 0, 16)
+SolarUIV2.icon_16.ZIndex = 2
+SolarUIV2.icon_16.Image = "rbxassetid://10747384394"
+SolarUIV2.icon_16.ImageTransparency = 0.200
+SolarUIV2.icon_16.ScaleType = Enum.ScaleType.Fit
+
+SolarUIV2.scale_45.Name = "scale"
+SolarUIV2.scale_45.Parent = SolarUIV2.icon_16
+
+SolarUIV2.gradient_25.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.00), NumberSequenceKeypoint.new(1.00, 0.47)}
+SolarUIV2.gradient_25.Name = "gradient"
+SolarUIV2.gradient_25.Parent = SolarUIV2.close_2
+
+-- Scripts:
+
+local function WJLLLZ_fake_script() -- SolarUIV2.header.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.header)
+
+	local tween_service = game:GetService("TweenService")
+	local rev = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true)
+	
+	tween_service:Create(script.Parent.focused_bg, rev, {Offset = Vector2.new(.5, 0)}):Play()
+	
+end
+coroutine.wrap(WJLLLZ_fake_script)()
+local function JJKUHLO_fake_script() -- SolarUIV2.close.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	    script.Parent.Parent.Parent.Parent["SolarUIV.2"]:Destroy()
+	end)
+end
+coroutine.wrap(JJKUHLO_fake_script)()
+local function RAJVBM_fake_script() -- SolarUIV2.Panel.Script 
+	local script = Instance.new('Script', SolarUIV2.Panel)
+
+	script.Parent.Parent.Panel.Draggable = true
+end
+coroutine.wrap(RAJVBM_fake_script)()
+local function XRRTH_fake_script() -- SolarUIV2.Home.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Home)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local Internet = script.Parent.Parent.Parent.Parent.Internet
+	local Settings = script.Parent.Parent.Parent.Parent.Setting
+	local Credits = script.Parent.Parent.Parent.Parent.Credits
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch.Visible = true
+	    Internet.Visible = false
+	    Settings.Visible = false
+	    Credits.Visible = false
+	end)
+end
+coroutine.wrap(XRRTH_fake_script)()
+local function RLXBUTK_fake_script() -- SolarUIV2.Internet.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Internet)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local Internet = script.Parent.Parent.Parent.Parent.Internet
+	local Settings = script.Parent.Parent.Parent.Parent.Setting
+	local Credits = script.Parent.Parent.Parent.Parent.Credits
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = false
+	    Exe.Visible = false
+	    Launch.Visible = false
+	    Internet.Visible = true
+	    Settings.Visible = false
+	    Credits.Visible = false
+	end)
+end
+coroutine.wrap(RLXBUTK_fake_script)()
+local function RINP_fake_script() -- SolarUIV2.Settings.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Settings)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local Internet = script.Parent.Parent.Parent.Parent.Internet
+	local Settings = script.Parent.Parent.Parent.Parent.Setting
+	local Credits = script.Parent.Parent.Parent.Parent.Credits
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = false
+	    Exe.Visible = false
+	    Launch.Visible = false
+	    Internet.Visible = false
+	    Settings.Visible = true
+	    Credits.Visible = false
+	end)
+end
+coroutine.wrap(RINP_fake_script)()
+local function QSIGMU_fake_script() -- SolarUIV2.Up.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Up)
+
+	local button = script.Parent
+	
+	local function onButtonClicked(player)
+	    game:GetService("StarterGui"):SetCore("SendNotification", {
+	        Title = "Impossible";
+	        Text = "Fonctionnalité indisponible";
+	        Icon = "rbxassetid://3944668821";
+	        Duration = 4;
+	    })
+	end
+	
+	button.MouseButton1Click:Connect(onButtonClicked)
+end
+coroutine.wrap(QSIGMU_fake_script)()
+local function ZBKCYNF_fake_script() -- SolarUIV2.Down.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Down)
+
+	local button = script.Parent
+	
+	local function onButtonClicked(player)
+	    game:GetService("StarterGui"):SetCore("SendNotification", {
+	        Title = "Impossible";
+	        Text = "Fonctionnalité indisponible";
+	        Icon = "rbxassetid://3944668821";
+	        Duration = 4;
+	    })
+	end
+	
+	button.MouseButton1Click:Connect(onButtonClicked)
+end
+coroutine.wrap(ZBKCYNF_fake_script)()
+local function KXDHF_fake_script() -- SolarUIV2.ExeScript.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ExeScript)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch = true
+	end)
+end
+coroutine.wrap(KXDHF_fake_script)()
+local function LZXSC_fake_script() -- SolarUIV2.ExeScript.Script 
+	local script = Instance.new('Script', SolarUIV2.ExeScript)
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end
+coroutine.wrap(LZXSC_fake_script)()
+local function GAGXSZ_fake_script() -- SolarUIV2.ExeScript_2.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ExeScript_2)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch = true
+	end)
+end
+coroutine.wrap(GAGXSZ_fake_script)()
+local function DPHO_fake_script() -- SolarUIV2.ExeScript_3.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ExeScript_3)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch = true
+	end)
+end
+coroutine.wrap(DPHO_fake_script)()
+local function DQOEXS_fake_script() -- SolarUIV2.ExeScript_4.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ExeScript_4)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch = true
+	end)
+end
+coroutine.wrap(DQOEXS_fake_script)()
+local function KDRFI_fake_script() -- SolarUIV2.ExeScript_5.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ExeScript_5)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch = true
+	end)
+end
+coroutine.wrap(KDRFI_fake_script)()
+local function ZPLR_fake_script() -- SolarUIV2.ExeScript_6.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ExeScript_6)
+
+	local Clear = script.Parent.Parent.Parent.Parent.Clear
+	local Exe = script.Parent.Parent.Parent.Parent.Exe
+	local Launch = script.Parent.Parent.Parent.Parent.Launch
+	local 
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Clear.Visible = true
+	    Exe.Visible = true
+	    Launch = true
+	end)
+end
+coroutine.wrap(ZPLR_fake_script)()
+local function DTBETB_fake_script() -- SolarUIV2.Element.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Element)
+
+	local ts,ti = game.TweenService,TweenInfo.new(.5,Enum.EasingStyle.Quint)
+	
+	local on1,on2,off1,off2 = ts:Create(script.Parent.Fill,ti,{ImageTransparency=0}), ts:Create(script.Parent.Knob,ti,{Position=UDim2.new(1,-39,.5,0)}),ts:Create(script.Parent.Fill,ti,{ImageTransparency=1}), ts:Create(script.Parent.Knob,ti,{Position=UDim2.new(0,-3,.5,0)})
+	
+	local state = script.Parent:GetAttribute("state")
+	
+	local acces = script.Parent.Parent.Parent.Parent.Parent.Parent.Panel
+	
+	if state then
+		on1:Play()
+	    on2:Play()
+	else
+		off1:Play()
+	    off2:Play()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		state = script.Parent:GetAttribute("state")
+		
+		if state then
+			script.Parent:SetAttribute("state",false)
+			off1:Play()
+	        off2:Play()
+	        acces.icon.focused_bg.Enabled = true
+	        acces.header.focused_bg.Enabled = true
+	        acces.icon.focused_bgg.Enabled = false
+	        acces.header.focused_bgg.Enabled = false
+		else
+			script.Parent:SetAttribute("state",true)
+			on1:Play()
+	        on2:Play()
+	        acces.icon.focused_bg.Enabled = false
+	        acces.header.focused_bg.Enabled = false
+	        acces.icon.focused_bgg.Enabled = true
+	        acces.header.focused_bgg.Enabled = true
+		end
+	end)
+end
+coroutine.wrap(DTBETB_fake_script)()
+local function BCEM_fake_script() -- SolarUIV2.Element_2.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Element_2)
+
+	local ts,ti = game.TweenService,TweenInfo.new(.5,Enum.EasingStyle.Quint)
+	
+	local on1,on2,off1,off2 = ts:Create(script.Parent.Fill,ti,{ImageTransparency=0}), ts:Create(script.Parent.Knob,ti,{Position=UDim2.new(1,-39,.5,0)}),ts:Create(script.Parent.Fill,ti,{ImageTransparency=1}), ts:Create(script.Parent.Knob,ti,{Position=UDim2.new(0,-3,.5,0)})
+	
+	local state = script.Parent:GetAttribute("state")
+	
+	local acces = script.Parent.Parent.Parent.Parent.Parent.Parent.Panel
+	
+	if state then
+		on1:Play()
+	    on2:Play()
+	else
+		off1:Play()
+	    off2:Play()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		state = script.Parent:GetAttribute("state")
+		
+		if state then
+			script.Parent:SetAttribute("state",false)
+			off1:Play()
+	        off2:Play()
+	        acces.ImageTransparency = 0.1
+	        
+		else
+			script.Parent:SetAttribute("state",true)
+			on1:Play()
+	        on2:Play()
+	        acces.ImageTransparency = 0
+		end
+	end)
+end
+coroutine.wrap(BCEM_fake_script)()
+local function RVSU_fake_script() -- SolarUIV2.Element_3.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Element_3)
+
+	local ts,ti = game.TweenService,TweenInfo.new(.5,Enum.EasingStyle.Quint)
+	
+	local on1,on2,off1,off2 = ts:Create(script.Parent.Fill,ti,{ImageTransparency=0}), ts:Create(script.Parent.Knob,ti,{Position=UDim2.new(1,-39,.5,0)}),ts:Create(script.Parent.Fill,ti,{ImageTransparency=1}), ts:Create(script.Parent.Knob,ti,{Position=UDim2.new(0,-3,.5,0)})
+	
+	local state = script.Parent:GetAttribute("state")
+	
+	local acces = script.Parent.Parent.Parent.Parent.Parent.Parent.Panel
+	
+	if state then
+		on1:Play()
+	    on2:Play()
+	else
+		off1:Play()
+	    off2:Play()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		state = script.Parent:GetAttribute("state")
+		
+		if state then
+			script.Parent:SetAttribute("state",false)
+			off1:Play()
+	        off2:Play()
+	        acces.ImageColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.fade_top.ImageColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.fade_bottom.ImageColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.Clear.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.Launch.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.Setting.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.Internet.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.menu.BackgroundColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+	        acces.Up.BackgroundColor3 = Color3.new(0.380392, 0.380392, 0.380392)
+	        acces.Down.BackgroundColor3 = Color3.new(0.380392, 0.380392, 0.380392)
+	        acces.close.BackgroundColor3 = Color3.new(0.380392, 0.380392, 0.380392)
+	        acces.Exe.BackgroundColor3 = Color3.new(0.243137, 0.243137, 0.243137)
+	        acces.Exe.Exe.BackgroundColor3 = Color3.new(0.317647, 0.317647, 0.317647)
+	        acces.Credits.BackgroundColor3 = Color3.new(0.243137, 0.243137, 0.243137)
+	        script.Parent.Parent.Parent["L/DMode"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent["BTransparency"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent["TitleChange"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent["Crefit"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent["Crefit"].ImageButton.BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.Frame.Frame["1"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.Frame.Frame["2"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.Frame.Frame["3"].BackgroundColor3 = Color3.new(0.368627, 0.368627, 0.368627)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.close.BackgroundColor3 = Color3.new(0.380392, 0.380392, 0.380392)
+	        
+		else
+			script.Parent:SetAttribute("state",true)
+			on1:Play()
+	        on2:Play()
+	        acces.ImageColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.fade_top.ImageColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.fade_bottom.ImageColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Clear.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Launch.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Setting.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Internet.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.menu.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Up.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Down.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.close.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+	        acces.Exe.BackgroundColor3 = Color3.new(0.666667, 0.666667, 0.666667)
+	        acces.Exe.Exe.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
+	        acces.Credits.BackgroundColor3 = Color3.new(0.666667, 0.666667, 0.666667)
+	        script.Parent.Parent.Parent["L/DMode"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent["BTransparency"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent["TitleChange"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent["Crefit"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent["Crefit"].ImageButton.BackgroundColor3 = Color3.new(0.647059, 0.647059, 0.647059)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.Frame.Frame["1"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.Frame.Frame["2"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.Frame.Frame["3"].BackgroundColor3 = Color3.new(0.627451, 0.627451, 0.627451)
+	        script.Parent.Parent.Parent.Parent.Parent.Credits.close.BackgroundColor3 = Color3.new(0.658824, 0.658824, 0.658824)
+		end
+	end)
+end
+coroutine.wrap(RVSU_fake_script)()
+local function CDOI_fake_script() -- SolarUIV2.ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ImageButton)
+
+	local acces = script.Parent.Parent.Parent.Parent.Parent.Parent.Panel
+	
+	local Credit = acces.Credits
+	local Settings = acces.Setting
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Settings.Visible = false
+	    Credit.Visible = true
+	end)
+end
+coroutine.wrap(CDOI_fake_script)()
+local function NFSAY_fake_script() -- SolarUIV2.ClearButton.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.ClearButton)
+
+	local pass = script.Parent.Parent.Exe
+	
+	script.Parent.Parent.ClearButton.MouseButton1Click:Connect(function()
+	    pass.TextBox1.Text = ""
+	    pass.TextBox2.Text = ""
+	    pass.TextBox3.Text = ""
+	    pass.TextBox4.Text = ""
+	    pass.TextBox5.Text = ""
+	    pass.TextBox6.Text = ""
+	end)
+end
+coroutine.wrap(NFSAY_fake_script)()
+local function MXLKYH_fake_script() -- SolarUIV2.LaunchButton.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.LaunchButton)
+
+	local pass = script.Parent.Parent.Exe
+	
+	script.Parent.Parent.LaunchButton.MouseButton1Down:Connect(function()
+	    loadstring(pass.TextBox1.Text)()
+	end)
+end
+coroutine.wrap(MXLKYH_fake_script)()
+local function TQYPKFR_fake_script() -- SolarUIV2.icon_15.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.icon_15)
+
+	local tween_service = game:GetService("TweenService")
+	local rev = TweenInfo.new(1, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true)
+	
+	tween_service:Create(script.Parent.focused_bg, rev, {Offset = Vector2.new(.5, 0)}):Play()
+	
+end
+coroutine.wrap(TQYPKFR_fake_script)()
+local function KTHHZV_fake_script() -- SolarUIV2.Panel.NotifScript 
+	local script = Instance.new('LocalScript', SolarUIV2.Panel)
+
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+	    Title = "Solar UI V2";
+	    Text = "Solar V2 est désormais utilisable";
+	    Icon = "rbxassetid://4335489513";
+	    Duration = 4;
+	})
+	
+	if (identifyexecutor()) == "Solara" then
+	    game:GetService("StarterGui"):SetCore("SendNotification", {
+	        Title = "Executeur : Solara";
+	        Text = "Vous utilisez actuellement Solara";
+	        Icon = "rbxassetid://4335489513";
+	        Duration = 4;
+	    })
+	end
+	
+	if (identifyexecutor()) == "Feather" then
+	    game:GetService("StarterGui"):SetCore("SendNotification", {
+	        Title = "Executeur : Feather";
+	        Text = "Vous utilisez actuellement Feather";
+	        Icon = "rbxassetid://4335489513";
+	        Duration = 4;
+	    })
+	end
+end
+coroutine.wrap(KTHHZV_fake_script)()
+local function PEESY_fake_script() -- SolarUIV2.close_2.LocalScript 
+	local script = Instance.new('LocalScript', SolarUIV2.close_2)
+
+	local acces = script.Parent.Parent.Parent.Parent.Panel
+	
+	local Credit = acces.Credits
+	local Settings = acces.Setting
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	    Settings.Visible = true
+	    Credit.Visible = false
+	end)
+end
+coroutine.wrap(PEESY_fake_script)()
